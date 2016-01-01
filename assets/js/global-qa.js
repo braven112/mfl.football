@@ -19,6 +19,7 @@ jQuery(document).ready(function() {
     $('#body_board_show table caption').eq(1).remove();
 
     //customer wrapper
+    $(".playoffbracket").addClass('report');
     $(".report").wrap("<div class='report-wrapper'></div>");
     $("#outerMFLScoreboardDiv .report-wrapper .report,#lineup-form .report-wrapper .report,#body_board_show .report-wrapper .report-wrapper .report").unwrap();
     $(".report-wrapper .report-wrapper .report").unwrap();
