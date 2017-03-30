@@ -29,12 +29,9 @@ table#standings th {
 .homepagecolumn .homepagemodule caption {
   padding-top: inherit;
   padding-bottom: inherit;
-  background-color: $white;
-  font-family: $headline-font;
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  color: $primary-color;
 }
 
 
@@ -42,20 +39,16 @@ table#standings th {
 
 .homepagecolumn #brief_standings h3,
 .homepagecolumn #standings h3 {
-  color: $primary-color;
-  border-bottom: 4px solid $lightgray;
+  border-bottom: 4px solid;
 }
 
 #body_standings {
   caption,h3 {
       padding-top: inherit;
   padding-bottom: inherit;
-  background-color: $white;
-  font-family: $headline-font;
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  color: $primary-color;
   padding-left:10px;
   }
   td#division00,

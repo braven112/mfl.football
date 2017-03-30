@@ -80,17 +80,14 @@
 }
 
 .rfaStatus {
-  color: green;
   font-style: italic;
 }
 
 .rfaFutureContract {
-  color: green;
   font-style: italic;
 }
 
 .report .ufaStatus {
-  color: #a3262e;
   font-style: italic;
   font-weight: bold;
   text-align: center;
@@ -98,7 +95,6 @@
 
 .contractStatus {
   font-size: 8pt;
-  background-color: darkorange;
   color: white;
   font-weight: bold;
   margin-left: 4px;
@@ -107,13 +103,11 @@
 }
 
 .auditionStatus {
-  color: blue;
   font-style: italic;
 }
 
 .contractHomeButton {
   float: right;
-  background-color: #e6a40f;
 }
 
 .contractHomeButton a:link,
@@ -123,20 +117,13 @@
   text-decoration: none;
   padding: 4px;
   margin: -1px;
-  color: black;
-  background-color: #e6a40f;
-  border: 2px solid black;
+  border: 2px solid;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.contractHomeButton a:hover {
-  background-color: #ffb612;
-}
-
 .team-nav {
   margin: 12px 0;
-  background-color: $accent-color;
   padding: 4px 8px;
   border-radius: 5px;
   width: 100%;
@@ -151,17 +138,12 @@
     height: 20px;
     float: left;
     margin: 0px 5px 0 0;
-    fill: #fff;
-  }
-  .team-nav--button a:hover svg {
-    fill: #fff;
   }
   .team-nav--button .svg-text {
     font-size: 12px;
     display: inline-block;
     margin-top: 4px;
     margin-right: 10px;
-    color: #fff;
   }
   @media (min-width: 1200px) {
     .team-nav .svg-text {
@@ -170,7 +152,6 @@
   }
   .team-nav--button .svg-text a:link,
   .team-nav--button .svg-text a:visited {
-    color: $white;
     text-decoration: none;
   }
   svg.icon-user-plus {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700");
 .homepagecolumn .homepagemodule h3 {
   margin: 0 0 0 -1px;
 }
@@ -1761,30 +1762,23 @@ table#standings th {
 .homepagecolumn .homepagemodule caption {
   padding-top: inherit;
   padding-bottom: inherit;
-  background-color: #fff;
-  font-family: "Roboto Slab";
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  color: #1c497c;
 }
 
 /*Standings*/
 .homepagecolumn #brief_standings h3,
 .homepagecolumn #standings h3 {
-  color: #1c497c;
-  border-bottom: 4px solid #ddd;
+  border-bottom: 4px solid;
 }
 
 #body_standings caption, #body_standings h3 {
   padding-top: inherit;
   padding-bottom: inherit;
-  background-color: #fff;
-  font-family: "Roboto Slab";
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  color: #1c497c;
   padding-left: 10px;
 }
 
@@ -2044,17 +2038,14 @@ form.reportform input[type="submit"] {
 }
 
 .rfaStatus {
-  color: green;
   font-style: italic;
 }
 
 .rfaFutureContract {
-  color: green;
   font-style: italic;
 }
 
 .report .ufaStatus {
-  color: #a3262e;
   font-style: italic;
   font-weight: bold;
   text-align: center;
@@ -2062,7 +2053,6 @@ form.reportform input[type="submit"] {
 
 .contractStatus {
   font-size: 8pt;
-  background-color: darkorange;
   color: white;
   font-weight: bold;
   margin-left: 4px;
@@ -2071,13 +2061,11 @@ form.reportform input[type="submit"] {
 }
 
 .auditionStatus {
-  color: blue;
   font-style: italic;
 }
 
 .contractHomeButton {
   float: right;
-  background-color: #e6a40f;
 }
 
 .contractHomeButton a:link,
@@ -2087,20 +2075,13 @@ form.reportform input[type="submit"] {
   text-decoration: none;
   padding: 4px;
   margin: -1px;
-  color: black;
-  background-color: #e6a40f;
-  border: 2px solid black;
+  border: 2px solid;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.contractHomeButton a:hover {
-  background-color: #ffb612;
-}
-
 .team-nav {
   margin: 12px 0;
-  background-color: #3c9950;
   padding: 4px 8px;
   border-radius: 5px;
   width: 100%;
@@ -2118,11 +2099,6 @@ form.reportform input[type="submit"] {
   height: 20px;
   float: left;
   margin: 0px 5px 0 0;
-  fill: #fff;
-}
-
-.team-nav .team-nav--button a:hover svg {
-  fill: #fff;
 }
 
 .team-nav .team-nav--button .svg-text {
@@ -2130,7 +2106,6 @@ form.reportform input[type="submit"] {
   display: inline-block;
   margin-top: 4px;
   margin-right: 10px;
-  color: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -2141,7 +2116,6 @@ form.reportform input[type="submit"] {
 
 .team-nav .team-nav--button .svg-text a:link,
 .team-nav .team-nav--button .svg-text a:visited {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -2197,12 +2171,6 @@ form.reportform input[type="submit"] {
   border-color: transparent;
   margin-bottom: 0;
   text-align: left;
-  color: #1c497c;
-}
-
-#body_options_02 .reportnavigation a:link,
-#body_options_02 .reportnavigation a:visited {
-  color: #1c497c;
 }
 
 #body_options_02 .alert {
@@ -2221,97 +2189,22 @@ form.reportform input[type="submit"] {
 
 body {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  color: #333333;
   border: 0px;
   margin-top: 0;
   overflow-x: hidden;
 }
 
-td a,
-td a:link,
-td a:active,
-td a:visited,
-td a:focus {
-  font-family: "Roboto", sans-serif;
-}
-
-a:focus,
-a,
-a:link,
-a:active,
-a:visited,
-a:focus,
-th,
-th a,
-th a:link,
-th a:active,
-th a:visited,
-th a:focus,
-h1,
-td h1 a:link,
-td h1 a:active,
-td h1 a:visited,
-td h1 a:focus,
-h2,
-td h2 a:link,
-td h2 a:active,
-td h2 a:visited,
-td h2 a:focus,
-h3,
-td h3 a,
-td h3 a:link,
-td h3 a:active,
-td h3 a:visited,
-td h3 a:focus,
-h4,
-td h4 a,
-td h4 a:link,
-td h4 a:active,
-td h4 a:visited,
-td h4 a:focus,
-input[type="button"],
-input[type="submit"],
-.myfantasyleague_tabmenu,
-.myfantasyleague_menu,
-caption,
-caption a,
-caption a:link,
-caption a:active,
-caption a:visited,
-caption a:focus,
-.welcome,
-.welcome a,
-.welcome a:link,
-.welcome a:active,
-.welcome a:visited,
-.welcome a:focus,
-#MFLPlayerPopupLinks .popreport td a,
-#owner_activity td.franchisename,
-.myfantasyleague_tabmenu #homepagetabs li a {
-  font-family: "Roboto", sans-serif;
-}
-
-a:visited {
-  color: #1c497c;
-}
-
-a:link {
-  color: #1c497c;
-}
-
-/*hides default MFL footer*/
 span#mfladdons {
   margin-bottom: 24px;
   display: block;
 }
 
+/*hides default MFL footer*/
 .pagefooter {
   display: none;
 }
 
 .container-footer {
-  background-color: #1c497c;
   min-height: 16em;
   padding: 24px 0;
 }
@@ -2329,8 +2222,6 @@ span#mfladdons {
 .container-footer ul li {
   margin-left: -2.5em;
   list-style-type: none;
-  color: #fff;
-  font-family: "Roboto Slab";
   margin-bottom: 5px;
 }
 
@@ -2341,10 +2232,6 @@ span#mfladdons {
   margin-bottom: 24px;
 }
 
-h2 {
-  color: #1d4b7e;
-}
-
 h3 {
   margin-bottom: 12px;
 }
@@ -2352,12 +2239,7 @@ h3 {
 /*main mfl wrapper*/
 .pagebody {
   width: 100%;
-  /*  max-width: 1200px;
-  margin: 20px auto 100px;*/
-  background-color: #f9f9f9;
   padding: 0 0;
-  /*  border-radius: 5px;
-  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.6);*/
   overflow: auto;
 }
 
@@ -2388,23 +2270,19 @@ h3 {
 }
 
 .homepagemessage th {
-  color: #8a6d3b;
   font-style: normal;
   font-weight: bold;
-  background-color: #fcf8e3;
   border-radius: 5px 5px 0 0;
   padding: 15px 5px 0px;
-  border: 1px solid #faf2cc;
+  border: 1px solid;
   border-bottom: 0;
   position: relative;
   top: 2px;
 }
 
 table.homepagemessage td {
-  background-color: #fcf8e3;
   padding: 16px;
-  color: #8a6d3b;
-  border: 1px solid #faf2cc;
+  border: 1px solid;
   border-radius: 0 0 5px 5px;
   border-top: 0px;
 }
@@ -2420,11 +2298,9 @@ table.homepagemessage td {
 
 caption,
 caption span {
-  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  color: #1d4b7e;
 }
 
 caption {
@@ -2437,17 +2313,11 @@ caption img {
 }
 
 th {
-  color: #1d4b7e;
   font-style: normal;
   font-weight: bold;
   text-align: left;
   padding: 4px 8px;
   background-color: transparent;
-}
-
-th a:link,
-th a:visited {
-  color: #1d4b7e;
 }
 
 #body_home #power_rank .total_points,
@@ -2469,16 +2339,9 @@ th a:visited {
 }
 
 span.reportnavigation {
-  border: 1px solid #3c9950;
+  border: 1px solid;
   border-radius: 5px;
-  background-color: #3c9950;
-  color: #fff;
   margin-bottom: 12px;
-}
-
-span.reportnavigation a:link,
-span.reportnavigation a:visited {
-  color: #fff;
 }
 
 /*reports*/
@@ -2487,7 +2350,6 @@ span.reportnavigation a:visited {
   border-radius: 4px;
   padding: 12px;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -2499,7 +2361,7 @@ span.reportnavigation a:visited {
 .report {
   width: 100%;
   border-collapse: collapse;
-  border-bottom: 0px solid #ddd;
+  border-bottom: 0px solid;
   margin-bottom: 12px;
 }
 
@@ -2513,12 +2375,7 @@ span.reportnavigation a:visited {
 }
 
 .report .oddtablerow {
-  background-color: #fff;
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
-}
-
-.report .eventablerow {
-  background-color: #ececec;
 }
 
 /*//messageboard cta*/
@@ -2552,7 +2409,6 @@ span#mb {
   margin: 0;
   position: relative;
   top: 3px;
-  fill: #1c497c;
 }
 
 #message_board_summary iframe {
@@ -2578,7 +2434,7 @@ table#message_board_summary td {
 
 .newposition td,
 .newposition th {
-  border-top: 4px solid #ccc;
+  border-top: 4px solid;
 }
 
 /* margin-top: 12px; */
@@ -2587,14 +2443,6 @@ table#message_board_summary td {
 }
 
 /*add drop*/
-span#add_name_field_id {
-  color: green;
-}
-
-span#drop_name_field_id {
-  color: red;
-}
-
 #body_add_drop form table table caption {
   padding-left: 0;
 }
@@ -2605,23 +2453,12 @@ span#drop_name_field_id {
 
 #body_add_drop table table div {
   width: 100% !important;
-  border-color: #ddd !important;
   padding: 5px;
   border-radius: 5px;
 }
 
 #body_add_drop table table {
   width: 100% !important;
-}
-
-#add .highlight {
-  color: #fff;
-  background-color: green;
-}
-
-#drop .highlight {
-  color: #fff;
-  background-color: red;
 }
 
 table#drop td,
@@ -2631,7 +2468,6 @@ table#add {
 
 .utility-nav {
   margin-bottom: 24px;
-  background-color: #3c9950;
   padding: 4px 8px;
   border-radius: 5px;
   width: 100%;
@@ -2654,7 +2490,6 @@ table#add {
   height: 20px;
   float: left;
   margin: 0px 5px 0 0;
-  fill: #fff;
 }
 
 .utility-nav .svg-text {
@@ -2662,7 +2497,6 @@ table#add {
   display: inline-block;
   margin-top: 4px;
   margin-right: 5px;
-  color: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -2674,7 +2508,6 @@ table#add {
 .utility-nav .svg-text b,
 .utility-nav .svg-text a:link,
 .utility-nav .svg-text a:visited {
-  color: white;
   margin-right: 5px;
   text-decoration: none;
 }
@@ -2688,16 +2521,11 @@ table#add {
 }
 
 .utility-nav .svg-text .commish-link {
-  border-left: 1px solid #fff;
+  border-left: 1px solid;
   padding-left: 5px;
 }
 
-.utility-nav a:hover [class^="icon"] {
-  fill: #fff;
-}
-
 textarea#MSG {
-  background: #31382d;
   color: white;
   width: 100%;
   margin: 14px 0;
@@ -2727,7 +2555,6 @@ span#chat_audio_clip {
 }
 
 #body_commissioner_setup table.two_column_layout ul {
-  background-color: white;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 15px;
   border-radius: 4px;
@@ -3068,7 +2895,7 @@ span.leaguename--dotus {
 }
 
 #curr_auctions .btn-primary a {
-  background-color: #3c9950;
+  background-color: #348545;
   color: #fff;
 }
 
@@ -3082,13 +2909,13 @@ span.leaguename--dotus {
 }
 
 #monthly_calendar td.today {
-  background-color: #3c9950;
+  background-color: #348545;
   color: #fff;
-  border-color: #2e743d;
+  border-color: #266032;
 }
 
 #monthly_calendar td.today .calendarday {
-  border-color: #2e743d;
+  border-color: #266032;
 }
 
 #monthly_calendar td.today a:link {
@@ -3104,13 +2931,13 @@ span.leaguename--dotus {
 }
 
 #monthly_calendar ul li.calendar_event_trade {
-  border-bottom-color: #2e743d;
+  border-bottom-color: #266032;
 }
 
 #monthly_calendar td.today .calendarday {
-  border-color: #2e743d;
-  background-color: #2e743d;
-  border-bottom-color: #3c9950;
+  border-color: #266032;
+  background-color: #266032;
+  border-bottom-color: #348545;
 }
 
 #monthly_calendar td .calendarday {
@@ -3142,7 +2969,7 @@ span.leaguename--dotus {
 }
 
 .st2 {
-  fill: #3c9950;
+  fill: #348545;
 }
 
 .st3 {
@@ -3164,7 +2991,7 @@ span.leaguename--dotus {
 
 .leaguename {
   font-family: "Roboto Slab";
-  color: #3c9950;
+  color: #348545;
 }
 
 span.leaguename--the {
@@ -3196,14 +3023,14 @@ span.leaguename--dotus {
 
 input[type="button"],
 input[type="submit"] {
-  background-color: #3c9950;
-  border-color: #3c9950;
+  background-color: #348545;
+  border-color: #348545;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #2e743d;
-  border-color: #2e743d;
+  background-color: #266032;
+  border-color: #266032;
 }
 
 input#chat_text_field {
@@ -3211,19 +3038,19 @@ input#chat_text_field {
 }
 
 form.reportform input[type="submit"] {
-  background: #3c9950;
+  background: #348545;
   color: #fff;
 }
 
 .btn-primary a,
 .btn-primary a:link,
 .btn-primary a:visited {
-  background-color: #3c9950;
+  background-color: #348545;
   color: #fff;
 }
 
 .btn-primary a:hover {
-  background-color: #2e743d;
+  background-color: #266032;
 }
 
 [class^="icon"] {
@@ -3324,7 +3151,7 @@ a:hover [class^="icon"] {
 
 .myfantasyleague_tabmenu #homepagetabs li {
   border-right-color: #1c497c;
-  background-color: #3c9950;
+  background-color: #348545;
   border-left-color: #1c497c;
   border-top-color: #1c497c;
   border-right-color: #1c497c;
@@ -3509,8 +3336,8 @@ th a:visited {
 }
 
 span.reportnavigation {
-  border-color: #3c9950;
-  background-color: #3c9950;
+  border-color: #348545;
+  background-color: #348545;
   color: #fff;
 }
 
@@ -3569,7 +3396,7 @@ span#drop_name_field_id {
 }
 
 .utility-nav {
-  background-color: #3c9950;
+  background-color: #348545;
 }
 
 .utility-nav svg {
@@ -3625,7 +3452,7 @@ textarea#MSG {
 }
 
 .team-nav {
-  background-color: #3c9950;
+  background-color: #348545;
 }
 
 .team-nav .team-nav--button svg {
