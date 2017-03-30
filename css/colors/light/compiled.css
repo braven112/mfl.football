@@ -1789,6 +1789,15 @@ svg.icon-banknote {
   padding: 1px;
 }
 
+#login table[align="center"] table[align="center"] b,
+#login table[align="center"] table[align="center"] p {
+  display: none;
+}
+
+#login .report span.alert.alert-info {
+  margin-top: 12px;
+}
+
 table#standings th {
   padding-top: 12px;
 }
