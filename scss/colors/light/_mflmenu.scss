@@ -2,17 +2,28 @@
 ======================================= */
   .myfantasyleague_menu {
     background: $primary-color;
-    border-bottom: 4px solid $primary-color;
+    border-bottom-color:darken($primary-color, 5%);
   }
 .myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
     background: $primary-color;
 }
+.myfantasyleague_menu ul ul li {
+    background: $primary-color;
+}
+.myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
+    border-color:darken($primary-color, 5%);
+  }
+
 .myfantasyleague_menu li:hover > a {
     background-color: $primary-color;
 }
 .myfantasyleague_menu ul li ul {
-    border-top-color: darken($primary-color, .5);/*darker border*/
+    border-top-color: darken($primary-color, 5%);/*darker border*/
 }
+
+.myfantasyleague_menu ul li ul li:hover > a {
+    background-color: darken($primary-color, 5%);
+  }
 @media only screen and (max-width:920px) {
   .myfantasyleague_menu {
     background: $primary-color;
@@ -64,10 +75,10 @@
   }
   
   .myfantasyleague_menu li:hover > a {
-    background-color: darken($primary-color, .5);
+    background-color: darken($primary-color, 5%);
   }
   .myfantasyleague_menu ul li ul li:hover > a {
-    background-color: darken($primary-color, .5);
+    background-color: darken($primary-color, 5%);
   }
   .myfantasyleague_menu ul ul li a {
     border-top-color:$primary-color;
