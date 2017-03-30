@@ -1794,6 +1794,10 @@ svg.icon-banknote {
   display: none;
 }
 
+#login table[align="center"] table[align="center"] p.form_buttons {
+  display: block;
+}
+
 #login .report span.alert.alert-info {
   margin-top: 12px;
 }
