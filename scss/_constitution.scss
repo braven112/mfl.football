@@ -1,8 +1,7 @@
 .constitution-wrapper h2{
-  color: #1d4b7e;
   text-align: left;
   margin: 0 0 12px 0;
-  border-bottom: 4px solid $lightgray;
+  border-bottom: 4px solid;
   padding-bottom: 3px;
 }
 
@@ -16,7 +15,5 @@
     margin-bottom: 0;
     padding-left: 20px;
 }
-.constitution-wrapper td.secondround {background-color:$eventablerow}
-.constitution-wrapper td.thirdround {background-color:$oddtablerow}
 .constitution-wrapper .emphasize { font-style: italic; }
 .constitution-wrapper {font-size:1.2em; display:flexbox;}

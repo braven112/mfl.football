@@ -7,7 +7,6 @@
    }
    
    .container-header {
-     background-color: $white;
      padding: 20px 0;
      margin-bottom: 24px;
      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
@@ -46,36 +45,23 @@
      }
      .st1 {
        display: inline;
-       fill: #33373A;
+      
      }
-     .st2 {
-       fill: $accent-color;
-     }
-     .st3 {
-       fill: $primary-color;
-     }
+    
      .st4 {
        display: none;
-       fill: #1C497C;
-     }
-     .st5 {
-       fill: $lightgray;
-     }
-     .st6 {
-       fill: #FFFFFF;
-     }
+           }
+     
+    
      .st7 {
        display: none;
-       fill: #187D3E;
      }
    }
    
    .leaguename {
      float: left;
      font-size: 32px;
-     font-family: $headline-font;
      padding: 6px 0 6px 6px;
-     color: $accent-color;
      text-transform: uppercase;
    }
    
@@ -96,14 +82,12 @@
    }
    
    span.leaguename--the {
-     color: $primary-color;
      padding-right: 5px;
    }
    
    span.leaguename--league {}
    
    span.leaguename--dotus {
-     color: $primary-color;
      font-size: 18px;
    }
    
@@ -179,7 +163,6 @@
    .nav_buttons .svg-text {
      font-size: 10px;
      text-align: center;
-     color: $link-color;
    }
    
    .nav_buttons a {
@@ -198,12 +181,10 @@
      transition: all 0.5s ease;
      vertical-align: top;
      width: 100%;
-     background: $secondary-color;
      position: absolute;
      left: 0;
      padding: 10px 30px;
      text-align: center;
-     color: $white;
      top: -5px;
    }
    
@@ -212,12 +193,10 @@
      transition: all 0.5s ease;
      vertical-align: top;
      width: 100%;
-     background: $secondary-color;
      position: absolute;
      left: 0;
      padding: 10px 30px;
      text-align: center;
-     color: $white;
      top: 36px;
      box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.38);
      z-index: 999;
@@ -229,7 +208,3 @@
      }
    }
    
-   .welcome a:link,
-   .welcome a:visited {
-     color: $white;
-   }

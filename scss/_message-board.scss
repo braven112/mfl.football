@@ -2,21 +2,11 @@
   @import "variables";
 body {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-	background:#FFF;
 }
 @media (max-width: 767px) {
 body #container {
     width: 100%;
     }
-}
-a:link {
-    color: $link-color;
-}
-
-a:visited {
-    color: $link-color;
 }
 .feed_item {
     margin-bottom: 12px;
@@ -37,10 +27,9 @@ a:visited {
 }
 
 .feed_item:nth-child(odd) {
-    background-color: #ececec;
     box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
-    border-left: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-    border: 1px solid #e0e0e0;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border: 1px solid;
     padding-top: 6px;
 }
