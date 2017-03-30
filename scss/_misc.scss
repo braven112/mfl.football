@@ -1,0 +1,512 @@
+body {
+  font-size: 14px;
+  font-family: $body-font;
+  color: $primary-text-color;
+  border: 0px;
+  margin-top: 0;
+  overflow-x: hidden;
+}
+
+td a,
+td a:link,
+td a:active,
+td a:visited,
+td a:focus {
+  font-family: $body-font;
+}
+
+a:focus,
+a,
+a:link,
+a:active,
+a:visited,
+a:focus,
+th,
+th a,
+th a:link,
+th a:active,
+th a:visited,
+th a:focus,
+h1,
+td h1 a:link,
+td h1 a:active,
+td h1 a:visited,
+td h1 a:focus,
+h2,
+td h2 a:link,
+td h2 a:active,
+td h2 a:visited,
+td h2 a:focus,
+h3,
+td h3 a,
+td h3 a:link,
+td h3 a:active,
+td h3 a:visited,
+td h3 a:focus,
+h4,
+td h4 a,
+td h4 a:link,
+td h4 a:active,
+td h4 a:visited,
+td h4 a:focus,
+input[type="button"],
+input[type="submit"],
+.myfantasyleague_tabmenu,
+.myfantasyleague_menu,
+caption,
+caption a,
+caption a:link,
+caption a:active,
+caption a:visited,
+caption a:focus,
+.welcome,
+.welcome a,
+.welcome a:link,
+.welcome a:active,
+.welcome a:visited,
+.welcome a:focus,
+#MFLPlayerPopupLinks .popreport td a,
+#owner_activity td.franchisename,
+.myfantasyleague_tabmenu #homepagetabs li a {
+  font-family: $body-font;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:link {
+  color: $link-color;
+}
+
+
+/*hides default MFL footer*/
+span#mfladdons {
+    margin-bottom: 24px;
+    display: block;
+}
+.pagefooter {
+  display: none;
+}
+
+.container-footer {
+  background-color: $primary-color;
+  min-height: 16em;
+  padding: 24px 0;
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  ul {
+    margin-left: -1.5em;
+    margin-bottom:24px;
+    li {
+    margin-left: -2.5em;
+    list-style-type: none;
+    color: $white;
+    font-family: $headline-font;
+    margin-bottom:5px;
+  }
+}
+  .defending-champ {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+  }
+}
+
+h2 {
+  color: $secondary-color;
+}
+
+h3 {
+  margin-bottom: 12px;
+}
+
+
+/*main mfl wrapper*/
+
+.pagebody {
+  width: 100%;
+  /*  max-width: 1200px;
+  margin: 20px auto 100px;*/
+  background-color: $offwhite2;
+  padding: 0 0;
+  /*  border-radius: 5px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.6);*/
+  overflow: auto;
+}
+
+
+/*act like a bootstrap row*/
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  clear: both;
+}
+
+
+/*bootstrap column*/
+
+.homepagetabcontent {
+  padding: 0 0px;
+}
+
+
+/*handle mfl messages*/
+
+.homepagemessage {
+  display: none;
+  border: none;
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+  margin: 0 auto 24px;
+}
+
+.homepagemessage:first-child {
+  padding-left: 0;
+}
+
+.homepagemessage th {
+  color: #8a6d3b;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #fcf8e3;
+  border-radius: 5px 5px 0 0;
+  padding: 15px 5px 0px;
+  border: 1px solid #faf2cc;
+  border-bottom: 0;
+  position: relative;
+  top: 2px;
+}
+
+table.homepagemessage td {
+  background-color: #fcf8e3;
+  padding: 16px;
+  color: #8a6d3b;
+  border: 1px solid #faf2cc;
+  border-radius: 0 0 5px 5px;
+  border-top: 0px;
+}
+
+.homepagecolumn {
+  padding: 0 0 24px;
+}
+
+.homepagecolumn .homepagemodule,
+.homepagecolumn .homepagemodule caption {
+  width: 100%;
+}
+
+caption,
+caption span {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  color: $secondary-color;
+}
+
+caption {
+  padding-left: 8px;
+  margin-bottom: 12px;
+  img {
+    margin-left: -4px;
+  }
+}
+
+th {
+  color: $secondary-color;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  padding: 4px 8px;
+  background-color: transparent;
+}
+
+th a:link,
+th a:visited {
+  color: $secondary-color;
+}
+
+#body_home #power_rank {
+  .total_points,
+  .total_potential_points,
+  .efficiency,
+  .bench_points,
+  .maxpf,
+  .minpf,
+  .coulda_won,
+  .woulda_lost,
+  .power_rank,
+  .alt_power_rank {
+    display: none;
+  }
+  th[colspan="11"],
+  th[colspan="4"] {
+    display: none;
+  }
+}
+
+span.reportnavigation {
+  border: 1px solid $accent-color;
+  border-radius: 5px;
+  background-color: $accent-color;
+  color: $white;
+  margin-bottom: 12px;
+  a:link,
+  a:visited {
+    color: $white;
+  }
+}
+
+
+/*reports*/
+
+.report-wrapper {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  @media (max-width: 991px) {
+    overflow-x: auto;
+  }
+}
+
+.report {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 0px solid $lightgray;
+  margin-bottom: 12px;
+}
+
+.report td {
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.report h3 {
+  text-align: left;
+}
+
+.report .oddtablerow {
+  background-color: $oddtablerow;
+  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.report .eventablerow {
+  background-color: $eventablerow;
+}
+
+
+/*//messageboard cta*/
+span#mb {
+    float: right;
+    position: relative;
+    top: 34px;
+}
+
+
+.mb {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  position: relative;
+  top: 20px;
+  right: 10px;
+  a {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+  }
+  svg.icon-chevron-right {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: 3px;
+    fill: $primary-color;
+  }
+}
+
+#message_board_summary iframe {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #message_board_summary iframe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+table#message_board_summary td {
+  margin-left: 0;
+  padding: 0;
+}
+
+.report .newposition td {
+  padding-top: 10px;
+}
+
+.newposition td,
+.newposition th {
+  border-top: 4px solid $lightgray2;
+}
+
+
+/* margin-top: 12px; */
+
+.newposition td a {
+  margin-top: 12px;
+}
+
+
+/*add drop*/
+
+span#add_name_field_id {
+  color: $add-color;
+}
+
+span#drop_name_field_id {
+  color: $drop-color;
+}
+
+#body_add_drop form table table caption {
+  padding-left: 0;
+}
+
+#body_add_drop form > table caption {
+  padding-left: 8px;
+}
+
+#body_add_drop table table div {
+  width: 100% !important;
+  border-color: $lightgray !important;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#body_add_drop table table {
+  width: 100% !important;
+}
+
+#add .highlight {
+  color: $white;
+  background-color: $add-color;
+}
+
+#drop .highlight {
+  color: $white;
+  background-color: $drop-color;
+}
+
+table#drop td,
+table#add {
+  cursor: pointer;
+}
+
+.utility-nav {
+  margin-bottom: 24px;
+  background-color: $accent-color;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+  .utility-nav--button {
+    display: inline-block;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    .loginbutton .svg-text {
+      margin-right: 0;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 5px 0 0;
+    fill: $white;
+  }
+  .svg-text {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 5px;
+    @media (min-width: 1200px) {
+      margin-right: 5px;
+    }
+    color: $white;
+    b,
+    a:link,
+    a:visited {
+      color: white;
+      margin-right: 5px;
+      text-decoration:none;
+    }
+    b {
+      display: none;
+    }
+    small {
+      display: none;
+    }
+    .commish-link {
+    border-left: 1px solid $white;
+    padding-left: 5px;
+    }
+  }
+  a:hover [class^="icon"] {
+    fill: $white;
+  }
+}
+
+textarea#MSG {
+  background: $codebg-color;
+  color: white;
+  width: 100%;
+  margin: 14px 0;
+}
+
+#body_options_35 {
+  .alert {
+    margin-top: 12px;
+  }
+}
+
+#league_chat {
+  caption img {
+    margin-left: 6px;
+  }
+  a svg.icon-comments {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 5px;
+  }
+}
+
+span#chat_audio_clip {
+  display: none;
+}
+
+#body_commissioner_setup {
+  table.two_column_layout li {
+    padding: 0px;
+    margin: 0 0 0 18px;
+  }
+  table.two_column_layout ul {
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 4px;
+  }
+  td.two_column_layout th {
+    padding-left: 18px;
+    padding-top: 18px;
+  }
+}

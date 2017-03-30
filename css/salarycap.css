@@ -1,0 +1,114 @@
+.text-align-left.icon-header {
+    margin-top: -24px;
+}
+
+#contractOuterDiv {
+  width: 100%;
+}
+
+#contractOuterDiv .report {
+  width: 100%;
+}
+
+#contractOuterDiv td {
+  white-space: nowrap;
+}
+
+#contractOuterDiv th {
+  text-align: center;
+}
+
+#contractHeader {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.contractReport {
+    margin-top: 24px;
+}
+.contractDropdown {
+    float: right;
+    position: relative;
+    top: -5px;
+}
+.contractDropdown .report {
+    border: none;
+    position: relative;
+    top: 26px;
+}
+.subtotals {
+    background-color: #ddd;
+    padding: 5px;
+}
+#contractReport {}
+
+#contractTable {}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
+}
+.text-align-right {
+  text-align: right !important;
+}
+.text-align-left {
+  text-align: left !important;
+}
+
+.rfaStatus {
+  color: green;
+  font-style: italic;
+}
+
+.rfaFutureContract {
+  color: green;
+  font-style: italic;
+}
+
+.report .ufaStatus {
+  color: #a3262e;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contractStatus {
+  font-size: 8pt;
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+  margin-left: 4px;
+  padding: 0px 3px;
+  vertical-align: top;
+}
+
+.auditionStatus {
+  color: blue;
+  font-style: italic;
+}
+
+.contractHomeButton {
+  float: right;
+  background-color: #e6a40f;
+}
+
+.contractHomeButton a:link,
+.contractHomeButton a:hover,
+.contractHomeButton a:visited,
+.contractHomeButton a:active {
+  text-decoration: none;
+  padding: 4px;
+  margin: -1px;
+  color: black;
+  background-color: #e6a40f;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contractHomeButton a:hover {
+  background-color: #ffb612;
+}

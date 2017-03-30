@@ -1,0 +1,86 @@
+@media (max-width: 540px) {
+  .hidden-calendar {
+    display: none !important;
+  }
+}
+
+.homepagecolumn #monthly_calendar {
+  width: 100%;
+}
+
+#monthly_calendar td,
+#monthly_calendar th {
+  border: 1px solid $lightgray;
+  padding: 12px;
+}
+
+#monthly_calendar .eventablerow {
+  background-color: $white;
+}
+
+#monthly_calendar td {
+  height: 10em;
+}
+
+#monthly_calendar td a {
+  text-decoration: none;
+}
+
+#monthly_calendar td.today {
+  background-color: $accent-color;
+  color: $white;
+  height: 12em;
+  border: 2px solid $dark-accent-color; //#247535
+  box-shadow: inset 0px -2px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+#monthly_calendar td.today {
+  .calendarday {
+    border-color: $dark-accent-color;
+  }
+  a:link {
+    color: $white;
+  }
+  a:visited {
+    color: $white;
+  }
+}
+
+#monthly_calendar ul li {
+  font-size: 95%;
+  list-style-type: none;
+  margin-left: -40px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-top: 1px solid $lightgray;
+  padding-top: 12px;
+}
+
+#monthly_calendar ul li:first-child {
+  border: none;
+  padding-top: 18px;
+}
+
+#monthly_calendar ul li.calendar_event_trade {
+  border-bottom-color: $dark-accent-color;
+}
+
+#monthly_calendar td.today .calendarday {
+  border-color: $dark-accent-color;
+  background-color: $dark-accent-color;
+  border-bottom: 1px solid $accent-color;
+}
+
+#monthly_calendar td .calendarday {
+  float: none;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1px;
+  border-left: 0px solid #ddd;
+  padding-left: 2px;
+  margin-top: -12px;
+  margin-right: -12px;
+  padding: 7px;
+  margin-left: -12px;
+  background-color: #eee;
+}

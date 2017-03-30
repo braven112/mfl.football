@@ -1,0 +1,37 @@
+input[type="button"],input[type="submit"] {
+    padding: 8px 30px;
+    margin-bottom: 10px;
+    background-color: #3c9950;
+    border: 2px solid #3c9950;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    cursor: pointer;
+    border-radius: 2px;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+  background-color: #247535;
+  border-color: #247535;
+  }
+#league_chat input[type="button"] {
+  width: 100%;
+}
+input#chat_text_field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+input[type="text"] {
+  }
+  #body_options_101 input[type="submit"] {
+    margin-left: 10px;
+}
+form.reportform input[type="submit"] {
+    background: rgba(255, 0, 0, 0);
+    color: #3c9950;
+    margin-left: 5px;
+    padding: 4px 20px;
+}

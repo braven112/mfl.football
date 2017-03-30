@@ -1,0 +1,66 @@
+input[type="button"],
+input[type="submit"] {
+  padding: 14px 30px;
+  margin-bottom: 10px;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: $dark-accent-color;
+  border-color: $dark-accent-color;
+}
+
+#league_chat input[type="button"] {
+  width: 100%;
+}
+
+input#chat_text_field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid $lightgray;
+}
+
+input[type="text"] {}
+
+#body_options_101 input[type="submit"] {
+  margin-left: 10px;
+}
+
+form.reportform input[type="submit"] {
+  background: $accent-color;
+  color: $white;
+  margin-left: 5px;
+  padding: 12px 30px;
+}
+
+//button on current auction page
+.btn-primary a,
+.btn-primary a:link,
+.btn-primary a:visited {
+  border-radius: 5px 5px 5px 5px;
+  padding: 14px 30px;
+  position: relative;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $accent-color;
+  color: $white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary a:hover {
+  background-color: $dark-accent-color;
+}

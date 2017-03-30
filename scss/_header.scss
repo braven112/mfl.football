@@ -1,0 +1,235 @@
+   .pagetitle {
+     display: none;
+   }
+   
+   .brandlogo {
+     display: none;
+   }
+   
+   .container-header {
+     background-color: $white;
+     padding: 20px 0;
+     margin-bottom: 24px;
+     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+   }
+   
+   .leaguelogo,
+   .franchiselogo,
+   .standingslogo {
+     max-width: 100%;
+   }
+   
+   .league_logo svg {
+     width: 50px;
+     height: 53px;
+     max-width: 100%;
+     display: block;
+   }
+   
+   @media (min-width: 767px) {
+     .league_logo svg {
+       width: 90px;
+       height: 100px;
+     }
+   }
+   
+   @media (max-width: 767px) {
+     .league_logo svg {
+       margin: 0 auto 12px;
+     }
+   }
+   
+   .league_logo {
+     float: left;
+     .st0 {
+       display: none;
+     }
+     .st1 {
+       display: inline;
+       fill: #33373A;
+     }
+     .st2 {
+       fill: $accent-color;
+     }
+     .st3 {
+       fill: $primary-color;
+     }
+     .st4 {
+       display: none;
+       fill: #1C497C;
+     }
+     .st5 {
+       fill: $lightgray;
+     }
+     .st6 {
+       fill: #FFFFFF;
+     }
+     .st7 {
+       display: none;
+       fill: #187D3E;
+     }
+   }
+   
+   .leaguename {
+     float: left;
+     font-size: 32px;
+     font-family: $headline-font;
+     padding: 6px 0 6px 6px;
+     color: $accent-color;
+     text-transform: uppercase;
+   }
+   
+   @media (min-width: 767px) {
+     .leaguename {
+       font-size: 60px;
+       padding: 8px 24px;
+       margin: 0px 0 30px;
+     }
+   }
+   
+   @media (min-width: 992px) {
+     .leaguename {
+       font-size: 46px;
+       padding: 24px 24px;
+       margin: 0;
+     }
+   }
+   
+   span.leaguename--the {
+     color: $primary-color;
+     padding-right: 5px;
+   }
+   
+   span.leaguename--league {}
+   
+   span.leaguename--dotus {
+     color: $primary-color;
+     font-size: 18px;
+   }
+   
+   @media (max-width: 767px) {
+     .nav_wrapper {
+       max-width: 100%;
+       overflow-x: scroll;
+     }
+   }
+   
+   @media (max-width: 767px) {
+     .nav_buttons {
+       min-width: 580px;
+     }
+   }
+   
+   @media (min-width: 992px) {
+     .nav_buttons {
+       padding: 10px 0px;
+       margin: 10px 0;
+     }
+   }
+   
+   @media (min-width: 768px) and (max-width: 991px) {
+     .nav_buttons {
+       padding: 0px 0px 0px;
+       position: relative;
+       top: -10px;
+       margin: 0 -30px;
+     }
+   }
+   
+   .nav_button--button {
+     display: inline-block;
+     padding: 0 15px 0 0;
+     margin-bottom: 12px;
+   }
+   
+   @media (min-width: 768px) and (max-width: 991px) {
+     .nav_button--button {
+       display: inline-block;
+       margin: 0 auto;
+       padding: 0 29px 0;
+       margin-bottom: 10px;
+     }
+   }
+   
+   @media (min-width: 992px) {
+     .nav_button--button {
+       margin-left: 6px;
+       padding-right: 1px;
+     }
+     .nav_button--button svg {
+       width: 36px;
+       height: 36px;
+     }
+   }
+   
+   @media (min-width: 1200px) {
+     .nav_button--button {
+       margin-left: 24px;
+     }
+     .nav_button--button svg {
+       width: 38px;
+       height: 38px;
+     }
+   }
+   
+   .nav_button--button:first-child {
+     margin-left: 0;
+   }
+   
+   .nav_buttons .svg-text {
+     font-size: 10px;
+     text-align: center;
+     color: $link-color;
+   }
+   
+   .nav_buttons a {
+     text-decoration: none;
+   }
+   
+   .loginbutton {
+     cursor: pointer;
+   }
+   
+   .welcome small {
+     display: none;
+   }
+   
+   .welcome {
+     transition: all 0.5s ease;
+     vertical-align: top;
+     width: 100%;
+     background: $secondary-color;
+     position: absolute;
+     left: 0;
+     padding: 10px 30px;
+     text-align: center;
+     color: $white;
+     top: -5px;
+   }
+   
+   .active.welcome {
+     display: block;
+     transition: all 0.5s ease;
+     vertical-align: top;
+     width: 100%;
+     background: $secondary-color;
+     position: absolute;
+     left: 0;
+     padding: 10px 30px;
+     text-align: center;
+     color: $white;
+     top: 36px;
+     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.38);
+     z-index: 999;
+   }
+   
+   @media (max-width: 850px) {
+     .active.welcome {
+       top: 48px;
+     }
+   }
+   
+   .welcome a:link,
+   .welcome a:visited {
+     color: $white;
+   }

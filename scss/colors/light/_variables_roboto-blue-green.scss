@@ -1,0 +1,47 @@
+//////////////////////Colors//////////////////////////
+$primary-color:#1c497c;//#33629b;
+$secondary-color:#1d4b7e;
+$accent-color:#3c9950;
+$dark-accent-color:darken($accent-color, 10%);
+$primary-text-color:#333333;
+$secondary-text-color:#333333;
+
+$link-color:$primary-color;
+$link-color-hover:#33629b;
+
+$add-color:green;
+$drop-color:red;
+
+$alert-warning-text:#8a6d3b;
+$alert-warning-bg:#fcf8e3;
+$alert-warning-border:#faf2cc;
+
+$alert-success-text:#3c763d;
+$alert-success-bg:#dff0d8;
+$alert-success-border:#d0e9c6;
+
+$alert-info-text:#31708f;
+$alert-info-bg:#d9edf7;
+$alert-info-border:#bcdff1;
+
+$codebg-color: #31382d;
+
+$gray1:#333;
+$gray2:#666;
+$gray3:#999;
+
+$oddtablerow:#fff;
+$eventablerow:#ececec;
+
+$offwhite:#eee;
+$offwhite2:#f9f9f9;
+
+$lightgray:#ddd;
+$lightgray2:#ccc;
+$lightgray3:#aaa;
+
+$white:#fff;
+
+////////////////////////Fonts/////////////////////////////////
+$headline-font: 'Roboto Slab';
+$body-font: 'Roboto', sans-serif;

@@ -1,0 +1,12 @@
+
+.homepagemodule.report .franchiseicon {
+    width: 225px;
+    height: auto;
+}
+
+.homepagemodule.report th {
+    white-space: nowrap;
+}
+.homepagemodule.report .divwlt {
+    display: none;
+}

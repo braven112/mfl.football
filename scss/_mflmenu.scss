@@ -1,0 +1,330 @@
+/*   MFL RESPONSIVE MENU MOBILE STYLE
+======================================= */
+  .myfantasyleague_menu {
+    background: $primary-color;
+    border-bottom: 4px solid $primary-color;
+  }
+.myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
+    background: $primary-color;
+}
+.myfantasyleague_menu li:hover > a {
+    background-color: $primary-color;
+    background-image: none;
+    text-decoration: none;
+    box-shadow: none;
+}
+.myfantasyleague_menu ul li ul {
+    border-top: 4px solid darken($primary-color, .5);/*darker border*/
+}
+  .myfantasyleague_menu {
+    font-size: 12px;
+}
+@media only screen and (max-width:920px) {
+	.pagebody {
+		padding: 30px 0px
+	}
+  /*  BASE STYLE FOR ALL SKINS  */
+  .myfantasyleague_menu ul li b {
+    display: none;
+  }
+  .myfantasyleague_menu {
+    height: 0;
+    padding-top: 45px;
+    background: $primary-color;
+    position: relative;
+    border-bottom: 4px solid $primary-color;
+  }
+
+  .myfantasyleague_menu > label,
+  .myfantasyleague_menu ul li label {
+    display: block;
+    width: 100%;
+    height: 47px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+   .myfantasyleague_menu > label .top-bun {
+display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    margin-left: -9px;
+    margin-top: -9px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+     .myfantasyleague_menu > label .burger {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    right: 15px;
+    top: 29px;
+    margin-left: -9px;
+    margin-top: -9px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+       .myfantasyleague_menu > label .double-burger {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    right: 15px;
+    top: 29px;
+    margin-left: -9px;
+    margin-top: -9px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+   .myfantasyleague_menu > label .bottom-bun {
+display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    margin-left: -9px;
+    margin-top: -9px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+   .myfantasyleague_menu input:checked ~ label .top-bun {
+    width: 0%;
+    top: 30px;
+    right: 30px;
+
+  }
+ 
+  .myfantasyleague_menu input:checked ~ label .burger {
+transform: rotate(45deg);
+
+  }
+    .myfantasyleague_menu input:checked ~ label .double-burger {
+transform: rotate(-45deg);
+  }
+  .myfantasyleague_menu input:checked ~ label .bottom-bun {
+    width: 0%;
+    top: 30px;
+    right: 30px;
+
+  }
+
+
+
+
+  .myfantasyleague_menu ul li label span {
+    background: $white;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    border-radius: 5px;
+  }
+  .myfantasyleague_menu ul li ul li.has-sub label span {
+    right: 24px;
+  }
+  .myfantasyleague_menu ul li label span:before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: $primary-color;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -9px;
+    margin-top: -1px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  .myfantasyleague_menu ul li label span:after {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 18px;
+    background: $primary-color;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -9px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  .myfantasyleague_menu > span {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+  }
+  .myfantasyleague_menu li {
+    display: block;
+  }
+  .myfantasyleague_menu ul,
+  .myfantasyleague_menu ul ul {
+    margin: 0;
+    display: block;
+    position: static;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    box-shadow: none;
+  }
+  .myfantasyleague_menu > ul > li.has-sub > a {
+    background-image: none;
+  }
+  .myfantasyleague_menu ul ul > li.has-sub > a {
+    background-image: none;
+  }
+  .myfantasyleague_menu ul li {
+    float: none;
+    display: block;
+    position: relative;
+  }
+  .myfantasyleague_menu ul ul li label,
+  .myfantasyleague_menu ul ul li > ul,
+  .myfantasyleague_menu ul ul li:hover > ul {
+    margin-top: 0;
+  }
+  .myfantasyleague_menu ul {
+    background: #2e4b7e;
+    border: 0;
+  }
+  .myfantasyleague_menu ul ul li {
+    background-color: #2e4b7e;
+  }
+  .myfantasyleague_menu ul li a {
+    float: none;
+    border-top: 1px solid $primary-color;
+    border-top: 0.0625rem solid $primary-color;
+    text-indent: 10px;
+    text-indent: 0.625rem;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+  .myfantasyleague_menu ul ul li a {
+    border: 0;
+    border-top: 1px solid $primary-color;
+    border-top: 0.0625rem solid $primary-color;
+  }
+  .myfantasyleague_menu li ul li a,
+  .myfantasyleague_menu li a {
+    line-height: 45px;
+    line-height: 2.813rem;
+  }
+  .myfantasyleague_menu ul ul li a:before {
+    top: 50%;
+    margin-top: -6px;
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 6px solid $white;
+  }
+  .myfantasyleague_menu ul li ul li a {
+    text-indent: 25px;
+  }
+  .myfantasyleague_menu ul li ul li a:before {
+    left: 20px;
+  }
+  .myfantasyleague_menu ul li ul li.has-sub ul li a {
+    text-indent: 40px;
+  }
+  .myfantasyleague_menu ul li ul li.has-sub ul li a:before {
+    left: 35px;
+  }
+  .myfantasyleague_menu li:hover > a {
+    background-color: #2e4b7e;
+    text-decoration: none;
+    box-shadow: none;
+    background-image: none
+  }
+  .myfantasyleague_menu ul li ul li:hover > a {
+    background-color: #2e4b7e;
+  }
+  .myfantasyleague_menu li ul li ul li:hover > a {
+    text-decoration: none;
+  }
+  .myfantasyleague_menu input:checked ~ label span:before {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .myfantasyleague_menu input:checked ~ label span:after {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  .myfantasyleague_menu input:checked ~ ul {
+    max-height: 8000px;
+  }
+  .myfantasyleague_menu ul ul {
+    border: 0;
+  }
+  .myfantasyleague_menu ul li ul {
+    border-top: 0;
+    background: none;
+  }
+  .myfantasyleague_menu > ul > li.has-sub > a:after,
+  .myfantasyleague_menu ul ul > li.has-sub > a:after {
+    display: none;
+  }
+  .myfantasyleague_menu ul ul {
+    border-bottom: 0;
+  }
+  .myfantasyleague_menu ul ul li.has-sub:first-of-type li:first-of-type,
+  .myfantasyleague_menu ul ul li.has-sub li:first-of-type,
+  .myfantasyleague_menu ul ul li.has-sub li,
+  .myfantasyleague_menu ul ul li a,
+  .myfantasyleague_menu ul ul li.has-sub a {
+    border: 0;
+  }
+  .myfantasyleague_menu ul ul li a {
+    border-top: 1px solid $primary-color;
+  }
+  .myfantasyleague_menu ul ul li.has-sub li {
+    margin-left: 0;
+  }
+  .myfantasyleague_menu ul ul li.has-sub a {
+    border-top: 1px solid $primary-color;
+  }
+  .myfantasyleague_menu ul ul li:hover > ul,
+  .myfantasyleague_menu ul ul li:first-of-type:hover > ul {
+    margin-top: 0;
+  }
+  li.mfl-icon img {
+    display: none;
+  }
+  li.mfl-icon a span {
+    display: inline-block;
+  }
+}
+
+.myfantasyleague_menu li.mfl-icon {
+  display: none;
+}
+
+.myfantasyleague_menu li {
+  list-style-image: none;
+}

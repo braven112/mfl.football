@@ -1,0 +1,90 @@
+table#standings th {
+  padding-top: 12px;
+}
+
+.standings-nav {
+  display: none;
+}
+
+.franchiseicon {
+  max-width: 100%;
+  min-width: 75px;
+  height: auto;
+}
+
+.homepagemodule.report th {
+  white-space: nowrap;
+}
+
+.homepagemodule.report .divwlt {
+  display: none;
+}
+
+.homepagemodule.report .strk {
+  display: none;
+}
+
+.homepagecolumn #standings h3,
+.homepagecolumn #brief_standings h3,
+.homepagecolumn .homepagemodule caption {
+  padding-top: inherit;
+  padding-bottom: inherit;
+  background-color: $white;
+  font-family: $headline-font;
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  color: $primary-color;
+}
+
+
+/*Standings*/
+
+.homepagecolumn #brief_standings h3,
+.homepagecolumn #standings h3 {
+  color: $primary-color;
+  border-bottom: 4px solid $lightgray;
+}
+
+#body_standings {
+  caption,h3 {
+      padding-top: inherit;
+  padding-bottom: inherit;
+  background-color: $white;
+  font-family: $headline-font;
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  color: $primary-color;
+  padding-left:10px;
+  }
+  td#division00,
+  td#division01,
+  td#division02,
+  td#division03,
+  td#division04,
+  td#division05,
+  td#division06,
+  td#division07 {
+    padding: 6px 0px 2px;
+  }
+  .franchiseicon {
+    min-width:128px;
+  }
+}
+
+.homepagecolumn td#division00,
+.homepagecolumn td#division01,
+.homepagecolumn td#division02,
+.homepagecolumn td#division03,
+.homepagecolumn td#division04,
+.homepagecolumn td#division05,
+.homepagecolumn td#division06,
+.homepagecolumn td#division07 {
+  padding: 6px 8px 2px;
+}
+
+#standings caption,
+.homepagecolumn #brief_standings caption {
+  display: none;
+}

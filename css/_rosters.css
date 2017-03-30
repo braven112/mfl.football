@@ -1,0 +1,8 @@
+@media (min-width: 992px) {
+  #single_roster .withfranchiseicon {
+    display: none;
+  }
+  td.two_column_layout {
+    width: 100%;
+  }
+}

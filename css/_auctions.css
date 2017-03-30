@@ -1,0 +1,19 @@
+#curr_auctions .btn-primary a {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -web-kit-border-radius: 5px 5px 5px 5px;
+  padding: 10px 20px;
+  position: relative;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #2D8414;
+  color: #FFF;
+  display: block;
+  text-align: center;
+}
+
+#curr_auctions .btn-primary td {
+  padding-top: 0px;
+  padding-bottom: 36px;
+}

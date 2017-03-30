@@ -1,0 +1,8 @@
+.constitution-wrapper h2{
+  color: $primary-color;
+  border-bottom-color:$lightgray;
+}
+
+
+.constitution-wrapper td.secondround {background-color:$eventablerow}
+.constitution-wrapper td.thirdround {background-color:$oddtablerow}

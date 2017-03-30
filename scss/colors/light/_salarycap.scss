@@ -1,0 +1,39 @@
+.subtotals {
+  background-color: $lightgray;
+}
+
+.rfaStatus {
+  color: $add-color;
+  font-style: italic;
+}
+
+.rfaFutureContract {
+  color: $add-color;
+}
+
+.report .ufaStatus {
+  color: $drop-color;
+}
+
+.contractStatus {
+  background-color: darken($drop-color, .5);
+}
+
+
+.team-nav {
+  background-color: $accent-color;
+  .team-nav--button svg {
+    fill: $white;
+  }
+  .team-nav--button a:hover svg {
+    fill: $white;
+  }
+  .team-nav--button .svg-text {
+    color: $white;
+  }
+  
+  .team-nav--button .svg-text a:link,
+  .team-nav--button .svg-text a:visited {
+    color: $white;
+  }
+}

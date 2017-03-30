@@ -1,0 +1,50 @@
+#body_options_02 {
+  .report tr th:first-child {
+    display: none;
+  }
+  .report a {
+    white-space: nowrap;
+  }
+  .report input[type="checkbox"] {
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+  }
+  td[colspan="10"] {
+    padding: 10px 0;
+    textarea#MESSAGE0001 {
+      width: 100%;
+    }
+  }
+  .franchiselogo {
+    display: none;
+    @media (min-width: 992px) {
+      display: inline;
+    }
+    margin-bottom: 12px;
+    width: 300px;
+    float: right;
+    position: relative;
+    top: -80px;
+  }
+  .reportnavigation {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+    text-align: left;
+    color: $link-color;
+    a:link,
+    a:visited {
+      color: $link-color;
+    }
+  }
+  .alert {
+    margin-bottom: 12px;
+  }
+  input[type="button"] {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}
