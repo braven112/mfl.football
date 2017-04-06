@@ -1,5 +1,6 @@
 .subtotals {
-  background-color: $lightgray;
+  background-color: transparent;
+  color: $accent-color;
 }
 
 .rfaStatus {
@@ -21,19 +22,19 @@
 
 
 .team-nav {
-  background-color: $accent-color;
+  background-color: $secondary-menu-bg-color;
   .team-nav--button svg {
-    fill: $white;
+    fill: $secondary-menu-icon-color;
   }
   .team-nav--button a:hover svg {
-    fill: $white;
+    fill: $secondary-menu-icon-hover-color;
   }
   .team-nav--button .svg-text {
-    color: $white;
+    color: $secondary-menu-text-color;
   }
   
   .team-nav--button .svg-text a:link,
   .team-nav--button .svg-text a:visited {
-    color: $white;
+    color: $secondary-menu-text-color;
   }
 }

@@ -54,3 +54,37 @@ form.reportform input[type="submit"] {
   text-decoration: none;
 }
 
+
+input[type="password"],
+input[type="text"] {
+    padding: 4px;
+    font-size: 1.1em;
+    min-width: 100px;
+}
+select {
+    padding: 4px 5px 5px;
+    font-size: 1.1em;
+}
+
+
+/*//messageboard cta*/
+.mb {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  position: relative;
+  top: 20px;
+  right: 10px;
+  a {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+  }
+  svg.icon-chevron-right {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: 3px;
+  }
+}

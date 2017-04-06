@@ -1,0 +1,14 @@
+#body_options_52 .report-wrapper table table td input[type="button"] {
+  width: 100%;
+}
+
+#body_options_52 td[colspan="3"][align="center"] .franchiseicon {
+  width: 175px;
+  height: auto;
+  position: relative;
+  top: -7px;
+}
+
+#body_options_52 .picks {
+  width: 263px;
+}

@@ -1,6 +1,7 @@
 body {
   font-family: $body-font;
   color: $primary-text-color;
+  background-color: $pagebody-bg;
 }
 
 td a,
@@ -75,24 +76,6 @@ a:link {
   color: $link-color;
 }
 
-
-
-.container-footer {
-  background-color: $primary-color;
-  a {
-    color: $white;
-  }
-  ul {
-    li {
-    color: $white;
-    font-family: $headline-font;
-    }
-}
-  .defending-champ {
-    color: $white;
-  }
-}
-
 h2 {
   color: $secondary-color;
 }
@@ -127,7 +110,7 @@ table.homepagemessage td {
 caption,
 caption span {
   font-family: 'Roboto Slab', serif;
-  color: $secondary-color;
+  color: $caption-color;
 }
 
 th {
@@ -140,12 +123,12 @@ th a:visited {
 }
 
 span.reportnavigation {
-  border-color:$accent-color;
-  background-color: $accent-color;
-  color: $white;
+  border-color:$secondary-menu-border-color;
+  background-color: $secondary-menu-bg-color;
+  color: $secondary-menu-text-color;
   a:link,
   a:visited {
-    color: $white;
+    color: $secondary-menu-link-color;
   }
 }
 
@@ -162,11 +145,11 @@ span.reportnavigation {
 }
 
 
-.report .oddtablerow {
+.report .oddtablerow, .oddtablerow {
   background-color: $oddtablerow;
 }
 
-.report .eventablerow {
+.report .eventablerow, .eventablerow {
   background-color: $eventablerow;
 }
 
@@ -174,16 +157,12 @@ span.reportnavigation {
 
 
 
-.mb {
-  svg.icon-chevron-right {
-    fill: $primary-color;
-  }
-}
+
 
 
 .newposition td,
 .newposition th {
-  border-top-color:$lightgray2;
+  border-top-color:$newposition-border-color;
 }
 
 
@@ -200,7 +179,9 @@ span#drop_name_field_id {
 }
 
 #body_add_drop table table div {
-  border-color: $lightgray !important;
+  border-color: $border-color !important;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: $report-bg;
 }
 
 
@@ -215,24 +196,24 @@ span#drop_name_field_id {
 }
 
 .utility-nav {
-  background-color: $accent-color;
+  background-color: $secondary-menu-bg-color;
   svg {
-    fill: $white;
+    fill: $secondary-menu-icon-color;
   }
   .svg-text {
-    color: $white;
+    color: $secondary-menu-text-color;
     b,
     a:link,
     a:visited {
-      color: $white;
+      color: $secondary-menu-text-color;
     }
     .commish-link {
-    border-left-color: $white;
+    border-left-color: $secondary-menu-text-color;
     
     }
   }
   a:hover [class^="icon"] {
-    fill: $white;
+    fill: $secondary-menu-link-color;
   }
 }
 
@@ -243,6 +224,6 @@ textarea#MSG {
 
 #body_commissioner_setup {
   table.two_column_layout ul {
-    background-color: white;
+    background-color: $report-bg;
   }
 }

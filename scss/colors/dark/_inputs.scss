@@ -1,0 +1,46 @@
+input[type="button"],
+input[type="submit"] {
+  background-color: $button-bg-color;
+  border-color:$button-bg-color;
+  color: $button-link-color;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: $button-bg-color-hover;
+  border-color: $button-bg-color-hover;
+  color: $button-link-color;
+}
+
+input#chat_text_field {
+  border-color:$lightgray;
+  color: $button-link-color;
+}
+
+
+form.reportform input[type="submit"] {
+  background: $button-bg-color;
+  color: $button-link-color;
+}
+
+//button on current auction page
+.btn-primary a,
+.btn-primary a:link,
+.btn-primary a:visited {
+  background-color: $button-bg-color;
+  color: $button-link-color;
+}
+
+.btn-primary a:hover {
+  background-color: $button-bg-color-hover;
+  color: $button-link-color;
+}
+
+.mb {
+  svg.icon-chevron-right {
+    fill: $button-bg-color;
+  }
+  svg.icon-chevron-right:hover {
+    fill: $button-bg-color-hover;
+  }
+}

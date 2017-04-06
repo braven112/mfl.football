@@ -1,9 +1,9 @@
 .homepagecolumn #standings h3,
 .homepagecolumn #brief_standings h3,
 .homepagecolumn .homepagemodule caption {
-  background-color: $white;
+  background-color: transparent;
   font-family: $headline-font;
-  color: $primary-color;
+  color: $headline-font-color;
 }
 
 
@@ -11,15 +11,14 @@
 
 .homepagecolumn #brief_standings h3,
 .homepagecolumn #standings h3 {
-  color: $primary-color;
-  border-bottom-color: $lightgray;
+  color: $headline-font-color;
+  border-bottom-color: $border-color;
 }
 
 #body_standings {
   caption,h3 {
-
-  background-color: $white;
+  background-color: transparent;
   font-family: $headline-font;
-  color: $primary-color;
+  color: $headline-font-color;
   }
 }

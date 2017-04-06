@@ -1,0 +1,83 @@
+#body_options_52 {
+  .report-wrapper table table td input[type="button"] {
+    width: 100%;
+  }
+  td[colspan="3"][align="center"] .franchiseicon {
+    width: 175px;
+    height: auto;
+    position: relative;
+    top: -7px;
+  }
+  .picks {
+    width: 350px;
+  }
+  table#picker tr td {
+    cursor: pointer;
+    display: table-cell;
+    position:inherit;
+  }
+  span.reportnavigation {
+    display: none;
+  }
+  form table[cellspacing="0"] tr:first-child td:nth-child(4) {
+    position: relative;
+    left: -50px;
+  }
+    form table[style="width:471px"] tr:first-child td:nth-child(4) {
+    position: inherit;
+  }
+  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(1),
+  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(3),
+  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(5) {
+    display: none;
+  }
+  form table[cellspacing="0"] tr[class=""] + tr td {
+    display: none;
+  }
+  form table[border="0"] tr:nth-child(3) > td:nth-child(1) {
+    display: none;
+  }
+  form table[border="0"] tr:nth-child(3) > td[colspan="9"]:nth-child(1) {
+    display: table-cell;
+  }
+  form table[cellspacing="0"] tr[class=""] + tr td[colspan="3"] {
+    display: table-cell;
+  }
+  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td[valign="center"]:nth-child(1) {
+    display: table-cell;
+  }
+  .reportnavigation.alert-info, .alert-info, .reportnavigation.alert-info a:link, .alert-info a:link, .reportnavigation.alert-info a:visited, .alert-info a:visited {
+    max-width: 1085px;
+}
+td[colspan="3"] ol {
+    padding-left: 14px;
+    padding-right: 130px;
+}
+//Align waitinfor and on deck text
+.report-wrapper table td[colspan="3"] h3 {
+    padding-left: 8px;
+}
+.report-wrapper table td[colspan="3"] {
+    padding: 6px 0px;
+}
+
+.reportform {
+    width: 1090px;
+}
+}
+
+
+
+
+///////My Draft List////////////////
+#body_options_129 {
+  select {
+    font-size: .9em;
+    option {
+    padding: 4px 0;
+    }
+}
+input[type="button"], input[type="submit"] {
+    padding: 14px 20px;
+    }
+}

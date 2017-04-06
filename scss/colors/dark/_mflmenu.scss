@@ -1,0 +1,89 @@
+/*   MFL RESPONSIVE MENU MOBILE STYLE
+======================================= */
+  .myfantasyleague_menu {
+    background: $menu-bg-color;
+    border-bottom-color:$menu-border-color;
+  }
+.myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
+    background: $menu-bg-color;
+}
+.myfantasyleague_menu ul ul li {
+    background: $menu-bg-color;
+}
+.myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
+    border-color:$menu-border-color;
+  }
+
+.myfantasyleague_menu li:hover > a {
+    background-color: $menu-bg-color;
+}
+.myfantasyleague_menu ul li ul {
+    border-top-color: $menu-border-color;/*darker border*/
+}
+
+.myfantasyleague_menu ul li ul li:hover > a {
+    background-color: $menu-border-color;
+  }
+@media only screen and (max-width:920px) {
+  .myfantasyleague_menu {
+    background: $menu-bg-color;
+    border-bottom-color:$menu-bg-color;
+  }
+
+
+
+   .myfantasyleague_menu > label .top-bun {
+    background-color: $menu-text-color;
+  }
+     .myfantasyleague_menu > label .burger {
+    background-color: $menu-text-color;
+  }
+       .myfantasyleague_menu > label .double-burger {
+    background-color: $menu-text-color;
+    }
+   .myfantasyleague_menu > label .bottom-bun {
+    background-color: $menu-text-color;
+  }
+ 
+  .myfantasyleague_menu ul li label span {
+    background: $menu-text-color;
+  }
+  .myfantasyleague_menu ul li label span:before {
+    background: $menu-bg-color;
+  }
+  .myfantasyleague_menu ul li label span:after {
+    background: $menu-bg-color;
+  }
+  .myfantasyleague_menu > span {
+    color: $menu-text-color;
+  }
+  .myfantasyleague_menu ul {
+    background: $menu-bg-color;
+  }
+  .myfantasyleague_menu ul ul li {
+    background-color: $menu-bg-color;
+  }
+  .myfantasyleague_menu ul li a {
+    border-top-color:$menu-bg-color;
+  }
+  .myfantasyleague_menu ul ul li a {
+    border-top-color: 1px solid $menu-bg-color;
+  }
+
+  .myfantasyleague_menu ul ul li a:before {
+    border-left-color:$menu-text-color;
+  }
+  
+  .myfantasyleague_menu li:hover > a {
+    background-color: $menu-border-color;
+  }
+  .myfantasyleague_menu ul li ul li:hover > a {
+    background-color: $menu-border-color;
+  }
+  .myfantasyleague_menu ul ul li a {
+    border-top-color:$menu-bg-color;
+  }
+  .myfantasyleague_menu ul ul li.has-sub a {
+    border-top-color:$menu-bg-color;
+  }
+}

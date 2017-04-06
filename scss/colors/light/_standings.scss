@@ -12,13 +12,13 @@
 .homepagecolumn #brief_standings h3,
 .homepagecolumn #standings h3 {
   color: $primary-color;
-  border-bottom-color: $lightgray;
+  border-bottom-color: $border-color;
 }
 
 #body_standings {
   caption,h3 {
 
-  background-color: $white;
+  background-color: transparent;
   font-family: $headline-font;
   color: $primary-color;
   }

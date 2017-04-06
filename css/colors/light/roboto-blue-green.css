@@ -1731,6 +1731,43 @@ svg.icon-banknote {
   margin-top: 12px;
 }
 
+#body_commissioner_setup .oddtablerow {
+  background-color: transparent;
+}
+
+/*hides default MFL footer*/
+.pagefooter {
+  display: none;
+}
+
+.container-footer {
+  min-height: 16em;
+  padding: 24px 0;
+}
+
+.container-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.container-footer ul {
+  margin-left: -40px;
+  margin-bottom: 24px;
+}
+
+.container-footer ul li {
+  margin-left: 0;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.container-footer .defending-champ {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 24px;
+}
+
 table#standings th {
   padding-top: 12px;
 }
@@ -2018,7 +2055,7 @@ form.reportform input[type="submit"] {
 
 .subtotals {
   background-color: #ddd;
-  padding: 5px;
+  padding: 15px 5px 5px;
 }
 
 .text-align-center {
@@ -2160,12 +2197,6 @@ form.reportform input[type="submit"] {
   top: -80px;
 }
 
-@media (min-width: 992px) {
-  #body_options_02 .franchiselogo {
-    display: inline;
-  }
-}
-
 #body_options_02 .reportnavigation {
   background-color: transparent;
   border-color: transparent;
@@ -2197,39 +2228,6 @@ body {
 span#mfladdons {
   margin-bottom: 24px;
   display: block;
-}
-
-/*hides default MFL footer*/
-.pagefooter {
-  display: none;
-}
-
-.container-footer {
-  min-height: 16em;
-  padding: 24px 0;
-}
-
-.container-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.container-footer ul {
-  margin-left: -1.5em;
-  margin-bottom: 24px;
-}
-
-.container-footer ul li {
-  margin-left: -2.5em;
-  list-style-type: none;
-  margin-bottom: 5px;
-}
-
-.container-footer .defending-champ {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 24px;
 }
 
 h3 {
@@ -2455,6 +2453,7 @@ table#message_board_summary td {
   width: 100% !important;
   padding: 5px;
   border-radius: 5px;
+  margin-bottom: 12px;
 }
 
 #body_add_drop table table {
@@ -2611,6 +2610,10 @@ span#chat_audio_clip {
   border: 1px solid transparent;
   border-radius: 4px;
   display: block;
+}
+
+.pageheader {
+  display: none;
 }
 
 .pagetitle {
@@ -3500,7 +3503,7 @@ textarea#MSG {
 }
 
 #body_standings caption, #body_standings h3 {
-  background-color: #fff;
+  background-color: transparent;
   font-family: "Roboto Slab";
   color: #1c497c;
 }

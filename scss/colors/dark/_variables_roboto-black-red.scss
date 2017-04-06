@@ -1,10 +1,10 @@
 //////////////////////Colors//////////////////////////
-$primary-color:#046B99;//#33629b;
-$secondary-color:#046B99;
-$accent-color:#FF4522;
+$primary-color:#FFF;
+$secondary-color:#ccc;
+$accent-color:#CAAD2D;
 $dark-accent-color:darken($accent-color, 10%);
-$primary-text-color:#333333;
-$secondary-text-color:#333333;
+$primary-text-color:#BEBEBE;
+$secondary-text-color:#BEBEBE;
 
 $link-color:$primary-color;
 $link-color-hover:#33629b;
@@ -47,8 +47,9 @@ $headline-font: 'Roboto Slab';
 $body-font: 'Roboto', sans-serif;
 
 ////////////////////////Page BG///////////////////////////////
-$pagebody-bg: $offwhite2;
-$report-bg: $white;
+$pagebody-bg: #1A1A1A;
+$report-bg:#1F1F1F;
+
 ////////////////////////Header BG///////////////////////////////
 $header-bg: $white;
 

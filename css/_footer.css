@@ -1,0 +1,32 @@
+/*hides default MFL footer*/
+.pagefooter {
+  display: none;
+}
+
+.container-footer {
+  min-height: 16em;
+  padding: 24px 0;
+}
+
+.container-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.container-footer ul {
+  margin-left: -1.5em;
+  margin-bottom: 24px;
+}
+
+.container-footer ul li {
+  margin-left: -2.5em;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.container-footer .defending-champ {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 24px;
+}

@@ -10,34 +10,6 @@ span#mfladdons {
     margin-bottom: 24px;
     display: block;
 }
-/*hides default MFL footer*/
-.pagefooter {
-  display: none;
-}
-
-.container-footer {
-  min-height: 16em;
-  padding: 24px 0;
-  a {
-    color: white;
-    text-decoration:none;
-  }
-  ul {
-    margin-left: -1.5em;
-    margin-bottom:24px;
-    li {
-    margin-left: -2.5em;
-    list-style-type: none;
-    margin-bottom:5px;
-  }
-}
-  .defending-champ {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 24px;
-  }
-}
 
 
 h3 {
@@ -194,35 +166,6 @@ span.reportnavigation {
 }
 
 
-/*//messageboard cta*/
-span#mb {
-    float: right;
-    position: relative;
-    top: 34px;
-}
-
-
-.mb {
-  @media (max-width: 767px) {
-    display: none;
-  }
-  position: relative;
-  top: 20px;
-  right: 10px;
-  a {
-    position: absolute;
-    right: 0;
-    text-decoration: none;
-  }
-  svg.icon-chevron-right {
-    width: 15px;
-    height: 15px;
-    margin: 0;
-    position: relative;
-    top: 3px;
-  }
-}
-
 #message_board_summary iframe {
   width: 100%;
 }
@@ -272,6 +215,7 @@ table#message_board_summary td {
   width: 100% !important;
   padding: 5px;
   border-radius: 5px;
+  margin-bottom:12px;
 }
 
 #body_add_drop table table {
@@ -309,6 +253,7 @@ table#add {
     display: inline-block;
     margin-top: 4px;
     margin-right: 5px;
+    font-weight:bold;
     @media (min-width: 1200px) {
       margin-right: 5px;
     }

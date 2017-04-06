@@ -1,5 +1,4 @@
   @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700');
-  @import "variables";
 body {
     font-size: 14px;
 }
@@ -10,7 +9,7 @@ body #container {
 }
 .feed_item {
     margin-bottom: 12px;
-    padding: 4px 8px;
+    padding: 10px 8px;
 }
 .feed_item_title {
     margin-bottom: 6px;
@@ -31,5 +30,6 @@ body #container {
     border-left: 1px solid;
     border-right: 1px solid;
     border: 1px solid;
-    padding-top: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
