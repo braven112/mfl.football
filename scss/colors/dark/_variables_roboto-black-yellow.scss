@@ -4,8 +4,6 @@ $gray1:#333;
 $gray2:#666;
 $gray3:#999;
 
-
-
 $offwhite:#eee;
 $offwhite2:#f9f9f9;
 
@@ -17,9 +15,9 @@ $white:#fff;
 
 
 
-$primary-color:#1f1f1f;
+$primary-color:#1f1f1f;//light black
 $secondary-color:#ccc;
-$accent-color:#CAAD2D;
+$accent-color:#CAAD2D;//Yellow
 $dark-accent-color:darken($accent-color, 10%);
 
 $primary-bg-color:#1f1f1f;
@@ -102,7 +100,7 @@ $headline-font-color: $accent-color;
 
 ////////////////////////Page BG///////////////////////////////
 $pagebody-bg: #1A1A1A;
-$report-bg:$primary-color;
+$report-bg:$primary-bg-color;
 
 ////////////////////////Header BG///////////////////////////////
 $header-bg: $report-bg;
