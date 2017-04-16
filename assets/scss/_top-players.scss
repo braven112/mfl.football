@@ -1,0 +1,33 @@
+#body_top, #body_options_08 {
+  .container.page-wrapper {
+    @media (min-width: 768px) {
+      width: 750px;
+    }
+    @media (min-width: 992px) {
+      width: 970px;
+    }
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+    @media (min-width: 1400px) {
+      width: 1370px;
+    }
+  }
+  .nocaption td {
+    font-size: 11px;
+    @media (min-width: 1400px) {
+      font-size: 13px;
+    }
+    padding: 8px 2px;
+    @media (min-width: 1400px) {
+      padding: 10px 6px;
+    }
+  }
+  .nocaption .player {
+    font-size: 12px;
+  }
+  select[multiple="multiple"] {
+    position: relative;
+    top: 11px;
+}
+}

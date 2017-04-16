@@ -1,0 +1,304 @@
+body {
+  font-size: 14px;
+  border: 0px;
+  margin-top: 0;
+  overflow-x: hidden;
+}
+
+
+span#mfladdons {
+    margin-bottom: 24px;
+    display: block;
+}
+
+
+h3 {
+  margin-bottom: 12px;
+}
+
+
+/*main mfl wrapper*/
+
+.pagebody {
+  width: 100%;
+  padding: 0;
+  overflow: auto;
+}
+
+
+/*act like a bootstrap row*/
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  clear: both;
+}
+
+
+/*bootstrap column*/
+
+.homepagetabcontent {
+  padding: 0 0px;
+}
+
+
+/*handle mfl messages*/
+
+.homepagemessage {
+  display: none;
+  border: none;
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+  margin: 0 auto 24px;
+}
+
+.homepagemessage:first-child {
+  padding-left: 0;
+}
+
+.homepagemessage th {
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  padding: 15px 5px 0px;
+  border: 1px solid;
+  border-bottom: 0;
+  position: relative;
+  top: 2px;
+}
+
+table.homepagemessage td {
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 0 0 5px 5px;
+  border-top: 0px;
+}
+
+.homepagecolumn {
+  padding: 0 0 24px;
+}
+
+.homepagecolumn .homepagemodule,
+.homepagecolumn .homepagemodule caption {
+  width: 100%;
+}
+
+caption,
+caption span {
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+}
+
+caption {
+  padding-left: 8px;
+  margin-bottom: 12px;
+  img {
+    margin-left: -4px;
+  }
+}
+
+th {
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  padding: 4px 8px;
+  background-color: transparent;
+}
+
+#body_home #power_rank {
+  .total_points,
+  .total_potential_points,
+  .efficiency,
+  .bench_points,
+  .maxpf,
+  .minpf,
+  .coulda_won,
+  .woulda_lost,
+  .power_rank,
+  .alt_power_rank {
+    display: none;
+  }
+  th[colspan="11"],
+  th[colspan="4"] {
+    display: none;
+  }
+}
+
+span.reportnavigation {
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+
+/*reports*/
+
+.report-wrapper {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  @media (max-width: 991px) {
+    overflow-x: auto;
+  }
+}
+
+.report {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 0px solid;
+  margin-bottom: 12px;
+}
+
+.report td {
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.report h3 {
+  text-align: left;
+}
+
+.report .oddtablerow {
+  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+#message_board_summary iframe {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #message_board_summary iframe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+table#message_board_summary td {
+  margin-left: 0;
+  padding: 0;
+}
+
+.report .newposition td {
+  padding-top: 10px;
+}
+
+.newposition td,
+.newposition th {
+  border-top: 4px solid;
+}
+
+
+/* margin-top: 12px; */
+
+.newposition td a {
+  margin-top: 12px;
+}
+
+
+/*add drop*/
+
+
+#body_add_drop form table table caption {
+  padding-left: 0;
+}
+
+#body_add_drop form > table caption {
+  padding-left: 8px;
+}
+
+#body_add_drop table table div {
+  width: 100% !important;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom:12px;
+}
+
+#body_add_drop table table {
+  width: 100% !important;
+}
+
+table#drop td,
+table#add {
+  cursor: pointer;
+}
+
+.utility-nav {
+  margin-bottom: 24px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+  .utility-nav--button {
+    display: inline-block;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    .loginbutton .svg-text {
+      margin-right: 0;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 5px 0 0;
+  }
+  .svg-text {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 5px;
+    font-weight:$secondary-menu-font-weight;
+    @media (min-width: 1200px) {
+      margin-right: 5px;
+    }
+    b,
+    a:link,
+    a:visited {
+      margin-right: 5px;
+      text-decoration:none;
+    }
+    b {
+      display: none;
+    }
+    small {
+      display: none;
+    }
+    .commish-link {
+    border-left: 1px solid ;
+    padding-left: 5px;
+    }
+  }
+}
+
+textarea#MSG {
+  color: white;
+  width: 100%;
+  margin: 14px 0;
+}
+
+#body_options_35 {
+  .alert {
+    margin-top: 12px;
+  }
+}
+
+#league_chat {
+  caption img {
+    margin-left: 6px;
+  }
+  a svg.icon-comments {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 5px;
+  }
+}
+
+span#chat_audio_clip {
+  display: none;
+}

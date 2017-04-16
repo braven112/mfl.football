@@ -1,0 +1,20 @@
+::-webkit-scrollbar-thumb {
+  background: $button-bg-color;
+  border-color:$pagebody-bg;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $button-bg-color-hover;
+}
+::-webkit-scrollbar-thumb:active {
+  background: $button-bg-color-hover;
+}
+::-webkit-scrollbar-track {
+  background: $pagebody-bg;
+  border-color:$pagebody-bg;
+}
+::-webkit-scrollbar-track:hover {
+  background: $pagebody-bg;
+}
+::-webkit-scrollbar-track:active {
+  background: $pagebody-bg;
+}
