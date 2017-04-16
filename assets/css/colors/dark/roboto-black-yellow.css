@@ -1526,7 +1526,7 @@ table.two_column_layout {
 }
 
 .league_logo .st1 {
-  display: inline;
+  display: none;
 }
 
 .league_logo .st4 {
@@ -3197,11 +3197,9 @@ table.report {
 }
 
 span.leaguename--the {
-  color: #BEBEBE;
 }
 
 span.leaguename--dotus {
-  color: #BEBEBE;
 }
 
 .nav_buttons .svg-text {

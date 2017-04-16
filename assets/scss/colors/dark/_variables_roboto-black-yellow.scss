@@ -70,6 +70,7 @@ $button-link-color:$primary-color;
 
 ////////////////////////Captions and Headlines /////////////////////////////////
 $caption-color:$accent-color;
+$headline-font-color: $caption-color;
 $h1-color:$caption-color;
 $h2-color:$caption-color;
 $h3-color:$caption-color;
@@ -119,6 +120,9 @@ $newposition-border-color:#444;
 $table-header-color:$secondary-color;
 
 ////////////////////////Logo Colors/////////////////////////////////
-$logo-color: $accent-color;
-$logo-secondary-color:$white;
-
+$logo-main-color: $accent-color;//shield
+$logo-secondary-color:transparent;//top bg
+$logo-3rd-color:$white; //stars
+$logo-4th-color:$white; //bottom star
+$logo-text-color:$white;
+$logo-secondary-text-color:$accent-color;
