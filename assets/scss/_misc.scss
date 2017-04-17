@@ -5,16 +5,21 @@ body {
   overflow-x: hidden;
 }
 
-
 span#mfladdons {
-    margin-bottom: 24px;
-    display: block;
+  margin-bottom: 24px;
+  display: block;
 }
-
 
 h3 {
   margin-bottom: 12px;
 }
+//#body_player, #body_player_history, #body_tweets,#body_options_138,#body_options_01, #body_options_118, #body_options_16,#body_options_54 {
+  h3 {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 5px;
+  }
+//}
 
 
 /*main mfl wrapper*/
@@ -165,7 +170,6 @@ span.reportnavigation {
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
-
 #message_board_summary iframe {
   width: 100%;
 }
@@ -202,7 +206,6 @@ table#message_board_summary td {
 
 /*add drop*/
 
-
 #body_add_drop form table table caption {
   padding-left: 0;
 }
@@ -215,7 +218,7 @@ table#message_board_summary td {
   width: 100% !important;
   padding: 5px;
   border-radius: 5px;
-  margin-bottom:12px;
+  margin-bottom: 12px;
 }
 
 #body_add_drop table table {
@@ -233,7 +236,7 @@ table#add {
   border-radius: 5px;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   .utility-nav--button {
     display: inline-block;
     padding: 6px 0 6px 0;
@@ -253,7 +256,7 @@ table#add {
     display: inline-block;
     margin-top: 4px;
     margin-right: 5px;
-    font-weight:$secondary-menu-font-weight;
+    font-weight: $secondary-menu-font-weight;
     @media (min-width: 1200px) {
       margin-right: 5px;
     }
@@ -261,7 +264,7 @@ table#add {
     a:link,
     a:visited {
       margin-right: 5px;
-      text-decoration:none;
+      text-decoration: none;
     }
     b {
       display: none;
@@ -270,8 +273,8 @@ table#add {
       display: none;
     }
     .commish-link {
-    border-left: 1px solid ;
-    padding-left: 5px;
+      border-left: 1px solid;
+      padding-left: 5px;
     }
   }
 }
@@ -296,6 +299,13 @@ textarea#MSG {
     width: 20px;
     height: 20px;
     margin: 0 0 0 5px;
+  }
+  td.personal-im {
+    b {
+      font-weight: normal;
+    }
+    border-bottom: 1px solid;
+    transition: all 0.1s ease;
   }
 }
 

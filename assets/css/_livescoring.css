@@ -1,0 +1,10 @@
+#body_live_scoring_summary table.report .report {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#body_live_scoring_summary .report td,
+#body_live_scoring_summary .report th {
+  padding: 10px 10px;
+  text-align: left;
+}

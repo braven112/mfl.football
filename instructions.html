@@ -78,7 +78,7 @@
         <h1>Template instructions</h1>
         
         <ul class="list-unstyled">
-          <li>Last updated 4/15/2017</li>
+          <li>Last updated 4/16/2017</li>
         </ul>
       </div>
     </div>
@@ -247,73 +247,59 @@
 &lt;/script&gt;</code></pre>
         <h2>Homepage</h2>
         <pre><code>&lt;div class="row"&gt;
-&lt;div class="col-md-4 col-md-push-8"&gt;
-&lt;div class="utility-nav"&gt;
+  &lt;div class="col-md-4 col-md-push-8"&gt;
+    &lt;div class="utility-nav"&gt;
+      &lt;div class="utility-nav--button"&gt;
+        &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=133"&gt;
+          &lt;svg class="icon-exchange"&gt;
+            &lt;use xlink:href="#icon-exchange"&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;div class="svg-text"&gt;Trade Block&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="utility-nav--button"&gt;
+        &lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE20"&gt;
+          &lt;svg class="icon-file-text"&gt;
+            &lt;use xlink:href="#icon-file-text"&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;div class="svg-text"&gt;Rules&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div id="loginlink" class="utility-nav--button loginbutton"&gt;
+        &lt;svg class="icon-sign-in"&gt;
+          &lt;use xlink:href="#icon-sign-in"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;div class="svg-text"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;module name="TRADES" /&gt;
+    &lt;module name="LEAGUE_CHAT" COUNT="20" /&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="col-md-8 col-md-pull-4"&gt;
+    &lt;module name="CURR_AUCTIONS" /&gt;
+    &lt;div class="mobile-standings-wrapper hidden-xs"&gt;
+      &lt;module name="STANDINGS" UNIT="DIVISION00" /&gt;
+      &lt;module name="STANDINGS" UNIT="DIVISION01" /&gt;
+      &lt;module name="STANDINGS" UNIT="DIVISION02" /&gt;
+      &lt;module name="STANDINGS" UNIT="DIVISION03" /&gt;
+    &lt;/div&gt;
+  &lt;div class="visible-xs"&gt;
+    &lt;module name="BRIEF_STANDINGS" /&gt;
+  &lt;/div&gt;
 
-        &lt;div class="utility-nav--button"&gt;
-          &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=133"&gt;
-            &lt;svg class="icon-exchange"&gt;&lt;use xlink:href="#icon-exchange"&gt;&lt;/use&gt;&lt;/svg&gt;
-            &lt;div class="svg-text"&gt;Trade Block&lt;/div&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class="utility-nav--button"&gt;
-          &lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE20"&gt;
-            &lt;svg class="icon-file-text"&gt;&lt;use xlink:href="#icon-file-text"&gt;&lt;/use&gt;&lt;/svg&gt;
-            &lt;div class="svg-text"&gt;Rules&lt;/div&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-&lt;div id="loginlink" class="utility-nav--button loginbutton"&gt;
-
-            &lt;svg class="icon-sign-in"&gt;
-              &lt;use xlink:href="#icon-sign-in"&gt;&lt;/use&gt;
-            &lt;/svg&gt;
-            &lt;div class="svg-text"&gt;&lt;/div&gt;
-
-        &lt;/div&gt;
-&lt;/div&gt;
-&lt;module name="TRADES"/&gt;
-&lt;module name="LEAGUE_CHAT" COUNT="20"/&gt;
-&lt;div class="hidden-xs hidden-sm"&gt;&lt;module name="OWNER_ACTIVITY"/&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="col-md-8 col-md-pull-4 hidden-xs"&gt;&lt;div class="standings-nav"&gt;
-&lt;div class="standings-nav--button"&gt;
-          &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=18"&gt;
-            &lt;svg class="icon-numberone"&gt;
-                  &lt;use xlink:href="#icon-numberone"&gt;&lt;/use&gt;
-                &lt;/svg&gt;
-            &lt;div class="svg-text"&gt;Standings&lt;/div&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class="standings-nav--button"&gt;
-          &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=101&amp;SORT=ALLPLAY"&gt;
-            &lt;svg class="icon-line-chart"&gt;&lt;use xlink:href="#icon-line-chart"&gt;&lt;/use&gt;&lt;/svg&gt;
-            &lt;div class="svg-text"&gt;Rankings&lt;/div&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-&lt;/div&gt;
-&lt;module name="CURR_AUCTIONS"/&gt;
-&lt;div class="mobile-standings-wrapper"&gt;&lt;module name="STANDINGS" UNIT="DIVISION00"/&gt;&lt;module name="STANDINGS" UNIT="DIVISION01"/&gt;&lt;module name="STANDINGS" UNIT="DIVISION02"/&gt;&lt;module name="STANDINGS" UNIT="DIVISION03"/&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class="col-md-8 col-md-pull-4 visible-xs"&gt;&lt;module name="BRIEF_STANDINGS"/&gt;&lt;/div&gt;
-
-
-&lt;div class="col-md-8"&gt;
-&lt;module name="MESSAGE16"/&gt;
-&lt;module name="POWER_RANK" DISPLAY="LEAGUE"/&gt;
-&lt;div class="hidden-calendar"&gt;&lt;module name="MONTHLY_CALENDAR"/&gt;&lt;/div&gt;
-&lt;module name="MY_NEWS" COUNT="10"/&gt;
-&lt;module name="NEXT_WEEKS_FANTASY_SCHEDULE"/&gt;
-
-&lt;module name="TOP_PERFORMERS"/&gt;
-
-
-&lt;div class="visible-xs visible-sm"&gt;&lt;module name="OWNER_ACTIVITY"/&gt;&lt;/div&gt;
-&lt;/div&gt;
+    &lt;module name="MESSAGE4" /&gt;
+    &lt;module name="POWER_RANK" DISPLAY="LEAGUE" /&gt;
+    &lt;div class="hidden-calendar"&gt;
+      &lt;module name="MONTHLY_CALENDAR" /&gt;
+    &lt;/div&gt;
+    &lt;module name="MY_NEWS" COUNT="10" /&gt;
+    &lt;module name="NEXT_WEEKS_FANTASY_SCHEDULE" /&gt;
+    &lt;module name="TOP_PERFORMERS" /&gt;
+      &lt;module name="OWNER_ACTIVITY" /&gt;
 
 &lt;/div&gt;
-
-&lt;script src="http://www.theleague.us/js/homepage.js"&gt;</code></pre>
+&lt;script src="http://www.theleague.us/assets/js/homepage.js"&gt;</code></pre>
 
 <h2>Icons</h2>
 <p class="instructions-copy">If you would like to swap out icons you can use the code from any of these below.</p>

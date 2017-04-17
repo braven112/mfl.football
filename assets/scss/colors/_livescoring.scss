@@ -1,0 +1,11 @@
+#body_live_scoring_summary {
+  table.report .report {
+    background-color: $white;
+  }
+  table.scoresummary .report {
+    background-color: $white;
+  }
+  table.scoresummary .report .oddtablerow {
+    background-color: transparent;
+}
+}

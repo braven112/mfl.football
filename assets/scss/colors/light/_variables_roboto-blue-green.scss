@@ -51,6 +51,7 @@ $border-color: #ddd;
 
 ////////////////////////MFL Menu/////////////////////////////////
 $menu-bg-color:$primary-color;
+$menu-bg-hover-color:darken($primary-color, 5%);
 $menu-border-color:$primary-color;
 $menu-text-color:$white;
 
@@ -101,12 +102,13 @@ $alert-info-bg:#d9edf7;
 $alert-info-border:#bcdff1;
 
 ////////////////////////Calendar/////////////////////////////////
-$calendar-bg-color:$primary-color;
+$calendar-bg-color:$offwhite;
+$calendar-eventablerow:$white;
 $calendar-border-color:lighten($calendar-bg-color, 1%);
 $calendar-text-color:$white;
 $today-bg-color:$accent-color;
 $today-border-color:lighten($today-bg-color, 1%);
-$today-text-color:$primary-color;
+$today-text-color:$white;
 
 
 ////////////////////////Homepage messages/////////////////////////////////

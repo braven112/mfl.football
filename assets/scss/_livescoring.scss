@@ -1,0 +1,35 @@
+#body_live_scoring_summary {
+	.pagebody {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .pagebody {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pagebody {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pagebody {
+    width: 1170px;
+  }
+}
+  table.report .report {
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .report td,
+  .report th {
+    padding: 10px 10px;
+    text-align: left;
+  }
+}
