@@ -1,4 +1,4 @@
-# theleague
+# theleague - project hawk
 a fantasy football site
 
 http://theleague.us/instructions.html
