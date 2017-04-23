@@ -62,10 +62,13 @@
   }
   
   ol li {
-    font-size: 1.25em;
     margin-left: 1.25em;
   }
   
+  ol li p {
+    font-size: 1.25em;
+  }
+
   ol {
     padding-left: 0px;
   }
@@ -152,14 +155,17 @@
         <h4>A responsive my fantasy league template</h4>
         <span class="label label-success updated">last updated 4/22/17</span>
         <p class="alert alert-info">Please don't share this URL yet. If I end up sharing this more broadly I'll need to upgrade my hosting package otherwise we'll all have very slow sites.</p>
-        <p>Part of building a mobile/tablet friendly template is making it simple, consistent and as fast as possible. On a phone real estate is at a premium and scrolling is easy.  As such I don't plan on incorporating MFL's tabs and other large 3rd party apps on the homepage.</p>
-        <p>Homepage messages (HPM's) will be used to take advanatage of the great apps others have built and create new pages where it makes sense so the homepage can still load quickly.</p>
-        <p>Over time hopefully I'll gather pages and customer modules others have made and share those here as well.</p>
+        <p>Part of building a mobile/tablet friendly template is making it simple, consistent and as fast as possible. On a phone real estate is at a premium and scrolling is easy. As such I don't plan on incorporating MFL's tabs and other large 3rd party apps on the homepage.</p>
+        <p>Homepage messages (HPM's) will be used to take advanatage of the great apps others have built and new pages will be created where it makes sense so the homepage can still load quickly.</p>
+        <p>Over time hopefully I'll gather pages and custom modules others have made and share those here as well.</p>
         <p>I'm doing my best to keep the template and each color variation as accessible as possible so color schemes should work well if even if you are color blind. There's a good chance at least one person in your league is.</p>
         <p>This template is built with Sass, uses Bootstrap's grid as well as a few extras from that framework. The goal is to make our <span class="text-nowrap">My Fantasy League (MFL)</span> site's work great on <i>any</i> device.</p>
         Here is a <a target="_blank" href="http://www59.myfantasyleague.com/2017/home/65353">demo</a> of the template.
         <hr>
         <h2>Template instructions</h2>
+        <p>The template will make use of Home Page Messages.  You may have already used these from previous years.  Save any code you need from these on your computer and delete them from your MFL site before you get started. Also make sure that you don't have one of our HPM's set as a header or footer already as that will interfere with the installation.</p>
+        <img alt="" class="img-responsive" src="assets/img/instructions/full-hpm-screenshot.png">
+        <small>In this example header would be #1, footer #2, homepage #3, message board #4, and so on...</small>
         <ol>
           <li>
             <p>To install the template you'll need to log in as commish and go to the commish setup page.</p><img alt="" class="img-responsive" src="assets/img/instructions/commish-menu-screenshot.png">
@@ -169,15 +175,18 @@
             <img class="img-responsive pull-left" src="assets/img/instructions/apprearance-screenshot.png"><img alt="" class="img-responsive pull-left" src="assets/img/instructions/skin-screenshot.png">
             <div class="clearfix"></div>
           </li>
-          <li>Go to the "Images and Other URL's link and paste in one of the <a href="#css">css files</a> below.
-            <br><img alt="" style="padding:5px 0" class="img-responsive" src="assets/img/instructions/css-screenshot.png"></li>
           <li>
-            <p>Paste in the <a href="#homepage">homepage code</a> below into hompeage message (HPM) #3</p><img alt="" class="img-responsive" src="assets/img/instructions/hpm-screen-shot.png"></li>
+            <p>Go to the "Images and Other URL's link and paste in one of the <a href="#css">css files</a> below.
+            </p><img alt="" style="padding:5px 0" class="img-responsive" src="assets/img/instructions/css-screenshot.png"></li>
           <li>
-            <p>Paste in the <a href="#header">header code</a> below into HPM #1</p>
+            <p>Paste in the <a href="#homepage">homepage code</a> below into homepage message (HPM) #3.</p><img alt="" class="img-responsive" src="assets/img/instructions/hpm-screen-shot.png">
+            <div class="alert alert-info">Your HPM's may already be named so look for the 3rd link under "Home page message setup"</div>
           </li>
           <li>
-            <p>Paste in the <a href="#footer">footer code</a> below into HPM #2</p>
+            <p>Paste in the <a href="#header">header code</a> below into HPM #1. Set as header on everypage.</p><img alt="" class="img-responsive" src="assets/img/instructions/header-screenshot.png">
+          </li>
+          <li>
+            <p>Paste in the <a href="#footer">footer code</a> below into HPM #2 Set as footer on everypage.</p><img alt="" class="img-responsive" src="assets/img/instructions/footer-screenshots.png">
           </li>
           <li>
             <p>Remove all modules and tabs from the homepage modules and tabs setup page</p><img alt="" class="img-responsive" src="assets/img/instructions/delete-screenshot.png"></li>
@@ -195,7 +204,8 @@ http://www.theleague.us/assets/css/colors/light/roboto-blue-green.css</code></pr
         <h2>Homepage Messages (HPM)</h2>
         <p class="instructions-copy">Copy and paste the following code into your homepage messages on MFL.com</p>
         <h3 id="header">Header</h3>
-        <p class="instructions-copy">This header includes jquery. Its also where you can edit your league name and the icons/navigation.</p>
+        <p class="instructions-copy">Copy all the code in the boxt below. This header includes jquery. Its also where you can edit your league name and the icons/navigation.</p>
+        
         <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 &lt;script src="https://file.myfontastic.com/2TXduAWe9ypMmodAVSJV7P/icons.js"&gt;
 &lt;/script&gt;
@@ -292,32 +302,28 @@ http://www.theleague.us/assets/css/colors/light/roboto-blue-green.css</code></pr
 &lt;!-- container-fluid --&gt;
 &lt;div class="mobile-scroll-wrapper"&gt;
   &lt;div class="container page-wrapper" id="contentframe "&gt;</code></pre>
+  <div class="alert alert-info">Don't forget to add your league name in the code below. </div><p>Look for this code and update it to change your league name. You can delete any of the spans if you don't need them <s>&lt;span class="leaguename--dotus"&gt;.com&lt;/span&gt;</s></p>
+  <pre><code>&lt;div class="leaguename"&gt;
+          &lt;span class="leaguename--the"&gt;Your&lt;/span&gt;&lt;span class="leaguename--league"&gt;Name&lt;/span&gt;&lt;span class="leaguename--dotus"&gt;here&lt;/span&gt;
+        &lt;/div&gt;</code></pre>
         <h3 id="footer">Footer</h3>
+        <p>Copy all the code in the boxt below. </p>
         <pre><code>&lt;/div&gt;
-&lt;/div&gt;
 &lt;div class="container-footer"&gt;
   &lt;div class="container"&gt;
     &lt;div class="row"&gt;
-      &lt;div class="col-sm-5"&gt;
+      &lt;div class="col-sm-4"&gt;
         &lt;div class="defending-champ"&gt;Defending League Champions
           &lt;br&gt;
-          &lt;a title="Owner: BSB" href="http://www59.myfantasyleague.com/2017/options?L=13522&amp;F=0006&amp;O=01"&gt;&lt;img align="middle" src="http://theleague.us/images/team_banners/lb_decleaters_icon.png" alt="LBer-DeCleaters" id="franchiseicon_0006" class="franchiseicon"&gt;
+          &lt;!-- &lt;a title="Owner: Your champ" href="http://www59.myfantasyleague.com/2017/options?L=13522&amp;F=0006&amp;O=01"&gt;&lt;img align="middle" src="http://theleague.us/images/team_banners/lb_decleaters_icon.png" alt="LBer-DeCleaters" id="franchiseicon_0006" class="franchiseicon"&gt;
+          &lt;/div&gt;
           &lt;/a&gt;
         &lt;/div&gt;
         &lt;span id="mfladdons"&gt;&lt;a href="http://www.mfladdons.com"&gt;Site Designed by MFLaddons.com&lt;/a&gt;&lt;/span&gt;
       &lt;/div&gt;
-      &lt;div class="col-sm-7"&gt;
+      &lt;div class="col-sm-8"&gt;
         &lt;div class="row"&gt;
-          &lt;div class="col-sm-4"&gt;
-            &lt;ul&gt;
-              &lt;li&gt;Team Management&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=13522&amp;O=02"&gt;Submit lineup&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/add_drop?L=66228"&gt;Add/drop&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=13522&amp;O=98"&gt;Practice squad&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=13522&amp;O=18"&gt;Injured reserve&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/div&gt;
-          &lt;div class="col-sm-4"&gt;
+          &lt;div class="col-sm-3"&gt;
             &lt;ul&gt;
               &lt;li&gt;Rules&lt;/li&gt;
               &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE20"&gt;Constitution&lt;/a&gt;&lt;/li&gt;
@@ -326,13 +332,31 @@ http://www.theleague.us/assets/css/colors/light/roboto-blue-green.css</code></pr
               &lt;li&gt;&lt;a href="https://drive.google.com/file/d/0B153AyPWE7R4cTRyX2I5Ulk2QnM/view?ths=true"&gt;2016 Tags&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/div&gt;
-          &lt;div class="col-sm-4"&gt;
+          &lt;div class="col-sm-3"&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Team Management&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=02"&gt;Submit lineup&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/add_drop?L=%LEAGUEID%"&gt;Add/drop&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=98"&gt;Practice squad&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=18"&gt;Injured reserve&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class="col-sm-3"&gt;
             &lt;ul&gt;
               &lt;li&gt;League&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/standings?L=66228"&gt;Standings&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=66228&amp;O=101"&gt;Rankings&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=66228&amp;O=15"&gt;Schedule&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/live_scoring_summary?L=66228&amp;W=1"&gt;Live scoring&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=07"&gt;Rosters&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/news_articles?MYNEWS=1&amp;L=%LEAGUEID%"&gt;My Player News&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/top?L=%LEAGUEID%&amp;SEARCHTYPE=ADVANCED&amp;COUNT=30&amp;CATEGORY=freeagent&amp;POSITION=*&amp;DISPLAY=points&amp;TEAM=*"&gt;Free Agents&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=44"&gt;Auction Results&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class="col-sm-3"&gt;
+            &lt;ul&gt;
+              &lt;li&gt;�&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/standings?L=%LEAGUEID%"&gt;Standings&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=101"&gt;Rankings&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=15"&gt;Schedule&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="http://%HOST%/%YEAR%/live_scoring_summary?L=%LEAGUEID%&amp;W=1"&gt;Live scoring&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -342,11 +366,11 @@ http://www.theleague.us/assets/css/colors/light/roboto-blue-green.css</code></pr
 &lt;/div&gt;
 &lt;script src="http://www.theleague.us/js/global.js"&gt;
 &lt;script&gt;
-  //customer wrapper
+  //custom wrapper
   $(".report").wrap("&lt;div class='report-wrapper'&gt;&lt;/div&gt;");
 &lt;/script&gt;</code></pre>
         <h3 id="homepage">Homepage</h3>
-        <p class="instructions-copy">This sets the layout of the homepage as well as a javascript file that allows you to log in.</p>
+        <p class="instructions-copy">Copy all the code in the boxt below. This sets the layout of the homepage and includes a javascript file that allows you to log in.</p>
         <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 &lt;script src="https://file.myfontastic.com/2TXduAWe9ypMmodAVSJV7P/icons.js"&gt;
 &lt;/script&gt;
