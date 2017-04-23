@@ -2,16 +2,20 @@
 @import "variables_roboto-black-red";
 @import "../../base-styles";
 ///Color files using the customer variables above
-@import "alerts";
-@import "auctions";
-@import "calendar";
-@import "constitution";
-@import "header";
-@import "inputs";
-@import "icons";
-@import "mflmenu";
-@import "mfltabs";
-@import "misc";
-@import "salarycap";
-@import "standings";
-@import "submit-lineup";
+@import "../alerts";
+@import "../auctions";
+@import "../calendar";
+@import "../constitution";
+@import "../commish";
+@import "../header";
+@import "../footer";
+@import "../icons";
+@import "../inputs";
+@import "../mflmenu";
+@import "../mfltabs";
+@import "../misc";
+@import "../salarycap";
+@import "../scrollbar";
+@import "../standings";
+@import "../submit-lineup";
+

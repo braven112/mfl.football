@@ -13,13 +13,14 @@ span#mfladdons {
 h3 {
   margin-bottom: 12px;
 }
+
 //#body_player, #body_player_history, #body_tweets,#body_options_138,#body_options_01, #body_options_118, #body_options_16,#body_options_54 {
-  h3 {
-    font-size: 15px;
-    text-align: left;
-    margin-left: 5px;
-  }
 //}
+h3 {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 5px;
+}
 
 
 /*main mfl wrapper*/
@@ -186,7 +187,6 @@ span.reportnavigation {
 //   margin-left: 0;
 //   padding: 0;
 // }
-
 .report .newposition td {
   padding-top: 10px;
 }

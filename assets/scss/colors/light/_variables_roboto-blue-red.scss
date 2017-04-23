@@ -1,5 +1,12 @@
 //////////////////////Colors//////////////////////////
 
+//Main Colors
+$primary-color:#0f3663; //Navy Blue
+
+$accent-color:#b22222;//red
+$dark-accent-color:darken($accent-color, 10%);
+
+
 $gray1:#333;
 $gray2:#666;
 $gray3:#999;
@@ -13,21 +20,14 @@ $lightgray3:#aaa;
 
 $white:#fff;
 
-
-
-$primary-color:#1f1f1f;//light black
-$secondary-color:#ccc;
-$accent-color:#da3636;//red
-$dark-accent-color:darken($accent-color, 10%);
-
 ////////////////////////Fonts/////////////////////////////////
 $headline-font: 'Roboto Slab';
 $body-font: 'Roboto', sans-serif;
-$headline-font-color: $accent-color;
+
 
 ////////////////////////Page Backgrounds/////////////////////////////////
-$primary-bg-color:#1f1f1f;
-$pagebody-bg: #1A1A1A;
+$primary-bg-color:$white;
+$pagebody-bg: $offwhite2;
 $report-bg:$primary-bg-color;
 
 ////////////////////////Header BG///////////////////////////////
@@ -35,34 +35,34 @@ $header-bg: $report-bg;
 
 ////////////////////////Footer BG///////////////////////////////
 $footer-bg-color:$primary-color;
-$footer-text-color:$accent-color;
+$footer-text-color:$white;
 $footer-header-text-color:$white;
 
 ////////////////////////Text/////////////////////////////////
-$primary-text-color:#BEBEBE;
-$secondary-text-color:#BEBEBE;
+$primary-text-color:#333;
+$secondary-text-color:#333;
 
 ////////////////////////Links/////////////////////////////////
-$link-color:#fff;
-$link-color-hover:#33629b;
+$link-color:$primary-color;
+$link-color-hover:lighten($primary-color, 5%);
 
 ////////////////////////Default Border color/////////////////////////////////
-$border-color: #292929;
+$border-color: #ddd;
 
 ////////////////////////MFL Menu/////////////////////////////////
 $menu-bg-color:$primary-color;
-$menu-bg-hover-color:lighten($primary-color, 5%);
-$menu-border-color:$border-color;
+$menu-bg-hover-color:darken($primary-color, 5%);
+$menu-border-color:$primary-color;
 $menu-text-color:$white;
 
 ////////////////////////Report navigation/////////////////////////////////
-$secondary-menu-border-color:$primary-bg-color;
-$secondary-menu-bg-color:$primary-bg-color;
-$secondary-menu-text-color: $primary-text-color;
-$secondary-menu-link-color: $accent-color;
-$secondary-menu-icon-color: $gray2;
-$secondary-menu-icon-hover-color: lighten($accent-color, 5%);
-$secondary-menu-font-weight:bold;
+$secondary-menu-border-color:$accent-color;
+$secondary-menu-bg-color:$accent-color;
+$secondary-menu-text-color: $white;
+$secondary-menu-link-color: $white;
+$secondary-menu-icon-color: $white;
+$secondary-menu-icon-hover-color: lighten($secondary-menu-icon-color, 5%);
+$secondary-menu-font-weight:normal;
 
 ////////////////////////Buttons/////////////////////////////////
 $button-bg-color:$accent-color;
@@ -70,7 +70,7 @@ $button-bg-color-hover:lighten($button-bg-color, 5%);
 $button-link-color:$white;
 
 ////////////////////////Captions and Headlines /////////////////////////////////
-$caption-color:$accent-color;
+$caption-color:$primary-color;
 $headline-font-color: $caption-color;
 $h1-color:$caption-color;
 $h2-color:$caption-color;
@@ -80,9 +80,9 @@ $h5-color:$caption-color;
 $h6-color:$caption-color;
 
 ////////////////////////Icons/////////////////////////////////
-$icon-color:$gray2;
-$icon-color-hover: lighten($accent-color, 5%);
-$icon-text-color:$primary-text-color;
+$icon-color:$primary-color;
+$icon-color-hover: lighten($icon-color, 5%);
+$icon-text-color:$primary-color;
 
 ////////////////////////Add/drop/////////////////////////////////
 $add-color:green;
@@ -102,29 +102,30 @@ $alert-info-bg:#d9edf7;
 $alert-info-border:#bcdff1;
 
 ////////////////////////Calendar/////////////////////////////////
-$calendar-bg-color:$pagebody-bg;
-$calendar-eventablerow:$primary-color;
+$calendar-bg-color:$offwhite;
+$calendar-eventablerow:$white;
 $calendar-border-color:lighten($calendar-bg-color, 1%);
 $calendar-text-color:$white;
 $today-bg-color:$accent-color;
 $today-border-color:lighten($today-bg-color, 1%);
-$today-text-color:$primary-color;
+$today-text-color:$white;
 
 
 ////////////////////////Homepage messages/////////////////////////////////
 $codebg-color: #31382d;
 
 ////////////////////////Table Colors/////////////////////////////////
-$oddtablerow:$primary-color;
-$eventablerow:#292929;
-$newposition-border-color:#444;
+$oddtablerow:$white;
+$eventablerow:#ececec;
+$newposition-border-color:$lightgray2;
 
-$table-header-color:$secondary-color;
+$table-header-color:$primary-color;
 
 ////////////////////////Logo Colors/////////////////////////////////
-$logo-main-color: $accent-color;//shield
-$logo-secondary-color:transparent;//top bg
-$logo-3rd-color:$white; //stars
+$logo-main-color: $primary-color;//shield
+$logo-secondary-color:$accent-color;//top bg
+$logo-3rd-color:$lightgray; //stars
 $logo-4th-color:$white; //bottom star
-$logo-text-color:$white;
+$logo-text-color:$primary-color;
 $logo-secondary-text-color:$accent-color;
+
