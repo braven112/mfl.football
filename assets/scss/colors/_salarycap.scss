@@ -20,6 +20,9 @@
   background-color: darken($drop-color, .5);
 }
 
+.summary-header {
+    margin-top: -12px;
+}
 
 .team-nav {
   background-color: $secondary-menu-bg-color;

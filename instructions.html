@@ -13,17 +13,93 @@
   <!-- Custom CSS -->
   <style>
   body {
-    /*padding-top: 70px;
-         Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 36px;
+    overflow-x: hidden;
+    /*Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.*/
   }
   
   pre {
     width: 100%;
     max-height: 100px;
+    margin-bottom: 24px;
   }
+  
   .instructions-copy {
-  	margin-top: -10px;
-  	margin-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  
+  h1 {
+    display: inline-block;
+  }
+  
+  .updated {
+    float: right;
+    margin: 6px 0 12px 6px;
+  }
+  
+  @media (min-width: 320px) {
+    .updated {}
+  }
+  
+  .instructions .img-responsive {
+    margin-bottom: 24px;
+  }
+  
+  ol li {
+    font-size: 1.25em;
+    margin-left: 1.25em;
+  }
+  
+  ol {
+    padding-left: 0px;
+  }
+  
+  .alert a {
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .builtwith,
+  img.builtwith.fontastic {
+    width: 100px;
+    height: 70px;
+    margin-right: 24px;
+    margin-bottom: 36px;
+    float: left;
+  }
+  
+  img.builtwith {
+    width: 70px;
+    height: 70px;
+  }
+  
+  img.builtwith.github {
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  .donation {
+    margin-bottom: 24px;
+  }
+  
+  .donation .btn {
+    margin-bottom: 12px;
   }
   </style>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,10 +109,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   <!-- jQuery Version 1.12.4 -->
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -72,24 +145,57 @@
   <!-- /.container
     </nav> -->
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Template instructions</h1>
-        
-        <ul class="list-unstyled">
-          <li>Last updated 4/16/2017</li>
-        </ul>
-      </div>
-    </div>
-    <!-- /.row -->
+  <div class="container instructions">
     <div class="row">
       <div class="col-sm-8">
-        <h2>CSS</h2>
-        <pre><code>http://www.theleague.us/assets/css/colors/dark/roboto-black-yellow.css</code></pre>
+        <h1>Project hawk</h1>
+        <h4>A responsive my fantasy league template</h4>
+        <span class="label label-success updated">last updated 4/22/17</span>
+        <p class="alert alert-info">Please don't share this URL yet. If I end up sharing this more broadly I'll need to upgrade my hosting package otherwise we'll all have very slow sites.</p>
+        <p>Part of building a mobile/tablet friendly template is making it simple, consistent and as fast as possible. On a phone real estate is at a premium and scrolling is easy.  As such I don't plan on incorporating MFL's tabs and other large 3rd party apps on the homepage.</p>
+        <p>Homepage messages (HPM's) will be used to take advanatage of the great apps others have built and create new pages where it makes sense so the homepage can still load quickly.</p>
+        <p>Over time hopefully I'll gather pages and customer modules others have made and share those here as well.</p>
+        <p>I'm doing my best to keep the template and each color variation as accessible as possible so color schemes should work well if even if you are color blind. There's a good chance at least one person in your league is.</p>
+        <p>This template is built with Sass, uses Bootstrap's grid as well as a few extras from that framework. The goal is to make our <span class="text-nowrap">My Fantasy League (MFL)</span> site's work great on <i>any</i> device.</p>
+        Here is a <a target="_blank" href="http://www59.myfantasyleague.com/2017/home/65353">demo</a> of the template.
         <hr>
-        <p class="alert alert-info">Copy and paste the following code into your homepage messages on MFL.com</p>
-        <h2>Header</h2>
+        <h2>Template instructions</h2>
+        <ol>
+          <li>
+            <p>To install the template you'll need to log in as commish and go to the commish setup page.</p><img alt="" class="img-responsive" src="assets/img/instructions/commish-menu-screenshot.png">
+          </li>
+          <li>
+            <p>On the "Select a skin" link choose "none".</p>
+            <img class="img-responsive pull-left" src="assets/img/instructions/apprearance-screenshot.png"><img alt="" class="img-responsive pull-left" src="assets/img/instructions/skin-screenshot.png">
+            <div class="clearfix"></div>
+          </li>
+          <li>Go to the "Images and Other URL's link and paste in one of the <a href="#css">css files</a> below.
+            <br><img alt="" style="padding:5px 0" class="img-responsive" src="assets/img/instructions/css-screenshot.png"></li>
+          <li>
+            <p>Paste in the <a href="#homepage">homepage code</a> below into hompeage message (HPM) #3</p><img alt="" class="img-responsive" src="assets/img/instructions/hpm-screen-shot.png"></li>
+          <li>
+            <p>Paste in the <a href="#header">header code</a> below into HPM #1</p>
+          </li>
+          <li>
+            <p>Paste in the <a href="#footer">footer code</a> below into HPM #2</p>
+          </li>
+          <li>
+            <p>Remove all modules and tabs from the homepage modules and tabs setup page</p><img alt="" class="img-responsive" src="assets/img/instructions/delete-screenshot.png"></li>
+          <li>
+            <p>On that same page add a new column at 100% and place the homepage HPM directly underneath.</p><img alt="" class="img-responsive" src="assets/img/instructions/homepage-tabs-screen-shot.png"></li>
+        </ol>
+        <div class="alert alert-info">Do not add any additional modules on this page. Adding modules will now be done by adding a snippet of code into the homepage message we added in step 4. You can <a href="http://www59.myfantasyleague.com/2017/generate_embed?L=65353">find the code to add modules here</a>.</div>
+        <h3 id="css">CSS</h3>
+        <p class="instructions-copy">A dark version and a light version. The HTML works with any css file.</p>
+        <pre><code>//dark with yellow
+http://www.theleague.us/assets/css/colors/dark/roboto-black-yellow.css
+//light blue and green//
+http://www.theleague.us/assets/css/colors/light/roboto-blue-green.css</code></pre>
+        <hr>
+        <h2>Homepage Messages (HPM)</h2>
+        <p class="instructions-copy">Copy and paste the following code into your homepage messages on MFL.com</p>
+        <h3 id="header">Header</h3>
+        <p class="instructions-copy">This header includes jquery. Its also where you can edit your league name and the icons/navigation.</p>
         <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 &lt;script src="https://file.myfontastic.com/2TXduAWe9ypMmodAVSJV7P/icons.js"&gt;
 &lt;/script&gt;
@@ -97,7 +203,7 @@
 &lt;div class="container-header"&gt;
   &lt;div class="container"&gt;
     &lt;div class="row"&gt;
-      &lt;div class="col-md-6 col-lg-5"&gt;
+      &lt;div class="col-md-6"&gt;
 &lt;a href="http://%STATICHOST%/%YEAR%/home/%LEAGUEID%"&gt;
         &lt;div class="league_logo" id="league_logo"&gt;
           
@@ -119,39 +225,33 @@
           
         &lt;/div&gt;
         &lt;div class="leaguename"&gt;
-          &lt;span class="leaguename--the"&gt;Try&lt;/span&gt;&lt;span class="leaguename--league"&gt;This&lt;/span&gt;&lt;span class="leaguename--dotus"&gt;.site&lt;/span&gt;
+          &lt;span class="leaguename--the"&gt;MFL&lt;/span&gt;&lt;span class="leaguename--league"&gt;Addons&lt;/span&gt;&lt;span class="leaguename--dotus"&gt;.com&lt;/span&gt;
         &lt;/div&gt;
 &lt;/a&gt;
         &lt;div class="clearfix visible-xs-block visible-sm-block visible-md-block"&gt;&lt;/div&gt;
       &lt;/div&gt;
       &lt;!-- column --&gt;
-      &lt;div class="col-md-6 col-lg-7"&gt;
+      &lt;div class="col-md-6"&gt;
         &lt;div class="nav_wrapper"&gt;
           &lt;div class="nav_buttons" id="nav_buttons"&gt;
             &lt;div class="nav_button--button"&gt;
-              &lt;a href="http://theleague.us/forum/index.php"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=29"&gt;
                 &lt;svg class="icon-commenting"&gt;
                   &lt;use xlink:href="#icon-commenting"&gt;&lt;/use&gt;
                 &lt;/svg&gt;
                 &lt;div class="svg-text"&gt;Message board&lt;/div&gt;
               &lt;/a&gt;
             &lt;/div&gt;
-&lt;div class="nav_button--button"&gt;
-          &lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE18"&gt;
-            &lt;svg class="icon-banknote"&gt;&lt;use xlink:href="#icon-banknote"&gt;&lt;/use&gt;&lt;/svg&gt;
-            &lt;div class="svg-text"&gt;Roster/Cap&lt;/div&gt;
-          &lt;/a&gt;
-&lt;/div&gt;
-          &lt;!--  &lt;script type="text/javascript"&gt;
+          &lt;script type="text/javascript"&gt;
             var franchise_id;
             if (!(franchise_id == undefined)) {
               document.write('&lt;div class="nav_button--button"&gt;&lt;a href="' + baseURLDynamic + '/' + year + '/options?L=' + league_id + '&amp;O=07&amp;F=' + franchise_id + ' "&gt;&lt;svg class="icon-helmet"&gt;&lt;use xlink:href="#icon-helmet"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;div class="svg-text"&gt;My Roster&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;')
             };
-            &lt;/script&gt;--&gt;
+            &lt;/script&gt;
             &lt;div class="nav_button--button"&gt;
               &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=02"&gt;
-                &lt;svg class="icon-helmet"&gt;
-                  &lt;use xlink:href="#icon-helmet"&gt;&lt;/use&gt;
+                &lt;svg class="icon-submit"&gt;
+                  &lt;use xlink:href="#icon-submit"&gt;&lt;/use&gt;
                 &lt;/svg&gt;
                 &lt;div class="svg-text"&gt;Submit lineup&lt;/div&gt;
               &lt;/a&gt;
@@ -192,7 +292,7 @@
 &lt;!-- container-fluid --&gt;
 &lt;div class="mobile-scroll-wrapper"&gt;
   &lt;div class="container page-wrapper" id="contentframe "&gt;</code></pre>
-        <h2>Footer</h2>
+        <h3 id="footer">Footer</h3>
         <pre><code>&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="container-footer"&gt;
@@ -245,78 +345,141 @@
   //customer wrapper
   $(".report").wrap("&lt;div class='report-wrapper'&gt;&lt;/div&gt;");
 &lt;/script&gt;</code></pre>
-        <h2>Homepage</h2>
-        <pre><code>&lt;div class="row"&gt;
-  &lt;div class="col-md-4 col-md-push-8"&gt;
-    &lt;div class="utility-nav"&gt;
-      &lt;div class="utility-nav--button"&gt;
-        &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=133"&gt;
-          &lt;svg class="icon-exchange"&gt;
-            &lt;use xlink:href="#icon-exchange"&gt;&lt;/use&gt;
-          &lt;/svg&gt;
-          &lt;div class="svg-text"&gt;Trade Block&lt;/div&gt;
-        &lt;/a&gt;
+        <h3 id="homepage">Homepage</h3>
+        <p class="instructions-copy">This sets the layout of the homepage as well as a javascript file that allows you to log in.</p>
+        <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;script src="https://file.myfontastic.com/2TXduAWe9ypMmodAVSJV7P/icons.js"&gt;
+&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;div class="container-header"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-6"&gt;
+&lt;a href="http://%STATICHOST%/%YEAR%/home/%LEAGUEID%"&gt;
+        &lt;div class="league_logo" id="league_logo"&gt;
+          
+            &lt;svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.8 442"&gt;
+              
+              &lt;g class="st0"&gt;
+                &lt;path class="st1" d="M115.6 499l-1.4-4.2h-11.5l-1.4 4.2h-8.5l11-29.1h9.5l11 29.1h-8.7zm-7.2-21.7l-3.7 11h7.4l-3.7-11zM130 499v-22.6h-8.2v-6.5h23.8v6.5h-8.1V499H130zM168.8 499v-11.7h-12.1V499h-7.5v-29.1h7.5v10.9h12.1v-10.9h7.5V499h-7.5zM182.2 499v-29.1h7.5v22.6h11.7v6.5h-19.2zM205.2 499v-29.1h21.3v6.5h-13.8v4.5h11.4v6.6h-11.4v4.9h13.8v6.5h-21.3zM237.4 499v-22.6h-8.2v-6.5H253v6.5h-8.1V499h-7.5zM256.6 499v-29.1h7.5V499h-7.5zM267.2 484.5c0-9 6.8-15.1 15.8-15.1 7 0 10.8 4 12.7 7.8l-6.5 3.1c-1-2.3-3.4-4.2-6.2-4.2-4.8 0-8.1 3.6-8.1 8.4 0 4.8 3.4 8.4 8.1 8.4 2.8 0 5.3-1.9 6.2-4.2l6.5 3.1c-1.9 3.7-5.7 7.8-12.7 7.8-9-.1-15.8-6.2-15.8-15.1zM296.7 494.9l4-5.9c2.1 2.1 5.3 3.8 9.3 3.8 2.5 0 4.1-.9 4.1-2.3 0-3.8-16.5-.7-16.5-11.9 0-4.9 4.1-9.3 11.6-9.3 4.7 0 8.7 1.4 11.8 4.1l-4.1 5.6c-2.5-2.1-5.6-3.1-8.5-3.1-2.2 0-3.1.7-3.1 2 0 3.6 16.5.9 16.5 11.7 0 5.8-4.3 9.7-12.1 9.7-5.9.2-10-1.6-13-4.4z" /&gt;
+              &lt;/g&gt;
+              &lt;path class="st0 st1" d="M172.3 72.3c-3.7 0-6.7 3-6.7 6.7v53.2c0 3.7 3 6.7 6.7 6.7s6.8-3 6.8-6.7V79.1c-.1-3.7-3.1-6.8-6.8-6.8zm-18.1 9.1c-3.7 0-6.7 3-6.7 6.7V123c0 3.7 3 6.7 6.7 6.7s6.8-3 6.8-6.7V88.2c0-3.7-3.1-6.8-6.8-6.8zm90.6-9.1c-3.7 0-6.7 3-6.7 6.7v53.2c0 3.7 3 6.7 6.7 6.7s6.8-3 6.8-6.7V79.1c-.1-3.7-3.1-6.8-6.8-6.8zm18.1 9.1c-3.7 0-6.7 3-6.7 6.7V123c0 3.7 3 6.7 6.7 6.7s6.8-3 6.8-6.7V88.2c-.1-3.7-3.1-6.8-6.8-6.8zm-79.2 31h49.7V98.9h-49.7v13.5z" /&gt;
+              &lt;path class="st2" d="M78 43.9h259.8v125.2H78z" /&gt;
+              &lt;path class="st3" d="M207.9 394c-16-7.8-51.6-26.7-81.5-53.8-18.5 1.3-37 3-55.4 5.2 47.3 58.1 123.8 91 128.4 92.9l8.5 3.6 8.5-3.6c4.6-2 81.1-34.8 128.4-92.9-18.4-2.2-36.9-3.9-55.4-5.2-29.9 27.1-65.5 46-81.5 53.8zM381.7 68.5l-6.8-6.5c-2.7-2.5-66.5-62-167-62-100.6 0-164.3 59.4-167 62l-6.8 6.5v106.9c-12.4 2.2-23.8 4.6-34.1 7.2l24.1 146.8c52.7-12 115.8-19 183.8-19 68 0 131.1 7 183.8 19l24.1-146.8c-10.3-2.6-21.7-5-34.1-7.2V68.5zm-43.9 100.6c-38.4-4.4-82.7-6.9-129.9-6.9s-91.5 2.5-129.9 6.9v-81C94.8 75 141.8 43.9 207.9 43.9c65.5 0 112.9 31.2 129.9 44.3v80.9z" /&gt;
+              &lt;path class="st4" d="M2.9 135.1c-32.9 6.2-65.6 13.7-98.1 22.5 15.2 22.1 30 44.4 44.2 66.9-2.1 26.6-3.6 53.1-4.7 79.6 18.3-4.9 36.8-9.4 55.2-13.5C-8.4 254-16.4 217.5-24.4 181c8.8-15.4 17.8-30.7 27.3-45.9zM512 158.6c-32.3-9.3-64.9-17.5-97.6-24.3 9.2 15.4 18 30.8 26.4 46.4-8.7 36.4-17.3 72.8-26 109.2 18.4 4.4 36.7 9.2 55 14.5-.6-26.4-1.6-53-3.2-79.6 14.7-22.4 29.8-44.4 45.4-66.2z" /&gt;
+              &lt;path class="st5" d="M207.9 317.6l6.9 21.4h22.5l-18.2 13.3 7 21.4-18.2-13.3-18.2 13.3 6.9-21.4-18.2-13.3h22.5z" /&gt;
+              &lt;path class="st6" d="M169.2 72.6l10 17.7 19.9-4-13.8 14.9 10 17.7-18.5-8.4-13.8 14.9 2.4-20.2-18.5-8.5 20-4zM107.9 89.6l10 17.8 19.9-4-13.8 14.9 10 17.7-18.5-8.5-13.7 14.9 2.3-20.1-18.5-8.5 20-4z" /&gt;
+              &lt;path class="st2" d="M169.9 349.7c0 2-.5 3.5-1.4 4.6s-2.2 1.6-3.7 1.6c-1.6 0-2.8-.5-3.8-1.6s-1.4-2.6-1.4-4.6v-3.3c0-2 .5-3.5 1.4-4.6.9-1 2.2-1.6 3.8-1.6 1.6 0 2.8.5 3.8 1.6.9 1 1.4 2.6 1.4 4.6v3.3zm-3.1-3.7c0-1.2-.2-2.1-.5-2.6s-.9-.8-1.6-.8c-.7 0-1.2.3-1.6.8-.4.6-.5 1.4-.5 2.7v4c0 1.2.2 2.1.5 2.7.4.6.9.8 1.6.8.7 0 1.2-.3 1.6-.8.4-.6.5-1.4.5-2.7V346zM255.4 342.8c-1.6 1.9-2.7 3.7-3.3 5.3-.6 1.6-1 3.6-1.3 6l-.1 1.5h-3l.1-1.5c.2-2.2.7-4.3 1.5-6.2.8-1.9 1.8-3.6 3.2-5.1h-5.4l-.1 1.5h-2.3v-3.9h10.7v2.4z" /&gt;
+              &lt;path class="st7" d="M141.6 83.6l9.8 17.5 19.7-3.9-13.6 14.7 9.8 17.5-18.2-8.3-13.6 14.7 2.3-19.9-18.2-8.4 19.6-3.9zM270.7 83.6l-9.8 17.5-19.7-3.9 13.6 14.7-9.8 17.5 18.2-8.3 13.6 14.7-2.3-19.9 18.2-8.4-19.7-3.9z" /&gt;
+              &lt;path class="st6" d="M245.8 72.6l-9.9 17.7-19.9-4 13.7 14.9-9.9 17.7 18.5-8.4 13.7 14.9-2.3-20.2 18.4-8.5-19.9-4zM307.1 89.6l-9.9 17.7-19.9-4 13.7 15-9.9 17.7 18.5-8.5 13.7 14.9-2.3-20.1 18.4-8.5-19.9-4z" /&gt;
+            &lt;/svg&gt;
+          
+        &lt;/div&gt;
+        &lt;div class="leaguename"&gt;
+          &lt;span class="leaguename--the"&gt;MFL&lt;/span&gt;&lt;span class="leaguename--league"&gt;Addons&lt;/span&gt;&lt;span class="leaguename--dotus"&gt;.com&lt;/span&gt;
+        &lt;/div&gt;
+&lt;/a&gt;
+        &lt;div class="clearfix visible-xs-block visible-sm-block visible-md-block"&gt;&lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="utility-nav--button"&gt;
-        &lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE20"&gt;
-          &lt;svg class="icon-file-text"&gt;
-            &lt;use xlink:href="#icon-file-text"&gt;&lt;/use&gt;
-          &lt;/svg&gt;
-          &lt;div class="svg-text"&gt;Rules&lt;/div&gt;
-        &lt;/a&gt;
+      &lt;!-- column --&gt;
+      &lt;div class="col-md-6"&gt;
+        &lt;div class="nav_wrapper"&gt;
+          &lt;div class="nav_buttons" id="nav_buttons"&gt;
+            &lt;div class="nav_button--button"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=29"&gt;
+                &lt;svg class="icon-commenting"&gt;
+                  &lt;use xlink:href="#icon-commenting"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;div class="svg-text"&gt;Message board&lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;script type="text/javascript"&gt;
+            var franchise_id;
+            if (!(franchise_id == undefined)) {
+              document.write('&lt;div class="nav_button--button"&gt;&lt;a href="' + baseURLDynamic + '/' + year + '/options?L=' + league_id + '&amp;O=07&amp;F=' + franchise_id + ' "&gt;&lt;svg class="icon-helmet"&gt;&lt;use xlink:href="#icon-helmet"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;div class="svg-text"&gt;My Roster&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;')
+            };
+            &lt;/script&gt;
+            &lt;div class="nav_button--button"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&amp;O=02"&gt;
+                &lt;svg class="icon-submit"&gt;
+                  &lt;use xlink:href="#icon-submit"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;div class="svg-text"&gt;Submit lineup&lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="nav_button--button"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/add_drop?L=%LEAGUEID%"&gt;
+                &lt;svg class="icon-user-plus"&gt;
+                  &lt;use xlink:href="#icon-user-plus"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;div class="svg-text"&gt;Add/drop&lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="nav_button--button"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/standings?L=%LEAGUEID%"&gt;
+                &lt;svg class="icon-numberone"&gt;
+                  &lt;use xlink:href="#icon-numberone"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;div class="svg-text"&gt;Standings&lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="nav_button--button"&gt;
+              &lt;a href="http://%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=MESSAGE13"&gt;
+                &lt;svg class="icon-scoreboard"&gt;
+                  &lt;use xlink:href="#icon-scoreboard"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;div class="svg-text"&gt;Live scoring&lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div id="loginlink" class="utility-nav--button loginbutton"&gt;
-        &lt;svg class="icon-sign-in"&gt;
-          &lt;use xlink:href="#icon-sign-in"&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-        &lt;div class="svg-text"&gt;&lt;/div&gt;
-      &lt;/div&gt;
+      &lt;!-- column--&gt;
     &lt;/div&gt;
-    &lt;module name="TRADES" /&gt;
-    &lt;module name="LEAGUE_CHAT" COUNT="20" /&gt;
-    
+    &lt;!-- row --&gt;
   &lt;/div&gt;
-  &lt;div class="col-md-8 col-md-pull-4"&gt;
-    &lt;module name="CURR_AUCTIONS" /&gt;
-    &lt;div class="mobile-standings-wrapper hidden-xs"&gt;
-      &lt;module name="STANDINGS" UNIT="DIVISION00" /&gt;
-      &lt;module name="STANDINGS" UNIT="DIVISION01" /&gt;
-      &lt;module name="STANDINGS" UNIT="DIVISION02" /&gt;
-      &lt;module name="STANDINGS" UNIT="DIVISION03" /&gt;
-    &lt;/div&gt;
-  &lt;div class="visible-xs"&gt;
-    &lt;module name="BRIEF_STANDINGS" /&gt;
-  &lt;/div&gt;
-
-    &lt;module name="MESSAGE4" /&gt;
-    &lt;module name="POWER_RANK" DISPLAY="LEAGUE" /&gt;
-    &lt;div class="hidden-calendar"&gt;
-      &lt;module name="MONTHLY_CALENDAR" /&gt;
-    &lt;/div&gt;
-    &lt;module name="MY_NEWS" COUNT="10" /&gt;
-    &lt;module name="NEXT_WEEKS_FANTASY_SCHEDULE" /&gt;
-    &lt;module name="TOP_PERFORMERS" /&gt;
-      &lt;module name="OWNER_ACTIVITY" /&gt;
-
+  &lt;!-- container --&gt;
 &lt;/div&gt;
-&lt;script src="http://www.theleague.us/assets/js/homepage.js"&gt;</code></pre>
-
-<h2>Icons</h2>
-<p class="instructions-copy">If you would like to swap out icons you can use the code from any of these below.</p>
-<div class="iconsdiv"></div>
+&lt;!-- container-fluid --&gt;
+&lt;div class="mobile-scroll-wrapper"&gt;
+  &lt;div class="container page-wrapper" id="contentframe "&gt;</code></pre>
+        <div class="alert alert-danger">If you don't include this HPM you won't be able log in.</div>
+        <h3>Icons</h3>
+        <p class="instructions-copy">For advanced users, if you would like to swap out icons you can use the code from any of these below.</p>
+        <div class="iconsdiv"></div>
       </div>
       <div class="col-sm-4">
-     
-      
-      
+        <div class="donation">
+          <h3>Contribute</h3>
+          <p class="alert alert-info">The template is free to use however if you would like to help out with hosting/bandwidth or for future capabilities and color schemes please consider donating. Thanks!</p>
+          <a class="btn btn-primary" href="https://www.paypal.me/mfladdons">Send a donation</a>
+          <p>You can also help but letting me know if you see bugs or have pages you've built that others might find useful as well. Let me if know if you would like to help contribute code to this project.</p>
+        </div>
+        <h3>Built with</h3>
+        <p>
+          <svg class="builtwith" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.8 410.6">
+            <title>SASS</title>
+            <path fill="#CD6799" d="M471.4 236c-19.1.1-35.7 4.7-49.6 11.5-5.1-10.1-10.2-19.1-11.1-25.7-1-7.7-2.2-12.4-1-21.6 1.2-9.2 6.6-22.3 6.5-23.3s-1.2-5.7-12.2-5.8c-11-.1-20.5 2.1-21.6 5-1.1 2.9-3.2 9.5-4.6 16.3-1.9 10-22 45.7-33.5 64.4-3.7-7.3-6.9-13.7-7.6-18.8-1-7.7-2.2-12.4-1-21.6 1.2-9.2 6.6-22.3 6.5-23.3-.1-1-1.2-5.7-12.2-5.8-11-.1-20.5 2.1-21.6 5-1.1 2.9-2.3 9.7-4.6 16.3-2.3 6.6-29 66.2-36 81.6-3.6 7.9-6.7 14.2-8.9 18.5s-.1.3-.4.8c-1.9 3.7-3 5.7-3 5.7v.1c-1.5 2.7-3.1 5.2-3.9 5.2-.6 0-1.7-7.2.2-17 4-20.7 13.5-52.9 13.4-54 0-.6 1.8-6.2-6.2-9.1-7.8-2.9-10.6 1.9-11.3 1.9-.7 0-1.2 1.7-1.2 1.7s8.7-36.2-16.6-36.2c-15.8 0-37.6 17.3-48.4 32.9-6.8 3.7-21.3 11.6-36.8 20.1-5.9 3.3-12 6.6-17.7 9.7-.4-.4-.8-.9-1.2-1.3-30.6-32.7-87.2-55.8-84.8-99.7.9-16 6.4-58 108.7-109 84.2-41.5 151.2-30 162.8-4.5 16.6 36.4-35.9 104-122.9 113.8-33.2 3.7-50.6-9.1-55-13.9-4.6-5-5.3-5.3-7-4.3-2.8 1.5-1 6 0 8.6 2.6 6.8 13.3 18.8 31.4 24.7 16 5.2 54.9 8.1 102-10.1 52.7-20.4 93.9-77.1 81.8-124.6C330.7 2 250.7-13.9 175 13 130 29 81.2 54.2 46.1 87 4.4 126-2.2 159.9.5 174.1c9.7 50.4 79.2 83.2 107 107.5-1.4.8-2.7 1.5-3.8 2.1-13.9 6.9-66.9 34.6-80.1 63.9-15 33.2 2.4 57 13.9 60.2 35.7 9.9 72.4-7.9 92.1-37.3 19.7-29.4 17.3-67.6 8.2-85.1-.1-.2-.2-.4-.4-.6 3.6-2.1 7.3-4.3 10.9-6.4 7.1-4.2 14.1-8.1 20.1-11.3-3.4 9.3-5.9 20.4-7.1 36.4-1.5 18.8 6.2 43.2 16.3 52.8 4.5 4.2 9.8 4.3 13.2 4.3 11.8 0 17.1-9.8 23-21.4 7.2-14.2 13.7-30.7 13.7-30.7s-8.1 44.6 13.9 44.6c8 0 16.1-10.4 19.7-15.7v.1s.2-.3.6-1c.8-1.3 1.3-2.1 1.3-2.1v-.2c3.2-5.6 10.4-18.3 21.1-39.4 13.8-27.2 27.1-61.2 27.1-61.2s1.2 8.3 5.3 22.1c2.4 8.1 7.4 17 11.4 25.6-3.2 4.5-5.2 7-5.2 7l.1.1c-2.6 3.4-5.4 7.1-8.5 10.7-10.9 13-23.9 27.9-25.7 32.2-2.1 5.1-1.6 8.8 2.4 11.8 2.9 2.2 8.1 2.5 13.4 2.2 9.8-.7 16.7-3.1 20.1-4.6 5.3-1.9 11.5-4.8 17.3-9.1 10.7-7.9 17.2-19.2 16.6-34.1-.3-8.2-3-16.4-6.3-24.1 1-1.4 1.9-2.8 2.9-4.2 16.9-24.7 30-51.8 30-51.8s1.2 8.3 5.3 22.1c2 7 6.1 14.6 9.7 22-15.9 12.9-25.7 27.9-29.2 37.7-6.3 18.2-1.4 26.4 7.9 28.3 4.2.9 10.2-1.1 14.6-3 5.6-1.8 12.2-4.9 18.5-9.5 10.7-7.9 21-18.9 20.4-33.8-.3-6.8-2.1-13.5-4.6-20 13.5-5.6 30.9-8.7 53.1-6.1 47.6 5.6 57 35.3 55.2 47.8-1.8 12.5-11.8 19.3-15.1 21.4-3.3 2.1-4.4 2.8-4.1 4.3.4 2.2 2 2.1 4.8 1.7 3.9-.7 25-10.1 25.9-33.1 1.5-29.4-26.5-61.5-76-61.2zM104.2 359.8C88.4 377 66.4 383.5 56.9 378c-10.2-5.9-6.2-31.3 13.2-49.5 11.8-11.1 27-21.4 37.1-27.7 2.3-1.4 5.7-3.4 9.8-5.9.7-.4 1.1-.6 1.1-.6l2.4-1.5c7.1 26 .3 48.9-16.3 67zm115-78.2c-5.5 13.4-17 47.7-24 45.8-6-1.6-9.7-27.6-1.2-53.3 4.3-12.9 13.4-28.3 18.7-34.3 8.6-9.6 18.1-12.8 20.4-8.9 2.9 5.1-10.5 42.3-13.9 50.7zm94.9 45.4c-2.3 1.2-4.5 2-5.5 1.4-.7-.4 1-2 1-2s11.9-12.8 16.6-18.6c2.7-3.4 5.9-7.4 9.3-11.9v1.3c0 15.3-14.8 25.6-21.4 29.8zm73.2-16.7c-1.7-1.2-1.4-5.2 4.3-17.7 2.2-4.9 7.4-13.1 16.3-21 1 3.2 1.7 6.3 1.6 9.2-.1 19.3-13.9 26.5-22.2 29.5z" />
+            </path>
+          </svg>
+          <svg class="builtwith" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+            <title>Bootstrap</title>
+            <g xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+              <path fill="#563D7C" d="M612 510c0 56.1-45.9 102-102 102H102C45.9 612 0 566.1 0 510V102C0 45.9 45.9 0 102 0h408c56.1 0 102 45.9 102 102v408z" />
+              <path fill="#FFF" d="M166.3 133h173.5c32 0 57.7 7.3 77 22s29 36.8 29 66.5c0 18-4.4 33.4-13.2 46.2-8.8 12.8-21.4 22.8-37.8 29.8v1c22 4.7 38.7 15.1 50 31.2 11.3 16.2 17 36.4 17 60.8 0 14-2.5 27.1-7.5 39.2-5 12.2-12.8 22.7-23.5 31.5s-24.3 15.8-41 21-36.5 7.8-59.5 7.8h-164V133zm62.5 149.5h102c15 0 27.5-4.2 37.5-12.8s15-20.8 15-36.8c0-18-4.5-30.7-13.5-38s-22-11-39-11h-102v98.6zm0 156.5h110.5c19 0 33.8-4.9 44.2-14.8 10.5-9.8 15.8-23.8 15.8-41.8 0-17.7-5.2-31.2-15.8-40.8s-25.2-14.2-44.2-14.2H228.8V439z" />
+            </g>
+          </svg>
+          <img class="builtwith" title="autoprefixer" src="https://codekitapp.com/images/help/free-autoprefixer-icon@2x.png">
+          <img class="builtwith fontastic" title="fontastic" src="http://fontastic.me/static/images/5e916a1e.logo.svg">
+          <img class="builtwith svgicon" title="fontastic" src="https://www.w3.org/Icons/SVG/svg-logo-v.svg">
+          <img class="builtwith github" title="fontastic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
       </div>
     </div>
   </div>
   <!-- /.container -->
-
-<script>
-      	$('.iconsdiv').load('assets/img/icons/demo.html');
-      </script>
+  <script>
+  $('.iconsdiv').load('assets/img/icons/demo.html');
+  </script>
 </body>
 
 </html>
