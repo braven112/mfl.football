@@ -1464,8 +1464,6 @@ table.two_column_layout {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1716,7 +1714,9 @@ svg.icon-commenting {
 }
 
 svg.icon-banknote {
-  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
   padding: 1px;
 }
 
@@ -1923,7 +1923,6 @@ select {
     top: 20px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .burger {
@@ -1936,7 +1935,6 @@ select {
     top: 29px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .double-burger {
@@ -1949,7 +1947,6 @@ select {
     top: 29px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .bottom-bun {
@@ -1962,7 +1959,6 @@ select {
     top: 38px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu input:checked ~ label .top-bun {
@@ -1971,10 +1967,14 @@ select {
     right: 30px;
   }
   .myfantasyleague_menu input:checked ~ label .burger {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu input:checked ~ label .double-burger {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .myfantasyleague_menu input:checked ~ label .bottom-bun {
     width: 0%;
@@ -2003,9 +2003,10 @@ select {
     top: 50%;
     margin-left: -8px;
     margin-top: -1px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu ul li label span:after {
     display: block;
@@ -2017,9 +2018,10 @@ select {
     top: 50%;
     margin-left: 2px;
     margin-top: -5px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu > span {
     display: block;
@@ -2040,7 +2042,6 @@ select {
     position: static;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
     box-shadow: none;
   }
@@ -2109,7 +2110,9 @@ select {
     text-decoration: none;
   }
   .myfantasyleague_menu input:checked ~ label span {
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
     transition: 0.25s;
   }
   .myfantasyleague_menu input:checked ~ ul {
@@ -2343,11 +2346,13 @@ select {
   }
   .myfantasyleague_tabmenu input:checked ~ label span:before {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
   }
   .myfantasyleague_tabmenu input:checked ~ label span:after {
     -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
   }
   .myfantasyleague_tabmenu input:checked ~ ul {
     max-height: 3000px;
@@ -3144,7 +3149,7 @@ table.report {
 
 #monthly_calendar td,
 #monthly_calendar th {
-  border-color: #1d1d1d;
+  border-color: #363636;
 }
 
 #monthly_calendar .eventablerow {
@@ -3153,12 +3158,12 @@ table.report {
 
 #monthly_calendar td.today {
   background-color: #C09f68;
-  color: #3b3b3b;
+  color: #2b2b2b;
   border-color: #c2a16c;
 }
 
 #monthly_calendar td.today .calendarday {
-  border-color: #1d1d1d;
+  border-color: #363636;
 }
 
 #monthly_calendar td.today a:link {
@@ -3170,17 +3175,17 @@ table.report {
 }
 
 #monthly_calendar ul li {
-  border-top: 1px solid #1d1d1d;
+  border-top: 1px solid #363636;
 }
 
 #monthly_calendar ul li.calendar_event_trade {
-  border-bottom-color: #1d1d1d;
+  border-bottom-color: #363636;
 }
 
 #monthly_calendar td .calendarday {
-  border-bottom-color: #1d1d1d;
-  border-left-color: #1d1d1d;
-  background-color: #1A1A1A;
+  border-bottom-color: #363636;
+  border-left-color: #363636;
+  background-color: #333;
 }
 
 #monthly_calendar td.today .calendarday {
@@ -3189,13 +3194,21 @@ table.report {
   border-bottom-color: #b08a4a;
 }
 
+#monthly_calendar td.today .calendarday a:link {
+  color: #2b2b2b;
+}
+
+#monthly_calendar td.today .calendarday a:visited {
+  color: #2b2b2b;
+}
+
 .constitution-wrapper h2 {
   color: #C09f68;
   border-bottom-color: #333;
 }
 
 .constitution-wrapper td.secondround {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .constitution-wrapper td.thirdround {
@@ -3256,7 +3269,7 @@ span.leaguename--dotus {
 }
 
 .container-footer {
-  background-color: #3b3b3b;
+  background-color: #2b2b2b;
 }
 
 .container-footer a:link, .container-footer a:visited {
@@ -3284,14 +3297,14 @@ input[type="button"],
 input[type="submit"] {
   background-color: #C09f68;
   border-color: #C09f68;
-  color: #3b3b3b;
+  color: #2b2b2b;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
   background-color: #c8aa7a;
   border-color: #c8aa7a;
-  color: #3b3b3b;
+  color: #2b2b2b;
 }
 
 input#chat_text_field {
@@ -3301,19 +3314,19 @@ input#chat_text_field {
 
 form.reportform input[type="submit"] {
   background: #C09f68;
-  color: #3b3b3b;
+  color: #2b2b2b;
 }
 
 .btn-primary a,
 .btn-primary a:link,
 .btn-primary a:visited {
   background-color: #C09f68;
-  color: #3b3b3b;
+  color: #2b2b2b;
 }
 
 .btn-primary a:hover {
   background-color: #c8aa7a;
-  color: #3b3b3b;
+  color: #2b2b2b;
 }
 
 .mb svg.icon-chevron-right {
@@ -3327,16 +3340,16 @@ form.reportform input[type="submit"] {
 /*   MFL RESPONSIVE MENU MOBILE STYLE
 ======================================= */
 .myfantasyleague_menu {
-  background: #3b3b3b;
+  background: #1A1A1A;
   border-bottom-color: #333;
 }
 
 .myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
-  background: #3b3b3b;
+  background: #1A1A1A;
 }
 
 .myfantasyleague_menu ul ul li {
-  background: #3b3b3b;
+  background: #1A1A1A;
 }
 
 .myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
@@ -3344,7 +3357,7 @@ form.reportform input[type="submit"] {
 }
 
 .myfantasyleague_menu li:hover > a {
-  background-color: #3b3b3b;
+  background-color: #1A1A1A;
 }
 
 .myfantasyleague_menu ul li ul {
@@ -3353,13 +3366,13 @@ form.reportform input[type="submit"] {
 }
 
 .myfantasyleague_menu ul li ul li:hover > a {
-  background-color: #484848;
+  background-color: #3b3b3b;
 }
 
 @media only screen and (max-width: 920px) {
   .myfantasyleague_menu {
-    background: #3b3b3b;
-    border-bottom-color: #3b3b3b;
+    background: #1A1A1A;
+    border-bottom-color: #1A1A1A;
   }
   .myfantasyleague_menu > label .top-bun {
     background-color: #f6f6f6;
@@ -3374,7 +3387,7 @@ form.reportform input[type="submit"] {
     background-color: #f6f6f6;
   }
   .myfantasyleague_menu ul li label span {
-    background: #3b3b3b;
+    background: #1A1A1A;
   }
   .myfantasyleague_menu ul li label span:before {
     background: #f6f6f6;
@@ -3386,16 +3399,16 @@ form.reportform input[type="submit"] {
     color: #f6f6f6;
   }
   .myfantasyleague_menu ul {
-    background: #3b3b3b;
+    background: #1A1A1A;
   }
   .myfantasyleague_menu ul ul li {
-    background-color: #3b3b3b;
+    background-color: #1A1A1A;
   }
   .myfantasyleague_menu ul li a {
-    border-top-color: #3b3b3b;
+    border-top-color: #1A1A1A;
   }
   .myfantasyleague_menu ul ul li a {
-    border-top-color: 1px solid #3b3b3b;
+    border-top-color: 1px solid #1A1A1A;
   }
   .myfantasyleague_menu ul ul li a:before {
     border-left-color: #f6f6f6;
@@ -3407,10 +3420,10 @@ form.reportform input[type="submit"] {
     background-color: #333;
   }
   .myfantasyleague_menu ul ul li a {
-    border-top-color: #3b3b3b;
+    border-top-color: #1A1A1A;
   }
   .myfantasyleague_menu ul ul li.has-sub a {
-    border-top-color: #3b3b3b;
+    border-top-color: #1A1A1A;
   }
 }
 
@@ -3581,7 +3594,7 @@ table.homepagemessage td {
 
 caption,
 caption span {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab";
   color: #C09f68;
 }
 
@@ -3621,7 +3634,7 @@ span.reportnavigation a:visited {
 
 .report .eventablerow,
 .eventablerow {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .newposition td,
@@ -3797,3 +3810,5 @@ textarea#MSG {
 #body_options_02 .reportnavigation a:visited {
   color: #fff;
 }
+
+/*# sourceMappingURL=roboto-black-gold.css.map */

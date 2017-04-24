@@ -21,7 +21,7 @@ $accent-color:#C09f68;//Gold
 $dark-accent-color:darken($accent-color, 10%);
 
 ////////////////////////Fonts/////////////////////////////////
-$headline-font: 'Roboto Slab';
+$headline-font: proxima-nova, sans-serif;
 $body-font: 'Roboto', sans-serif;
 $headline-font-color: $accent-color;
 
@@ -50,8 +50,8 @@ $link-color-hover:#33629b;
 $border-color: $gray1;
 
 ////////////////////////MFL Menu/////////////////////////////////
-$menu-bg-color:$pagebody-bg;
-$menu-bg-hover-color:$primary-color;
+$menu-bg-color:$primary-color;
+$menu-bg-hover-color:lighten($primary-color, 5%);
 $menu-border-color:$border-color;
 $menu-text-color:$white;
 

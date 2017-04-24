@@ -2608,7 +2608,7 @@ table#add {
   display: inline-block;
   margin-top: 4px;
   margin-right: 5px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @media (min-width: 1200px) {
@@ -2865,7 +2865,7 @@ span#chat_audio_clip {
   display: inline-block;
   margin-top: 4px;
   margin-right: 10px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @media (min-width: 1200px) {
@@ -3149,82 +3149,74 @@ table.report {
 
 #monthly_calendar td,
 #monthly_calendar th {
-  border-color: #f1f1f1;
+  border-color: #363636;
 }
 
 #monthly_calendar .eventablerow {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 #monthly_calendar td.today {
-  background-color: #b22222;
-  color: #fff;
-  border-color: #b62323;
+  background-color: #C09f68;
+  color: #3b3b3b;
+  border-color: #c2a16c;
 }
 
 #monthly_calendar td.today .calendarday {
-  border-color: #f1f1f1;
+  border-color: #363636;
 }
 
 #monthly_calendar td.today a:link {
-  color: #fff;
+  color: #f6f6f6;
 }
 
 #monthly_calendar td.today a:visited {
-  color: #fff;
+  color: #f6f6f6;
 }
 
 #monthly_calendar ul li {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #363636;
 }
 
 #monthly_calendar ul li.calendar_event_trade {
-  border-bottom-color: #f1f1f1;
+  border-bottom-color: #363636;
 }
 
 #monthly_calendar td .calendarday {
-  border-bottom-color: #f1f1f1;
-  border-left-color: #f1f1f1;
-  background-color: #eee;
+  border-bottom-color: #363636;
+  border-left-color: #363636;
+  background-color: #333;
 }
 
 #monthly_calendar td.today .calendarday {
-  border-color: #b62323;
-  background-color: #b22222;
-  border-bottom-color: #8b1b1b;
-}
-
-#monthly_calendar td.today .calendarday a:link {
-  color: #fff;
-}
-
-#monthly_calendar td.today .calendarday a:visited {
-  color: #fff;
+  border-color: #c2a16c;
+  background-color: #C09f68;
+  border-bottom-color: #b08a4a;
 }
 
 .constitution-wrapper h2 {
-  color: #0f3663;
-  border-bottom-color: #ddd;
+  color: #C09f68;
+  border-bottom-color: #333;
 }
 
 .constitution-wrapper td.secondround {
-  background-color: #ececec;
+  background-color: #333;
 }
 
 .constitution-wrapper td.thirdround {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 #body_commissioner_setup table.two_column_layout ul {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 #body_commissioner_setup td.two_column_layout th {
-  color: #0f3663;
+  color: #C09f68;
 }
 
 .container-header {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 .st1 {
@@ -3232,11 +3224,11 @@ table.report {
 }
 
 .st2 {
-  fill: #b22222;
+  fill: transparent;
 }
 
 .st3 {
-  fill: #0f3663;
+  fill: #C09f68;
 }
 
 .st4 {
@@ -3244,67 +3236,67 @@ table.report {
 }
 
 .st5 {
-  fill: #ddd;
+  fill: #f6f6f6;
 }
 
 .st6 {
-  fill: #fff;
+  fill: #f6f6f6;
 }
 
 .leaguename {
-  font-family: "Roboto Slab";
-  color: #b22222;
+  font-family: passion-one, sans-serif;
+  color: #C09f68;
 }
 
 span.leaguename--the {
-  color: #0f3663;
+  color: #f6f6f6;
 }
 
 span.leaguename--dotus {
-  color: #0f3663;
+  color: #f6f6f6;
 }
 
 .nav_buttons .svg-text {
-  color: #0f3663;
+  color: #BEBEBE;
 }
 
 .container-footer {
-  background-color: #0f3663;
+  background-color: #2b2b2b;
 }
 
 .container-footer a:link, .container-footer a:visited {
-  color: #fff;
+  color: #C09f68;
 }
 
 .container-footer ul li {
-  color: #fff;
-  font-family: "Roboto Slab";
+  color: #f6f6f6;
+  font-family: passion-one, sans-serif;
 }
 
 .container-footer .defending-champ {
-  color: #fff;
+  color: #f6f6f6;
 }
 
 [class^="icon"] {
-  fill: #0f3663;
+  fill: #C09f68;
 }
 
 a:hover [class^="icon"] {
-  fill: #124279;
+  fill: #c8aa7a;
 }
 
 input[type="button"],
 input[type="submit"] {
-  background-color: #b22222;
-  border-color: #b22222;
-  color: #fff;
+  background-color: #C09f68;
+  border-color: #C09f68;
+  color: #3b3b3b;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #c72626;
-  border-color: #c72626;
-  color: #fff;
+  background-color: #c8aa7a;
+  border-color: #c8aa7a;
+  color: #3b3b3b;
 }
 
 input#chat_text_field {
@@ -3313,166 +3305,154 @@ input#chat_text_field {
 }
 
 form.reportform input[type="submit"] {
-  background: #b22222;
-  color: #fff;
+  background: #C09f68;
+  color: #3b3b3b;
 }
 
 .btn-primary a,
 .btn-primary a:link,
 .btn-primary a:visited {
-  background-color: #b22222;
-  color: #fff;
+  background-color: #C09f68;
+  color: #3b3b3b;
 }
 
 .btn-primary a:hover {
-  background-color: #c72626;
-  color: #fff;
+  background-color: #c8aa7a;
+  color: #3b3b3b;
 }
 
 .mb svg.icon-chevron-right {
-  fill: #b22222;
+  fill: #C09f68;
 }
 
 .mb svg.icon-chevron-right:hover {
-  fill: #c72626;
-}
-
-#body_live_scoring_summary table.report .report {
-  background-color: #fff;
-}
-
-#body_live_scoring_summary table.scoresummary .report {
-  background-color: #fff;
-}
-
-#body_live_scoring_summary table.scoresummary .report .oddtablerow {
-  background-color: transparent;
+  fill: #c8aa7a;
 }
 
 /*   MFL RESPONSIVE MENU MOBILE STYLE
 ======================================= */
 .myfantasyleague_menu {
-  background: #0f3663;
-  border-bottom-color: #0f3663;
+  background: #3b3b3b;
+  border-bottom-color: #333;
 }
 
 .myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
-  background: #0f3663;
+  background: #3b3b3b;
 }
 
 .myfantasyleague_menu ul ul li {
-  background: #0f3663;
+  background: #3b3b3b;
 }
 
 .myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
-  border-color: #0f3663;
+  border-color: #333;
 }
 
 .myfantasyleague_menu li:hover > a {
-  background-color: #0f3663;
+  background-color: #3b3b3b;
 }
 
 .myfantasyleague_menu ul li ul {
-  border-top-color: #0f3663;
+  border-top-color: #333;
   /*darker border*/
 }
 
 .myfantasyleague_menu ul li ul li:hover > a {
-  background-color: #0c2a4d;
+  background-color: #484848;
 }
 
 @media only screen and (max-width: 920px) {
   .myfantasyleague_menu {
-    background: #0f3663;
-    border-bottom-color: #0f3663;
+    background: #3b3b3b;
+    border-bottom-color: #3b3b3b;
   }
   .myfantasyleague_menu > label .top-bun {
-    background-color: #fff;
+    background-color: #f6f6f6;
   }
   .myfantasyleague_menu > label .burger {
-    background-color: #fff;
+    background-color: #f6f6f6;
   }
   .myfantasyleague_menu > label .double-burger {
-    background-color: #fff;
+    background-color: #f6f6f6;
   }
   .myfantasyleague_menu > label .bottom-bun {
-    background-color: #fff;
+    background-color: #f6f6f6;
   }
   .myfantasyleague_menu ul li label span {
-    background: #0f3663;
+    background: #3b3b3b;
   }
   .myfantasyleague_menu ul li label span:before {
-    background: #fff;
+    background: #f6f6f6;
   }
   .myfantasyleague_menu ul li label span:after {
-    background: #fff;
+    background: #f6f6f6;
   }
   .myfantasyleague_menu > span {
-    color: #fff;
+    color: #f6f6f6;
   }
   .myfantasyleague_menu ul {
-    background: #0f3663;
+    background: #3b3b3b;
   }
   .myfantasyleague_menu ul ul li {
-    background-color: #0f3663;
+    background-color: #3b3b3b;
   }
   .myfantasyleague_menu ul li a {
-    border-top-color: #0f3663;
+    border-top-color: #3b3b3b;
   }
   .myfantasyleague_menu ul ul li a {
-    border-top-color: 1px solid #0f3663;
+    border-top-color: 1px solid #3b3b3b;
   }
   .myfantasyleague_menu ul ul li a:before {
-    border-left-color: #fff;
+    border-left-color: #f6f6f6;
   }
   .myfantasyleague_menu li:hover > a {
-    background-color: #0f3663;
+    background-color: #333;
   }
   .myfantasyleague_menu ul li ul li:hover > a {
-    background-color: #0f3663;
+    background-color: #333;
   }
   .myfantasyleague_menu ul ul li a {
-    border-top-color: #0f3663;
+    border-top-color: #3b3b3b;
   }
   .myfantasyleague_menu ul ul li.has-sub a {
-    border-top-color: #0f3663;
+    border-top-color: #3b3b3b;
   }
 }
 
 /*   MFL RESPONSIVE TABS
 =========================== */
 .myfantasyleague_tabmenu {
-  font-family: "Roboto Slab";
+  font-family: passion-one, sans-serif;
 }
 
 .myfantasyleague_tabmenu ul#homepagetabs {
-  border-bottom-color: #0f3663;
+  border-bottom-color: #3b3b3b;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li {
-  border-right-color: #0f3663;
-  background-color: #b22222;
-  border-left-color: #0f3663;
-  border-top-color: #0f3663;
-  border-right-color: #0f3663;
+  border-right-color: #3b3b3b;
+  background-color: #C09f68;
+  border-left-color: #3b3b3b;
+  border-top-color: #3b3b3b;
+  border-right-color: #3b3b3b;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li a {
-  color: #fff;
+  color: #f6f6f6;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover {
   box-shadow: none;
-  background: #0f3561;
+  background: #3a3a3a;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover a {
-  color: #fff;
+  color: #f6f6f6;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-  background: #0f3663;
+  background: #3b3b3b;
 }
 
 /*   MFL RESPONSIVE TABS MOBILE STYLE
@@ -3480,31 +3460,31 @@ form.reportform input[type="submit"] {
 @media only screen and (max-width: 767px) {
   /*  BASE STYLE FOR ALL SKINS  */
   .myfantasyleague_tabmenu > label span {
-    background: #fff;
+    background: #f6f6f6;
   }
   .myfantasyleague_tabmenu > label span:before {
-    background: #0f3663;
+    background: #3b3b3b;
   }
   .myfantasyleague_tabmenu > label span:after {
-    background: #0f3663;
+    background: #3b3b3b;
   }
   .myfantasyleague_tabmenu ul#homepagetabs {
-    background: #0f3663;
-    border-bottom-color: #0f3663;
+    background: #3b3b3b;
+    border-bottom-color: #3b3b3b;
   }
   .myfantasyleague_tabmenu ul#homepagetabs li a {
-    border-top-color: #0f3663;
+    border-top-color: #3b3b3b;
   }
   .myfantasyleague_tabmenu #homepagetabs li.currenttab,
   .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-    background: #0f3561;
+    background: #3a3a3a;
   }
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
+  color: #BEBEBE;
+  background-color: #1A1A1A;
 }
 
 td a,
@@ -3572,20 +3552,20 @@ caption a:focus,
 }
 
 a:visited {
-  color: #0f3663;
+  color: #fff;
 }
 
 a:link {
-  color: #0f3663;
+  color: #fff;
 }
 
 h2 {
-  color: #0f3663;
+  color: #C09f68;
 }
 
 /*main mfl wrapper*/
 .pagebody {
-  background-color: #f9f9f9;
+  background-color: #1A1A1A;
 }
 
 .homepagemessage:first-child {
@@ -3606,33 +3586,33 @@ table.homepagemessage td {
 
 caption,
 caption span {
-  font-family: "Roboto Slab";
-  color: #0f3663;
+  font-family: passion-one, sans-serif;
+  color: #C09f68;
 }
 
 th {
-  color: #0f3663;
+  color: #ccc;
 }
 
 th a:link,
 th a:visited {
-  color: #0f3663;
+  color: #ccc;
 }
 
 span.reportnavigation {
-  border-color: #b22222;
-  background-color: #b22222;
-  color: #fff;
+  border-color: #2b2b2b;
+  background-color: #2b2b2b;
+  color: #BEBEBE;
 }
 
 span.reportnavigation a:link,
 span.reportnavigation a:visited {
-  color: #fff;
+  color: #C09f68;
 }
 
 /*reports*/
 .report-wrapper {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 .report {
@@ -3641,17 +3621,17 @@ span.reportnavigation a:visited {
 
 .report .oddtablerow,
 .oddtablerow {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 .report .eventablerow,
 .eventablerow {
-  background-color: #ececec;
+  background-color: #333;
 }
 
 .newposition td,
 .newposition th {
-  border-top-color: #ccc;
+  border-top-color: #444;
 }
 
 /*add drop*/
@@ -3664,54 +3644,54 @@ span#drop_name_field_id {
 }
 
 #body_add_drop table table div {
-  border-color: #ddd !important;
+  border-color: #333 !important;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 #add .highlight {
-  color: #fff;
+  color: #f6f6f6;
   background-color: green;
 }
 
 #drop .highlight {
-  color: #fff;
+  color: #f6f6f6;
   background-color: red;
 }
 
 .utility-nav {
-  background-color: #b22222;
+  background-color: #2b2b2b;
 }
 
 .utility-nav svg {
-  fill: #fff;
+  fill: #C09f68;
 }
 
 .utility-nav .svg-text {
-  color: #fff;
+  color: #BEBEBE;
 }
 
 .utility-nav .svg-text b,
 .utility-nav .svg-text a:link,
 .utility-nav .svg-text a:visited {
-  color: #fff;
+  color: #BEBEBE;
 }
 
 .utility-nav .svg-text .commish-link {
-  border-left-color: #fff;
+  border-left-color: #BEBEBE;
 }
 
 .utility-nav a:hover [class^="icon"] {
-  fill: #fff;
+  fill: #C09f68;
 }
 
 textarea#MSG {
   background: #31382d;
-  color: #fff;
+  color: #f6f6f6;
 }
 
 #body_commissioner_setup table.two_column_layout ul {
-  background-color: #fff;
+  background-color: #2b2b2b;
 }
 
 #league_chat td.personal-im {
@@ -3722,7 +3702,7 @@ textarea#MSG {
 
 .subtotals {
   background-color: transparent;
-  color: #0f3663;
+  color: #C09f68;
 }
 
 .rfaStatus {
@@ -3747,80 +3727,80 @@ textarea#MSG {
 }
 
 .team-nav {
-  background-color: #b22222;
+  background-color: #2b2b2b;
 }
 
 .team-nav .team-nav--button svg {
-  fill: #fff;
+  fill: #C09f68;
 }
 
 .team-nav .team-nav--button a:hover svg {
-  fill: white;
+  fill: #c8aa7a;
 }
 
 .team-nav .team-nav--button .svg-text {
-  color: #fff;
+  color: #BEBEBE;
 }
 
 .team-nav .team-nav--button .svg-text a:link,
 .team-nav .team-nav--button .svg-text a:visited {
-  color: #fff;
+  color: #BEBEBE;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b22222;
-  border-color: #f9f9f9;
+  background: #C09f68;
+  border-color: #1A1A1A;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c72626;
+  background: #c8aa7a;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #c72626;
+  background: #c8aa7a;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f9f9f9;
-  border-color: #f9f9f9;
+  background: #1A1A1A;
+  border-color: #1A1A1A;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: #f9f9f9;
+  background: #1A1A1A;
 }
 
 ::-webkit-scrollbar-track:active {
-  background: #f9f9f9;
+  background: #1A1A1A;
 }
 
 .homepagecolumn #standings h3,
 .homepagecolumn #brief_standings h3,
 .homepagecolumn .homepagemodule caption {
   background-color: transparent;
-  font-family: "Roboto Slab";
-  color: #0f3663;
+  font-family: passion-one, sans-serif;
+  color: #C09f68;
 }
 
 /*Standings*/
 .homepagecolumn #brief_standings h3,
 .homepagecolumn #standings h3 {
-  color: #0f3663;
-  border-bottom-color: #ddd;
+  color: #C09f68;
+  border-bottom-color: #333;
 }
 
 #body_standings caption, #body_standings h3 {
   background-color: transparent;
-  font-family: "Roboto Slab";
-  color: #0f3663;
+  font-family: passion-one, sans-serif;
+  color: #C09f68;
 }
 
 #body_options_02 .reportnavigation {
-  color: #0f3663;
+  color: #fff;
 }
 
 #body_options_02 .reportnavigation a:link,
 #body_options_02 .reportnavigation a:visited {
-  color: #0f3663;
+  color: #fff;
 }
 
-/*# sourceMappingURL=roboto-blue-red.css.map */
+/*# sourceMappingURL=passion-black-gold.css.map */

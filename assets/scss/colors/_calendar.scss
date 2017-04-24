@@ -41,6 +41,12 @@
   border-color: $today-border-color;
   background-color: $today-bg-color;
   border-bottom-color:darken($today-border-color, 10%);
+    a:link {
+    color: $today-text-color;
+  }
+  a:visited {
+    color: $today-text-color;
+  }
 }
 
 

@@ -1464,8 +1464,6 @@ table.two_column_layout {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1716,7 +1714,9 @@ svg.icon-commenting {
 }
 
 svg.icon-banknote {
-  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
   padding: 1px;
 }
 
@@ -1923,7 +1923,6 @@ select {
     top: 20px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .burger {
@@ -1936,7 +1935,6 @@ select {
     top: 29px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .double-burger {
@@ -1949,7 +1947,6 @@ select {
     top: 29px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu > label .bottom-bun {
@@ -1962,7 +1959,6 @@ select {
     top: 38px;
     margin-left: -9px;
     margin-top: -9px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .myfantasyleague_menu input:checked ~ label .top-bun {
@@ -1971,10 +1967,14 @@ select {
     right: 30px;
   }
   .myfantasyleague_menu input:checked ~ label .burger {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu input:checked ~ label .double-burger {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .myfantasyleague_menu input:checked ~ label .bottom-bun {
     width: 0%;
@@ -2003,9 +2003,10 @@ select {
     top: 50%;
     margin-left: -8px;
     margin-top: -1px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu ul li label span:after {
     display: block;
@@ -2017,9 +2018,10 @@ select {
     top: 50%;
     margin-left: 2px;
     margin-top: -5px;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .myfantasyleague_menu > span {
     display: block;
@@ -2040,7 +2042,6 @@ select {
     position: static;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: 0.25s;
     transition: 0.25s;
     box-shadow: none;
   }
@@ -2109,7 +2110,9 @@ select {
     text-decoration: none;
   }
   .myfantasyleague_menu input:checked ~ label span {
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
     transition: 0.25s;
   }
   .myfantasyleague_menu input:checked ~ ul {
@@ -2343,11 +2346,13 @@ select {
   }
   .myfantasyleague_tabmenu input:checked ~ label span:before {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
   }
   .myfantasyleague_tabmenu input:checked ~ label span:after {
     -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
   }
   .myfantasyleague_tabmenu input:checked ~ ul {
     max-height: 3000px;
@@ -3189,6 +3194,14 @@ table.report {
   border-bottom-color: #8b281a;
 }
 
+#monthly_calendar td.today .calendarday a:link {
+  color: #fff;
+}
+
+#monthly_calendar td.today .calendarday a:visited {
+  color: #fff;
+}
+
 .constitution-wrapper h2 {
   color: #111;
   border-bottom-color: #ddd;
@@ -3593,7 +3606,7 @@ table.homepagemessage td {
 
 caption,
 caption span {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab";
   color: #111;
 }
 
@@ -3809,3 +3822,5 @@ textarea#MSG {
 #body_options_02 .reportnavigation a:visited {
   color: #111;
 }
+
+/*# sourceMappingURL=roboto-black-red.css.map */
