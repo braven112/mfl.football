@@ -281,14 +281,16 @@
 }
 
 .container-footer ul {
-  margin-left: -40px;
+  margin-left: 0;
   margin-bottom: 24px;
+  padding-left: 0;
 }
 
 .container-footer ul li {
   margin-left: 0;
-  list-style-type: none;
+  padding-left: 0;
   margin-bottom: 5px;
+  list-style: none;
 }
 
 .container-footer .defending-champ {
@@ -3107,6 +3109,50 @@ table.report {
 #body_top select[multiple="multiple"], #body_options_08 select[multiple="multiple"] {
   position: relative;
   top: 11px;
+}
+
+@media (max-width: 360px) {
+  #transactions {
+    font-size: 9px;
+  }
+}
+
+#transactions ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#transactions ul li {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 360px) {
+  #transactions .franchiseicon {
+    max-width: 90px;
+    height: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  #transactions .timestamp {
+    display: none;
+  }
+}
+
+#transactions .rank {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  #transactions .report td {
+    padding: 6px 4px;
+  }
+}
+
+#transactions .report .transactiontype {
+  padding-left: 0;
 }
 
 .reportnavigation.alert-warning,
