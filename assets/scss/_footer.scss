@@ -1,37 +1,10 @@
 /*hides default MFL footer*/
 
 .pagefooter {
-    display: none;
+  display: none;
 }
 
 .container-footer {
-<<<<<<< HEAD
-    min-height: 16em;
-    padding: 24px 0;
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    ul {
-        margin-left: -40px;
-        margin-bottom: 24px;
-        li {
-            margin-left: 0;
-            list-style-type: none;
-            margin-bottom: 5px;
-        }
-    }
-    .defending-champ {
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        margin-bottom: 14px;
-        a {
-            margin-top: 14px;
-            display: block;
-        }
-    }
-=======
   min-height: 16em;
   padding: 24px 0;
   a {
@@ -39,21 +12,22 @@
     text-decoration: none;
   }
   ul {
-    margin-left: 0;
+    margin-left: -40px;
     margin-bottom: 24px;
-    padding-left: 0;
     li {
       margin-left: 0;
-      padding-left: 0;
+      list-style-type: none;
       margin-bottom: 5px;
-      list-style:none;
     }
   }
   .defending-champ {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+    a {
+      margin-top: 14px;
+      display: block;
+    }
   }
->>>>>>> origin/master
 }

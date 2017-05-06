@@ -213,7 +213,7 @@ textarea#MSG {
 }
 
 #league_chat {
-  td.personal-im {
+  .chat-highlight td {
     background-color: $alert-info-bg;
     border-bottom-color: $alert-info-border;
     color: $alert-info-text;
