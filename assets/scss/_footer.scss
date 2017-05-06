@@ -5,6 +5,7 @@
 }
 
 .container-footer {
+<<<<<<< HEAD
     min-height: 16em;
     padding: 24px 0;
     a {
@@ -30,4 +31,29 @@
             display: block;
         }
     }
+=======
+  min-height: 16em;
+  padding: 24px 0;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    margin-left: 0;
+    margin-bottom: 24px;
+    padding-left: 0;
+    li {
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 5px;
+      list-style:none;
+    }
+  }
+  .defending-champ {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+  }
+>>>>>>> origin/master
 }

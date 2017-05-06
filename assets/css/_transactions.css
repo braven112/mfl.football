@@ -1,0 +1,15 @@
+@media (max-width: 430px) {
+  #transactions .timestamp {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  #transactions {
+    font-size: 9px;
+  }
+  .franchiseicon {
+    width: 80px;
+    height: auto;
+  }
+}

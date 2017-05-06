@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  //make submit lineup simpler
-  $("#body_options_02 .reportnavigation:contains('Looking for lineup advice?')").text('Select 9 starters: 1QB, 1RB, 1WR, 1TE, 1K, 1Def, 3Flex(RB,WR,TE)').addClass('alert alert-info');
   //Update standings accronyms
   $('th.divpct').text('Div %');
   $('th.all_play_wlt').text('All-Play');
@@ -35,11 +33,3 @@ $(document).ready(function() {
   }).addClass("empty");
 });
 
-//Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-97923590-1', 'auto');
-  ga('send', 'pageview');
