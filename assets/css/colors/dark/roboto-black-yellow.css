@@ -2708,6 +2708,25 @@ span#chat_audio_clip {
   padding: 12px 12px;
 }
 
+#body_player .container > table[cellpadding="1"] {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#body_player td[width="33%"],
+#body_player td[width="67%"] {
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  #body_player td[width="33%"],
+  #body_player td[width="67%"] {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+}
+
 #single_roster .withfranchiseicon {
   display: none;
 }
@@ -2932,16 +2951,17 @@ table#standings th {
   height: auto;
 }
 
-.homepagemodule.report th {
-  white-space: nowrap;
-}
-
 .homepagemodule.report .divwlt {
   display: none;
 }
 
 .homepagemodule.report .strk {
   display: none;
+}
+
+#standings .homepagemodule.report th,
+#brief_standings .homepagemodule.report th {
+  white-space: nowrap;
 }
 
 .homepagecolumn #standings h3,
@@ -2960,7 +2980,8 @@ table#standings th {
   border-bottom: 4px solid;
 }
 
-#body_standings caption, #body_standings h3 {
+#body_standings caption,
+#body_standings h3 {
   padding-top: inherit;
   padding-bottom: inherit;
   font-weight: bold;

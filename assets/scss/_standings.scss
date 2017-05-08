@@ -12,16 +12,19 @@ table#standings th {
   height: auto;
 }
 
-.homepagemodule.report th {
-  white-space: nowrap;
-}
-
 .homepagemodule.report .divwlt {
   display: none;
 }
 
 .homepagemodule.report .strk {
   display: none;
+}
+
+#standings,
+#brief_standings {
+  .homepagemodule.report th {
+    white-space: nowrap;
+  }
 }
 
 .homepagecolumn #standings h3,
@@ -43,13 +46,14 @@ table#standings th {
 }
 
 #body_standings {
-  caption,h3 {
-      padding-top: inherit;
-  padding-bottom: inherit;
-  font-weight: bold;
-  text-align: left;
-  font-size: 24px;
-  padding-left:10px;
+  caption,
+  h3 {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 10px;
   }
   td#division00,
   td#division01,
@@ -62,7 +66,7 @@ table#standings th {
     padding: 6px 0px 2px;
   }
   .franchiseicon {
-    min-width:128px;
+    min-width: 128px;
   }
 }
 
