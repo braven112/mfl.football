@@ -3804,6 +3804,10 @@ textarea#MSG {
   margin-top: -12px;
 }
 
+tr.cap_room_available_row th {
+  color: #CAAD2D;
+}
+
 .team-nav {
   background-color: #1f1f1f;
 }

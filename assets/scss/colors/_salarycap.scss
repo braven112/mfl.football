@@ -23,7 +23,9 @@
 .summary-header {
     margin-top: -12px;
 }
-
+tr.cap_room_available_row th {
+    color: $accent-color;
+}
 .team-nav {
   background-color: $secondary-menu-bg-color;
   .team-nav--button svg {
