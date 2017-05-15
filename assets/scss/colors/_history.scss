@@ -1,0 +1,30 @@
+#championship_plaque {
+  .plaqueframe {
+    background: url(http://www59.myfantasyleague.com/images/wood.jpg);
+    border-color: #000;
+  }
+  .plaque {
+    background: none;
+    color: #999;
+    border-color: #030100;;
+  }
+  .plaque div {
+    background: rgba(0, 0, 0, 0.67);
+  }
+  .plaque h2 {
+    border-color: #030100;;
+    background: rgba(0, 0, 0, 0.67);
+    color: #c90;
+  }
+  .plaque h3 {
+    font-family: inherit;
+    color: #c90 !important;
+  }
+  .plaque h4 {
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: bold;
+  }
+  .plaque p {
+    color: #999;
+  }
+}

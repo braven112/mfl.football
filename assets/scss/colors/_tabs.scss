@@ -1,0 +1,16 @@
+.tabbed-reports {  
+     border-color: $border-color;
+}
+
+.tabbed-reports li {
+	color:$white; 
+     background-color:$accent-color;
+     border-left-color:$accent-color;
+     border-right-color:$accent-color;
+}
+
+.tabbed-reports li:hover { 
+     color:$white; 
+     background-color:$dark-accent-color;
+} 
+

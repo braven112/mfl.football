@@ -1,0 +1,86 @@
+#championship_plaque {
+  .plaqueframe {
+        padding: 10px 0;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  .plaqueframe.flex {
+    width: auto;
+    margin: 0;
+  }
+  .plaque {
+    border: 0px solid;
+  }
+  .plaque div {
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    display: inline;
+    width: 44%;
+    margin-left: 0;
+    padding-bottom: 20px;
+    margin: 10px 3%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9) inset;
+    padding: 10px 10px;
+    line-height: 11px;
+  }
+  .plaque h2 {
+    padding: 10px;
+    margin: 10px 20px;
+    text-align: center;
+    border: 0px solid;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.9) inset;
+    display: none;
+  }
+  .plaque h3 {
+    margin: 0;
+    font-size: 13px;
+    padding: 5px 3px 0 3px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    background: none;
+  }
+  .plaque h4 {
+    margin: 0;
+    padding: 5px 6px 0 5px;
+    height: 28px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: normal;
+    text-align: center;
+    background: none;
+    line-height: 1;
+  }
+  .plaque p {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3px;
+    text-align: center;
+    background: none;
+  }
+  /*     Float containers fix - Thanks to: http://www.csscreator.com/attributes/containedfloat.php
+=============================== */
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix {
+    display: inline-block;
+  }
+  /* start commented backslash hack */
+  * html .clearfix {
+    height: 1%;
+  }
+  .clearfix {
+    display: block;
+  }
+  /* close commented backslash hack */
+}

@@ -1684,6 +1684,105 @@ span.leaguename--dotus {
   }
 }
 
+#championship_plaque {
+  /*     Float containers fix - Thanks to: http://www.csscreator.com/attributes/containedfloat.php
+=============================== */
+  /* start commented backslash hack */
+  /* close commented backslash hack */
+}
+
+#championship_plaque .plaqueframe {
+  padding: 10px 0;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#championship_plaque .plaqueframe.flex {
+  width: auto;
+  margin: 0;
+}
+
+#championship_plaque .plaque {
+  border: 0px solid;
+}
+
+#championship_plaque .plaque div {
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  display: inline;
+  width: 44%;
+  margin-left: 0;
+  padding-bottom: 20px;
+  margin: 10px 3%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9) inset;
+  padding: 10px 10px;
+  line-height: 11px;
+}
+
+#championship_plaque .plaque h2 {
+  padding: 10px;
+  margin: 10px 20px;
+  text-align: center;
+  border: 0px solid;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9) inset;
+  display: none;
+}
+
+#championship_plaque .plaque h3 {
+  margin: 0;
+  font-size: 13px;
+  padding: 5px 3px 0 3px;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  background: none;
+}
+
+#championship_plaque .plaque h4 {
+  margin: 0;
+  padding: 5px 6px 0 5px;
+  height: 28px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: normal;
+  text-align: center;
+  background: none;
+  line-height: 1;
+}
+
+#championship_plaque .plaque p {
+  font-size: 10px;
+  font-weight: normal;
+  font-family: inherit;
+  margin: 0;
+  padding: 0 3px;
+  text-align: center;
+  background: none;
+}
+
+#championship_plaque .clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#championship_plaque .clearfix {
+  display: inline-block;
+}
+
+#championship_plaque * html .clearfix {
+  height: 1%;
+}
+
+#championship_plaque .clearfix {
+  display: block;
+}
+
 [class^="icon"] {
   width: 38px;
   height: 38px;
@@ -3090,6 +3189,67 @@ table.report {
   }
 }
 
+/*   TABBED REPORTS 
+===================== */
+.tabbed-reports {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin: 0px 0 5px 0;
+  background: none repeat scroll 0px 0px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 13px 1px rgba(38, 62, 104, 0.2) inset;
+  border-spacing: 0;
+}
+
+.tabbed-reports li {
+  margin: 0;
+  padding: 4px 8px;
+  display: table-cell;
+  width: 1%;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  transition: none;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.tabbed-reports li:hover {
+  background: none repeat scroll 0px 0px;
+}
+
+.tabbed-reports li:last-of-type {
+  border-right: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.tabbed-reports li:first-of-type {
+  border-left: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.reports-content .report {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  box-shadow: 0px 0px 0px 0px inset;
+  padding-bottom: 0 !important;
+}
+
+.reports-content .report caption {
+  display: none;
+}
+
+.reports-content .franchiseicon {
+  width: 220px;
+  max-width: 220px;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   #body_top .container.page-wrapper, #body_options_08 .container.page-wrapper {
     width: 750px;
@@ -3336,6 +3496,41 @@ span.leaguename--dotus {
 
 .nav_buttons .svg-text {
   color: #0f3663;
+}
+
+#championship_plaque .plaqueframe {
+  background: url(http://www59.myfantasyleague.com/images/wood.jpg);
+  border-color: #000;
+}
+
+#championship_plaque .plaque {
+  background: none;
+  color: #999;
+  border-color: #030100;
+}
+
+#championship_plaque .plaque div {
+  background: rgba(0, 0, 0, 0.67);
+}
+
+#championship_plaque .plaque h2 {
+  border-color: #030100;
+  background: rgba(0, 0, 0, 0.67);
+  color: #c90;
+}
+
+#championship_plaque .plaque h3 {
+  font-family: inherit;
+  color: #c90 !important;
+}
+
+#championship_plaque .plaque h4 {
+  color: rgba(255, 255, 255, 0.61);
+  font-weight: bold;
+}
+
+#championship_plaque .plaque p {
+  color: #999;
 }
 
 .container-footer {
@@ -3895,6 +4090,22 @@ tr.cap_room_available_row th {
 #body_options_02 .reportnavigation a:link,
 #body_options_02 .reportnavigation a:visited {
   color: #0f3663;
+}
+
+.tabbed-reports {
+  border-color: #ddd;
+}
+
+.tabbed-reports li {
+  color: #fff;
+  background-color: #b22222;
+  border-left-color: #b22222;
+  border-right-color: #b22222;
+}
+
+.tabbed-reports li:hover {
+  color: #fff;
+  background-color: #871a1a;
 }
 
 /*# sourceMappingURL=roboto-blue-red.css.map */

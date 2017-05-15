@@ -33,3 +33,16 @@ $(document).ready(function() {
   }).addClass("empty");
 });
 
+///// Custom Tabs //////////////////
+$('.tabbed-reports li').on('click',function(e){
+    $('.reports-content>.'+ e.target.classList[0]).show().siblings().hide();
+});
+
+var selector = '.tabbed-reports li';
+
+$(selector).on('click', function(){
+    $(this).parent().find('li').removeClass('active');
+    $(this).parent().find('li').removeClass('current');
+    $(this).addClass('active');
+});
+
