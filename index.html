@@ -104,6 +104,15 @@
   .donation .btn {
     margin-bottom: 12px;
   }
+  .responsive-utilities td.is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
+}
+.responsive-utilities td.is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
+}
+
   </style>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -161,6 +170,7 @@
         <hr>
         <h2>Template instructions</h2>
         <p>The template will make use of Home Page Messages. You may have already used these from previous years. Save any code you need from these on your computer and delete them from your MFL site before you get started. Also make sure that you don't have one of your HPM's set as a header or footer already as that will interfere with the installation.</p>
+        <p>If you have any questions with installation or have ideas, please post <a href="http://forums.myfantasyleague.com/forums/index.php?showtopic=35720">here.</a>
         <div class="well well-md">If you are installing on a new site it may look something like this:
           <img alt="" class="img-responsive" src="assets/img/instructions/empty-hpm-screen-shot.png">If you already named your HPM's it may look a little different. In this example header would be #1, footer #2, homepage #3, message board #4, and so on...<img alt="" class="img-responsive" src="assets/img/instructions/full-hpm-screenshot.png">
         </div>
@@ -437,15 +447,17 @@ http://mfl.football/assets/css/colors/light/roboto-black-red.css</code></pre></l
 &lt;script src="http://mfl.football/assets/js/global.js"&gt;&lt;/script&gt;</code></pre>
           </li>
           <li>
-            <p><b>Remove <i>all</i> modules and tabs</b> from the homepage modules and tabs setup page</p>
-            <div class="well well-md"><img alt="" class="img-responsive" src="assets/img/instructions/delete-tabs-screenshot.png">Once you are done you'll only have the main tab. All other tabs will be removed.<img alt="" class="img-responsive" src="assets/img/instructions/main-tab-screenshot.png"></div>
+            <p>Go to the homepage modules and tabs setup page.  On the main tab add a new column at 100% and place the homepage HPM directly underneath.</p>
+            <div class="well well-md"><img class="img-responsive pull-left" src="assets/img/instructions/apprearance-screenshot.png"> <img alt="" style="margin: 5px 0;padding-left: 10px;" class="img-responsive" src="assets/img/instructions/homepage-tabs-screen-shot.png"><div class="clearfix"></div></div>
           </li>
           <li>
-            <p>On that same page add a new column at 100% and place the homepage HPM directly underneath.</p>
-            <div class="well well-md"><img alt="" class="img-responsive" src="assets/img/instructions/homepage-tabs-screen-shot.png"></div>
+            <p><b>Remove <i>all</i> other modules from the main tab and delete all other tabs</b>.  This template will only use the main tab.  Multiple tabs aren't supported.</p>
+            <div class="well well-md"><img alt="" class="img-responsive" src="assets/img/instructions/delete-tabs-screenshot.png">Once you are done you'll only have the main tab. All other tabs will be removed.<img alt="" class="img-responsive" src="assets/img/instructions/main-tab-screenshot.png"></div>
+            <div class="alert alert-info">Do not add any additional modules on this page. Adding modules will now be done by adding a snippet of code into the homepage message we added in step 4. You can <a href="http://www59.myfantasyleague.com/2017/generate_embed?L=65353">find the code to add modules here</a>.</div>
           </li>
+          
         </ol>
-        <div class="alert alert-info">Do not add any additional modules on this page. Adding modules will now be done by adding a snippet of code into the homepage message we added in step 4. You can <a href="http://www59.myfantasyleague.com/2017/generate_embed?L=65353">find the code to add modules here</a>.</div>
+        
         <hr>
         <!--         <h2>Alternative Layouts (HPM)</h2>
         <p class="instructions-copy">Comming soon.</p> -->
@@ -543,7 +555,113 @@ http://mfl.football/assets/css/colors/light/roboto-black-red.css</code></pre></l
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+
 <hr>
+<h2>Tricks</h2>
+  <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query.</p>
+  <p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.</p>
+  <h3>Available classes</h3>
+  <p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped responsive-utilities">
+      <thead>
+        <tr>
+          <th></th>
+          <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+          <th> Small devices <small>Tablets (≥768px)</small> </th>
+          <th> Medium devices <small>Desktops (≥992px)</small> </th>
+          <th> Large devices <small>Desktops (≥1200px)</small> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-xs-*</code></th>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-sm-*</code></th>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-md-*</code></th>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-lg-*</code></th>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.hidden-xs</code></th>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-sm</code></th>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-md</code></th>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+          <td class="is-visible">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-lg</code></th>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-visible">Visible</td>
+          <td class="is-hidden">Hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The <code>.visible-*-*</code> classes for each breakpoint come in three variations, one for each CSS <code>display</code> property value listed below.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Group of classes</th>
+          <th>CSS <code>display</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-*-block</code></th>
+          <td><code>display: block;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline</code></th>
+          <td><code>display: inline;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline-block</code></th>
+          <td><code>display: inline-block;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>So, for extra small (<code>xs</code>) screens for example, the available <code>.visible-*-*</code> classes are: <code>.visible-xs-block</code>, <code>.visible-xs-inline</code>, and <code>.visible-xs-inline-block</code>.</p> 
+  <hr>
         <br>
         <br>
         <br>
