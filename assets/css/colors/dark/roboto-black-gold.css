@@ -3058,14 +3058,11 @@ table#standings th {
   display: none;
 }
 
-#standings .homepagemodule.report th,
-#brief_standings .homepagemodule.report th {
+#standings .homepagemodule.report th, #brief_standings .homepagemodule.report th {
   white-space: nowrap;
 }
 
-.homepagecolumn #standings h3,
-.homepagecolumn #brief_standings h3,
-.homepagecolumn .homepagemodule caption {
+.homepagecolumn #standings h3, .homepagecolumn #brief_standings h3, .homepagecolumn .homepagemodule caption {
   padding-top: inherit;
   padding-bottom: inherit;
   font-weight: bold;
@@ -3074,13 +3071,11 @@ table#standings th {
 }
 
 /*Standings*/
-.homepagecolumn #brief_standings h3,
-.homepagecolumn #standings h3 {
+.homepagecolumn #brief_standings h3, .homepagecolumn #standings h3 {
   border-bottom: 4px solid;
 }
 
-#body_standings caption,
-#body_standings h3 {
+#body_standings caption, #body_standings h3 {
   padding-top: inherit;
   padding-bottom: inherit;
   font-weight: bold;
@@ -3089,14 +3084,7 @@ table#standings th {
   padding-left: 10px;
 }
 
-#body_standings td#division00,
-#body_standings td#division01,
-#body_standings td#division02,
-#body_standings td#division03,
-#body_standings td#division04,
-#body_standings td#division05,
-#body_standings td#division06,
-#body_standings td#division07 {
+#body_standings td#division00, #body_standings td#division01, #body_standings td#division02, #body_standings td#division03, #body_standings td#division04, #body_standings td#division05, #body_standings td#division06, #body_standings td#division07 {
   padding: 6px 0px 2px;
 }
 
@@ -3104,20 +3092,16 @@ table#standings th {
   min-width: 128px;
 }
 
-.homepagecolumn td#division00,
-.homepagecolumn td#division01,
-.homepagecolumn td#division02,
-.homepagecolumn td#division03,
-.homepagecolumn td#division04,
-.homepagecolumn td#division05,
-.homepagecolumn td#division06,
-.homepagecolumn td#division07 {
+.homepagecolumn td#division00, .homepagecolumn td#division01, .homepagecolumn td#division02, .homepagecolumn td#division03, .homepagecolumn td#division04, .homepagecolumn td#division05, .homepagecolumn td#division06, .homepagecolumn td#division07 {
   padding: 6px 8px 2px;
 }
 
-#standings caption,
-.homepagecolumn #brief_standings caption {
+#standings caption, .homepagecolumn #brief_standings caption {
   display: none;
+}
+
+.nodivisions #standings caption, .nodivisions .homepagecolumn #brief_standings caption {
+  display: block;
 }
 
 #body_options_02 .report tr th:first-child {

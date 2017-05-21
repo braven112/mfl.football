@@ -20,16 +20,13 @@ table#standings th {
   display: none;
 }
 
-#standings,
-#brief_standings {
+#standings, #brief_standings {
   .homepagemodule.report th {
     white-space: nowrap;
   }
 }
 
-.homepagecolumn #standings h3,
-.homepagecolumn #brief_standings h3,
-.homepagecolumn .homepagemodule caption {
+.homepagecolumn #standings h3, .homepagecolumn #brief_standings h3, .homepagecolumn .homepagemodule caption {
   padding-top: inherit;
   padding-bottom: inherit;
   font-weight: bold;
@@ -40,14 +37,12 @@ table#standings th {
 
 /*Standings*/
 
-.homepagecolumn #brief_standings h3,
-.homepagecolumn #standings h3 {
+.homepagecolumn #brief_standings h3, .homepagecolumn #standings h3 {
   border-bottom: 4px solid;
 }
 
 #body_standings {
-  caption,
-  h3 {
+  caption, h3 {
     padding-top: inherit;
     padding-bottom: inherit;
     font-weight: bold;
@@ -55,14 +50,7 @@ table#standings th {
     font-size: 24px;
     padding-left: 10px;
   }
-  td#division00,
-  td#division01,
-  td#division02,
-  td#division03,
-  td#division04,
-  td#division05,
-  td#division06,
-  td#division07 {
+  td#division00, td#division01, td#division02, td#division03, td#division04, td#division05, td#division06, td#division07 {
     padding: 6px 0px 2px;
   }
   .franchiseicon {
@@ -70,18 +58,16 @@ table#standings th {
   }
 }
 
-.homepagecolumn td#division00,
-.homepagecolumn td#division01,
-.homepagecolumn td#division02,
-.homepagecolumn td#division03,
-.homepagecolumn td#division04,
-.homepagecolumn td#division05,
-.homepagecolumn td#division06,
-.homepagecolumn td#division07 {
+.homepagecolumn td#division00, .homepagecolumn td#division01, .homepagecolumn td#division02, .homepagecolumn td#division03, .homepagecolumn td#division04, .homepagecolumn td#division05, .homepagecolumn td#division06, .homepagecolumn td#division07 {
   padding: 6px 8px 2px;
 }
 
-#standings caption,
-.homepagecolumn #brief_standings caption {
+#standings caption, .homepagecolumn #brief_standings caption {
   display: none;
+}
+
+.nodivisions {
+  #standings caption, .homepagecolumn #brief_standings caption {
+    display: block;
+  }
 }
