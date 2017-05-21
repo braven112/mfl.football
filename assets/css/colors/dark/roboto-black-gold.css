@@ -3096,7 +3096,7 @@ table#standings th {
   padding: 6px 8px 2px;
 }
 
-#standings caption, .homepagecolumn #brief_standings caption {
+.homepagecolumn #standings caption, .homepagecolumn #brief_standings caption {
   display: none;
 }
 
