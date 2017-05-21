@@ -265,6 +265,7 @@ http://mfl.football/assets/css/colors/light/roboto-black-red.css</code></pre></l
           </li>
           <li>
             <p class="instructions-copy"><b>Header</b> &mdash; Copy all the code in the box below. This header includes jquery. Its also where you can edit your league name and the icons/navigation. Paste into a HPM and label "header".</p>
+
             <div class="well well-md"><img alt="" class="img-responsive" src="assets/img/instructions/header-screenshot.png"></div>
             <pre><code>&lt;script&gt;
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -371,7 +372,7 @@ http://mfl.football/assets/css/colors/light/roboto-black-red.css</code></pre></l
 &lt;/div&gt;
 &lt;!-- container-fluid --&gt;
 &lt;div class="mobile-scroll-wrapper"&gt;
-  &lt;div class="container page-wrapper" id="contentframe "&gt;</code></pre>
+  &lt;div class="container page-wrapper" id="contentframe"&gt;</code></pre>
             <h4>How do I change my league name?</h4>
             <p>Look for this code and update it to change your league name. Look for the names "Your" "League" and "here". You can delete any of the spans if you don't need them
               <s>&lt;span class="leaguename--dotus"&gt;.com&lt;/span&gt;</s>
@@ -379,6 +380,8 @@ http://mfl.football/assets/css/colors/light/roboto-black-red.css</code></pre></l
             <pre><code>&lt;div class="leaguename"&gt;
     &lt;span class="leaguename--the"&gt;Your&lt;/span&gt;&lt;span class="leaguename--league"&gt;Name&lt;/span&gt;&lt;span class="leaguename--dotus"&gt;here&lt;/span&gt;
 &lt;/div&gt;</code></pre>
+<div class="alert alert-info">If your league doesn't use divisions you'll need to add a class to the last line so that the standings caption will show.  It only shows divison names by default.</div>
+            <pre><code>&lt;div class="container page-wrapper nodivisions" id="contentframe "&gt;</code></pre>
           </li>
           <li>
             <p><b>Footer</b> &mdash; Copy all the code in the box below. Paste into a HPM and label it "footer".
