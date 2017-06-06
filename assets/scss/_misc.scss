@@ -140,7 +140,13 @@ span.reportnavigation {
 
 
 /*reports*/
+//undo mobile wrap since report-wrapper already does that.  
+//Ideally we optimize this so that mobile-wrap does the report-wrapper styling.  
+//And report-wrapper is a fallback when mobile-wrap doesn't exist.
 
+.mobile-wrap {
+    overflow: initial !important;
+}
 .report-wrapper {
   margin-bottom: 24px;
   border-radius: 4px;
