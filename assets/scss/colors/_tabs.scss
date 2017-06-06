@@ -9,7 +9,7 @@
      border-right-color:$accent-color;
 }
 
-.tabbed-reports li:hover { 
+.tabbed-reports li:hover, .tabbed-reports li.active, .tabbed-reports li.current { 
      color:$white; 
      background-color:$dark-accent-color;
 } 
