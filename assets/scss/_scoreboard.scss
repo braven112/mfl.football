@@ -1,0 +1,19 @@
+/* Apply this globally for all skins to format custom scoreboard pages */
+
+#outerMFLScoreboardDiv {
+    table {
+        width: 100%;
+    }
+    .MFLMainScoreboard td {
+        padding: 2px 0;
+    }
+    .MFLMainScoreboard td,
+    #scoreboardHeader,
+    #MFLScoreboardLoading h3 {
+        text-align: center
+    }
+    #MFLRoadTeamName,
+    #MFLHomeTeamName {
+        font-size: 20px;
+    }
+}

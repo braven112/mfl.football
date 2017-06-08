@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
   //Update standings accronyms
   $('th.divpct').text('Div %');
   $('th.all_play_wlt').text('All-Play');
@@ -12,13 +12,14 @@ $(document).ready(function() {
 
   //customer wrapper
   $(".report").wrap("<div class='report-wrapper'></div>");
+  $("#outerMFLScoreboardDiv .report-wrapper .report,#lineup-form .report-wrapper .report").unwrap();
 
   //remove empty td's on add/drop page
   $("#body_options_43 td").filter(function() {
 
     var html = $(this).html();
 
-    if (html == '' || html == '&nbsp;')
+    if (html == '' || html == ' ')
       return true;
 
   }).remove();
@@ -27,22 +28,21 @@ $(document).ready(function() {
 
     var html2 = $(this).html();
 
-    if (html2 == '' || html2 == '&nbsp;')
+    if (html2 == '' || html2 == ' ')
       return true;
 
   }).addClass("empty");
 });
 
 ///// Custom Tabs //////////////////
-$('.tabbed-reports li').on('click',function(e){
+jQuery('.tabbed-reports li').on('click',function(e){
     $('.reports-content>.'+ e.target.classList[0]).show().siblings().hide();
 });
 
 var selector = '.tabbed-reports li';
 
-$(selector).on('click', function(){
+jQuery(selector).on('click', function(){
     $(this).parent().find('li').removeClass('active');
     $(this).parent().find('li').removeClass('current');
     $(this).addClass('active');
 });
-

@@ -1,0 +1,188 @@
+/*   SKIN SPECIFIC SCOREBOARD COLORING
+======================================= */
+
+#outerMFLScoreboardDiv {
+    /* color link of populating text in boxscores box and current week in weekly navigation */
+    #MFLFantasyMatchupsUpdate,
+    #MFLNFLMatchupsUpdate,
+    .navWeekCurr,
+    .MFLNFLLiveClock,
+    .MFLLiveClock {
+        color: $accent-color
+    }
+    /* border color for each fantasy and nfl box score table  */
+    .MFLGameTable,
+    .MFLNFLGameTable {
+        border-color: $border-color
+    }
+    /* font color for boxscores winner arrow and pace score  */
+    .MFLGameLinks .MFLPaceScore,
+    .MFLGameLinks .MFLWinMarker,
+    .MFLGameLinks .MFLNFLWinMarker {
+        color: $accent-color
+    }
+    /* hover and current state background opactity color for boxscores  */
+    #MFLBoxHolder td.matchupHilite,
+    #MFLBoxHolder td.matchupHilite:hover {
+        background: rgba(0, 0, 0, .5)
+    }
+    #MFLBoxHolder td.matchupLolite:hover {
+        background: rgba(255, 255, 255, .1)
+    }
+    /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
+    .MFLMainScoreboard {
+        background: #1d1d1d;
+        border-color: #555
+    }
+    /* background graident color for the banner area for scoreboard name  */
+    #MFLCenterTop {
+        color: $white;
+        background: $accent-color;
+    }
+    /* franchise team names and nfl team names box background and text colors  */
+    #MFLRoadTeamName,
+    #MFLHomeTeamName {
+        color: #ddd;
+        border-color: #222;
+        background: $eventablerow;
+    }
+    /* background gradient for scoreboard scores digits  */
+    #MFLRoadScore span,
+    #MFLHomeScore span {
+        border-color: #222;
+        background: #000000;
+        background: -moz-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: -webkit-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: linear-gradient(to bottom, #000000 0%, #333333 50%, #000000 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    }
+    /* color for horizontal lines in center of scoreboard scores digits  */
+    #MFLRoadScore span:before,
+    #MFLHomeScore span:before {
+        background: #000
+    }
+    #MFLRoadScore span:after,
+    #MFLHomeScore span:after {
+        background: #555
+    }
+    /* gradient colors for the small side boxes on each side of scores digit center lines  */
+    #MFLRoadScore span a:after,
+    #MFLHomeScore span a:after,
+    #MFLRoadScore span a:before,
+    #MFLHomeScore span a:before {
+        border-color: #222;
+        background: #555
+    }
+    /* border color for container holding scores digits  */
+    #MFLRoadScore,
+    #MFLHomeScore {
+        border-color: #333
+    }
+    /* Franchise and Team records background and text color  */
+    #MFLRoadTeamRecord,
+    #MFLHomeTeamRecord {
+        color: #ddd;
+        border-color: #333;
+        background: #000000;
+        background: -moz-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: -webkit-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: linear-gradient(to bottom, #000000 0%, #333333 50%, #000000 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    }
+    /* color for scoring digits  */
+    #MFLRoadScore span a,
+    #MFLHomeScore span a {
+        color: $accent-color
+    }
+    /* P-YTP-PMR backgrounds and text coloring  */
+    .MFLMainScoreboard td.MFLScoreboardTitle {
+        color: #ddd;
+        border-color: #333;
+        background: #000000;
+        background: -moz-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: -webkit-linear-gradient(top, #000000 0%, #333333 50%, #000000 100%);
+        background: linear-gradient(to bottom, #000000 0%, #333333 50%, #000000 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    }
+    #MFLRoadPlayers,
+    #MFLRoadYTP,
+    #MFLRoadPMR,
+    #MFLHomePlayers,
+    #MFLHomeYTP,
+    #MFLHomePMR {
+        color: #ddd;
+        border-color: #222;
+        background: #333333;
+        background: -moz-linear-gradient(top, #333333 1%, #666666 50%, #333333 99%);
+        background: -webkit-linear-gradient(top, #333333 1%, #666666 50%, #333333 99%);
+        background: linear-gradient(to bottom, #333333 1%, #666666 50%, #333333 99%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333', GradientType=0);
+    }
+    /* table row background color for games over or currently playing  */
+    .rowGameOver {
+        background: rgba(0, 0, 0, .5)
+    }
+    .CurrentlyPlaying {
+        background: rgba(218, 165, 62, .2)
+    }
+    /* change colors for S.O.S td cells for matchups poor to great  */
+    .MFLTeamLineup td.oppRankGreatMatchup {
+        background: #04B404;
+        color: #000
+    }
+    .MFLScoreboardLineups td.oppRankGoodMatchup {
+        background: #01DF01;
+        color: #000
+    }
+    .MFLScoreboardLineups td.oppRankAvgMatchup {
+        background: #FFFF00;
+        color: #000
+    }
+    .MFLScoreboardLineups td.oppRankPoorMatchup {
+        background: #FF8000;
+        color: #000
+    }
+    .MFLScoreboardLineups td.oppRankBadMatchup {
+        background: #FF0000;
+        color: #000
+    }
+    /* the small tooltip popup arrows shown when hovering actual and pace scores  */
+    #scoreboardTooltip:after {
+        border-top-color: #555!important;
+    }
+    #scoreboardTooltip.top:after {
+        border-bottom-color: #555!important;
+    }
+    #scoreboardTooltip table td {
+        border: 1px solid #111
+    }
+    /*   Edit Scoreboard Base CSS for this skin
+================================================ */
+    #scoreboardTooltip {
+        background-color: #000!important;
+        border: 2px solid #000;
+    }
+    #MFLScoreboardContainer .report {
+        background-color: #000!important;
+        border-bottom: 0
+    }
+    #scoreboardTooltip table {
+        border-spacing: 1px!important
+    }
+    #scoreboardTooltip table td {
+        border: 1px solid rgba(45, 45, 45, 0.3)
+    }
+    #scoreboardTooltip td table td {
+        border: 0
+    }
+    #MFLScoreboardContainer .report {
+        #000;
+        border-width: 2px;
+        border-width: .125rem
+    }
+    .MFLMainScoreboard .nflicon,
+    .MFLGameLinks .nflicon {
+        background: none;
+        border: 0
+    }
+}

@@ -1,0 +1,10 @@
+/* Apply this globally for all skins to format the custom lineups and custom scoreboard pages */
+#outerMFLScoreboardDiv table{
+    width:100%;
+}
+#outerMFLScoreboardDiv .MFLMainScoreboard td{
+    padding:2px 0;
+}
+#outerMFLScoreboardDiv .MFLMainScoreboard td,#outerMFLScoreboardDiv #scoreboardHeader,#lineup-form span.reportnavigation,#MFLScoreboardLoading h3 {
+    text-align:center
+} 
