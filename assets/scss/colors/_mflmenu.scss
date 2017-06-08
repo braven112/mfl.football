@@ -13,6 +13,7 @@
 .myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
     border-color:$menu-border-color;
   }
+  .myfantasyleague_menu ul ul li.has-sub li:first-of-type {border-color: $menu-border-color; } 
 
 .myfantasyleague_menu li:hover > a {
     background-color: $menu-bg-color;
