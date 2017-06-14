@@ -6,9 +6,11 @@
     display: inline-block;
     padding: 5px 0;
   }
-  a:link,
-  a:visited {
+  a:link, a:visited {
     text-decoration: none;
+  }
+  table.two_column_layout {
+    margin: 0
   }
   table.two_column_layout li {
     padding: 0px;
@@ -29,5 +31,5 @@
   }
   td.two_column_layout {
     margin-top: -40px;
-}
+  }
 }
