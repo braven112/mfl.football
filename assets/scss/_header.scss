@@ -26,6 +26,22 @@
   max-width: 100%;
   display: block;
 }
+.league_logo img {
+    max-height: 70px;
+    margin-bottom: 12px;
+}
+  @media (min-width: 767px) {
+    .league_logo img {
+      max-height: 70px;
+      margin-bottom: 18px;
+  }
+}
+  @media (min-width: 992px) {
+    .league_logo img {
+      max-height: 110px;
+      margin-bottom:0;
+  }
+}
 
 @media (min-width: 767px) {
   .league_logo svg {
