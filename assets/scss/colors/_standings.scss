@@ -1,6 +1,4 @@
-.homepagecolumn #standings h3,
-.homepagecolumn #brief_standings h3,
-.homepagecolumn .homepagemodule caption {
+.homepagecolumn #standings h3, .homepagecolumn #brief_standings h3, .homepagecolumn .homepagemodule caption {
   background-color: transparent;
   font-family: $headline-font;
   color: $headline-font-color;
@@ -9,16 +7,25 @@
 
 /*Standings*/
 
-.homepagecolumn #brief_standings h3,
-.homepagecolumn #standings h3 {
+.homepagecolumn #brief_standings h3, .homepagecolumn #standings h3 {
   color: $headline-font-color;
   border-bottom-color: $border-color;
 }
 
 #body_standings {
-  caption,h3 {
-  background-color: transparent;
-  font-family: $headline-font;
-  color: $headline-font-color;
+  caption, h3 {
+    background-color: transparent;
+    font-family: $headline-font;
+    color: $headline-font-color;
+  }
+}
+//Align division logos to the left and add margin-top to give them some room when images are used.
+#standings {
+  img.standingslogo {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  tr:first-child img {
+    margin-top: 0;
   }
 }

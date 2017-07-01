@@ -5,6 +5,7 @@
  .st1 {
    display: none;
  }
+ 
  //top bg
  .st2 {
    fill: $logo-secondary-color;
@@ -17,10 +18,12 @@
  .st4 {
    display: none;
  }
+ 
  //star
  .st5 {
    fill: $logo-3rd-color;
  }
+ 
  //bottom star
  .st6 {
    fill: $logo-4th-color;
@@ -29,14 +32,24 @@
  .leaguename {
    font-family: $headline-font;
    color: $logo-secondary-text-color;
+   .leaguename--the {
+     color: $logo-text-color;
+   }
+   .leaguename--dotus {
+     color: $logo-text-color;
+   }
  }
  
- span.leaguename--the {
-   color: $logo-text-color;
- }
- 
- span.leaguename--dotus {
-   color: $logo-text-color;
+ .leaguename-2line {
+   .leaguename-2line--primaryname {
+      font-family: $headline-font;
+     color: $logo-secondary-text-color;
+     font-weight: bold;
+   }
+   .leaguename-2line--secondaryname {
+      font-family:$body-font;
+     color: $logo-text-color;
+   }
  }
  
  .nav_buttons .svg-text {
