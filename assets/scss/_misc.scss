@@ -51,11 +51,18 @@ h3 {
 /*handle mfl messages*/
 
 .homepagemessage {
-//  display: none;
+  //  display: none;
   border: none;
-  width: 50%;
+  width: 100%;
+  @media (min-width: 992px) {
+    width: 50%;
+  }
   float: left;
-  padding: 0 15px;
+  padding: 0 0 0 15px;
+    @media (min-width: 992px) {
+    padding: 0 15px;
+  }
+  
   margin: 0 auto 24px;
 }
 
@@ -85,13 +92,11 @@ table.homepagemessage td {
   padding: 0 0 24px;
 }
 
-.homepagecolumn .homepagemodule,
-.homepagecolumn .homepagemodule caption {
+.homepagecolumn .homepagemodule, .homepagecolumn .homepagemodule caption {
   width: 100%;
 }
 
-caption,
-caption span {
+caption, caption span {
   font-weight: bold;
   text-align: left;
   font-size: 24px;
@@ -114,20 +119,10 @@ th {
 }
 
 #body_home #power_rank {
-  .total_points,
-  .total_potential_points,
-  .efficiency,
-  .bench_points,
-  .maxpf,
-  .minpf,
-  .coulda_won,
-  .woulda_lost,
-  .power_rank,
-  .alt_power_rank {
+  .total_points, .total_potential_points, .efficiency, .bench_points, .maxpf, .minpf, .coulda_won, .woulda_lost, .power_rank, .alt_power_rank {
     display: none;
   }
-  th[colspan="11"],
-  th[colspan="4"] {
+  th[colspan="11"], th[colspan="4"] {
     display: none;
   }
 }
@@ -140,14 +135,15 @@ span.reportnavigation {
 
 
 /*reports*/
+
 //undo mobile wrap since report-wrapper already does that.  
 //Ideally we optimize this so that mobile-wrap does the report-wrapper styling.  
 //And report-wrapper is a fallback when mobile-wrap doesn't exist.
-
 .mobile-wrap {
-    overflow: initial !important;
+  overflow: initial !important;
 }
-.report-wrapper,#outerMFLScoreboardDiv,#lineup-form {
+
+.report-wrapper, #outerMFLScoreboardDiv, #lineup-form {
   margin-bottom: 24px;
   border-radius: 4px;
   padding: 12px;
@@ -197,8 +193,7 @@ span.reportnavigation {
   padding-top: 10px;
 }
 
-.newposition td,
-.newposition th {
+.newposition td, .newposition th {
   border-top: 4px solid;
 }
 
@@ -231,8 +226,7 @@ span.reportnavigation {
   width: 100% !important;
 }
 
-table#drop td,
-table#add {
+table#drop td, table#add {
   cursor: pointer;
 }
 
@@ -266,9 +260,7 @@ table#add {
     @media (min-width: 1200px) {
       margin-right: 5px;
     }
-    b,
-    a:link,
-    a:visited {
+    b, a:link, a:visited {
       margin-right: 5px;
       text-decoration: none;
     }
