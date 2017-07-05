@@ -1,5 +1,4 @@
-input[type="button"],
-input[type="submit"] {
+input[type="button"], input[type="submit"] {
   padding: 14px 30px;
   margin-bottom: 10px;
   border: 2px solid;
@@ -14,9 +13,7 @@ input[type="submit"] {
   }
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover {
-}
+input[type="button"]:hover, input[type="submit"]:hover {}
 
 #league_chat input[type="button"] {
   width: 100%;
@@ -26,6 +23,24 @@ input#chat_text_field {
   width: 100%;
   padding: 8px;
   border: 1px solid;
+}
+
+#player_search {
+  input[type="text"] {
+    width: 100%;
+    @media (min-width: 1200px) {
+        width: 75.425%;
+    }
+    padding: 8px;
+    border: 1px solid;
+  }
+  input[type="submit"] {
+    width: 100%;
+      @media (min-width: 1200px) {
+        width: 23.5%;
+        padding: 8px 11px;
+      }
+  }
 }
 
 input[type="text"] {}
@@ -40,9 +55,7 @@ form.reportform input[type="submit"] {
 }
 
 //button on current auction page
-.btn-primary a,
-.btn-primary a:link,
-.btn-primary a:visited {
+.btn-primary a, .btn-primary a:link, .btn-primary a:visited {
   border-radius: 5px;
   padding: 14px 30px;
   position: relative;
@@ -54,20 +67,20 @@ form.reportform input[type="submit"] {
   text-decoration: none;
 }
 
-
-input[type="password"],
-input[type="text"] {
-    padding: 4px;
-    font-size: 1.1em;
-    min-width: 100px;
+input[type="password"], input[type="text"] {
+  padding: 4px;
+  font-size: 1.1em;
+  min-width: 100px;
 }
+
 select {
-    padding: 4px 5px 5px;
-    font-size: 1.1em;
+  padding: 4px 5px 5px;
+  font-size: 1.1em;
 }
 
 
 /*//messageboard cta*/
+
 .mb {
   @media (max-width: 767px) {
     display: none;

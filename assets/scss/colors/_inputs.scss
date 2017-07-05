@@ -16,7 +16,10 @@ input#chat_text_field {
   border-color:$lightgray;
   color: $gray1;
 }
-
+#player_search input[type="text"] {
+  border-color:$lightgray;
+  color: $gray1;
+}
 
 form.reportform input[type="submit"] {
   background: $button-bg-color;
