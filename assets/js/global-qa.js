@@ -64,6 +64,8 @@ jQuery(document).ready(function() {
     $('#last_weeks_fantasy_results caption span').text('H2H Results');
     $('#fantasy_recap caption span').text('Game Of The Week Recap');
     $('#fantasy_preview caption span').text('Game Of The Week Preview');
+    $('.commish-link[href*="0000"]').text('Commish');
+    
 });
 
 ///// Custom Tabs //////////////////
