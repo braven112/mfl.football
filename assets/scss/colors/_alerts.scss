@@ -30,3 +30,20 @@
   border-color: $alert-success-border !important;
   color: $alert-success-text !important;
 }
+
+
+.homepagemessage th {
+  color: $alert-warning-text !important;
+  background-color: $alert-warning-bg !important;
+  border: 1px solid $alert-warning-border !important;
+}
+
+.homepagemessage td {
+  background-color: $alert-warning-bg !important;
+  color: $alert-warning-text !important;
+  border-color: $alert-warning-border !important;
+}
+
+.homepagemessage a {
+  color: darken($alert-warning-text, 10%) !important;
+}

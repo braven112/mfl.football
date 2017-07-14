@@ -48,45 +48,7 @@ h3 {
 }
 
 
-/*handle mfl messages*/
 
-.homepagemessage {
-  //  display: none;
-  border: none;
-  width: 100%;
-  @media (min-width: 992px) {
-    width: 50%;
-  }
-  float: left;
-  padding: 0 0 0 15px;
-    @media (min-width: 992px) {
-    padding: 0 15px;
-  }
-  
-  margin: 0 auto 24px;
-}
-
-.homepagemessage:first-child {
-  padding-left: 0;
-}
-
-.homepagemessage th {
-  font-style: normal;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
-  padding: 15px 5px 0px;
-  border: 1px solid;
-  border-bottom: 0;
-  position: relative;
-  top: 2px;
-}
-
-table.homepagemessage td {
-  padding: 16px;
-  border: 1px solid;
-  border-radius: 0 0 5px 5px;
-  border-top: 0px;
-}
 
 .homepagecolumn {
   padding: 0 0 24px;

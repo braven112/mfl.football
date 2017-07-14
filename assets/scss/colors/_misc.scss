@@ -86,21 +86,7 @@ h2 {
   background-color: $pagebody-bg;
 }
 
-.homepagemessage:first-child {
-  padding-left: 0;
-}
 
-.homepagemessage th {
-  color: $alert-warning-text;
-  background-color: $alert-warning-bg;
-  border: 1px solid $alert-warning-border;
-}
-
-table.homepagemessage td {
-  background-color: $alert-warning-bg;
-  color: $alert-warning-text;
-  border-color: $alert-warning-border;
-}
 
 caption,
 caption span {
