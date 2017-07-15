@@ -13,20 +13,15 @@
     //  display: none;
     border: none;
     width: 100%;
-    @media (min-width: 992px) {
-        width: 50%;
-    }
     float: left;
     padding: 0;
-    @media (min-width: 992px) {
-        padding: 0 15px;
-    }
     margin: 0 auto 24px;
+
+}
+.homepagemessage:nth-of-type(2n) {
+    margin-top: -12px;
 }
 
-.homepagemessage:first-child {
-    padding-left: 0;
-}
 
 .homepagemessage th {
     font-style: normal;
