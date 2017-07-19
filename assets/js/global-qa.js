@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
     //customer wrapper
     $(".report").wrap("<div class='report-wrapper'></div>");
     $("#outerMFLScoreboardDiv .report-wrapper .report,#lineup-form .report-wrapper .report,#body_board_show .report-wrapper .report-wrapper .report").unwrap();
-    $(".report-wrapper .report-wrapper .report").unwrap(); 
+    $(".report-wrapper .report-wrapper .report").unwrap();
 
     // Add Login to menu
     $('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
@@ -65,7 +65,13 @@ jQuery(document).ready(function() {
     $('#fantasy_recap caption span').text('Game Of The Week Recap');
     $('#fantasy_preview caption span').text('Game Of The Week Preview');
     $('.commish-link[href*="0000"]').text('Commish');
-    
+
+    if ($(".homepagemodule#trades").text().match([1 - 9])) {
+        $(".homepagemodule#trades").effect("pulsate", { times: 3 }, 5000);
+    } else {
+
+    }
+
 });
 
 ///// Custom Tabs //////////////////

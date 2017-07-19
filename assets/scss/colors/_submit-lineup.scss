@@ -20,36 +20,38 @@
 
 /* table header row */
 
-#options_02.has-headerjs {
+#options_02 {
     .report .theader {
-        background: $table-header-color;
-        border-bottom: 2px solid $border-color
+        background: $eventablerow;
+        border-bottom: 1px solid $border-color
     }
     /* bg coloring for table rows inside each table that display Select x amount of players */
     .report .toomany {
-        background: $alert-danger-bg
+        background: $alert-danger-bg;
+        color: $alert-danger-text
     }
     /* light shaded red when player limit exceeded */
     .report .notenough {
-        background: $alert-warning-bg
+        background: $alert-warning-bg;
+        color: $alert-warning-text
     }
     /* light shaded yellow when need to add more players to that position */
     .report .rightamount {
-        background: $table-header-color
+        background: $eventablerow
     }
     /* grey shade when have correct value of position player in lineup */
     /* Starter and Bench tablerow background color and border color */
     #startertable tr.playerrow.eventablerow,
     #benchtable tr.playerrow.eventablerow {
-        background: $white;
+        background: $report-bg
     }
     #startertable tr.playerrow.oddtablerow,
     #benchtable tr.playerrow.oddtablerow {
-        background: $white;
+        background: $report-bg
     }
     #startertable tr.row_empty,
     #benchtable tr.row_empty {
-        background: $white;
+        background: transparent;
     }
     tr.rightamount td,
     tr.notenough td,
@@ -65,7 +67,7 @@
     #startertable tr.playerrow td.pphoto,
     #benchtable tr.playerrow td.pphoto {
         border: 1px solid $border-color;
-        background: $white
+        background: transparent
     }
     /* player injury */
     #benchtable td.inj b,
