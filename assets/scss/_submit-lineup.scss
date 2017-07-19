@@ -1,42 +1,630 @@
 #body_options_02 {
-  .report tr th:first-child {
-    display: none;
-  }
-  .report a {
-    white-space: nowrap;
-  }
-  .report input[type="checkbox"] {
-    margin-right: 10px;
-    position: relative;
-    top: 3px;
-  }
-  td[colspan="10"] {
-    padding: 10px 0;
-    textarea#MESSAGE0001 {
-      width: 100%;
+    .report tr th:first-child {
+        display: none;
     }
-  }
-  .franchiselogo {
-    display: none;
-    margin-bottom: 12px;
-    width: 300px;
-    float: right;
-    position: relative;
-    top: -80px;
-  }
-  .reportnavigation {
-    background-color: transparent;
-    border-color: transparent;
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .alert {
-    margin-bottom: 12px;
-  }
-  input[type="button"] {
-    width: 100%;
-    @media (min-width: 768px) {
-      width: auto;
+    .report a {
+        white-space: nowrap;
     }
-  }
+    .report input[type="checkbox"] {
+        margin-right: 10px;
+        position: relative;
+        top: 3px;
+    }
+    td[colspan="10"] {
+        padding: 10px 0;
+        textarea#MESSAGE0001 {
+            width: 100%;
+        }
+    }
+    .franchiselogo {
+        display: none;
+        margin-bottom: 12px;
+        width: 300px;
+        float: right;
+        position: relative;
+        top: -80px;
+    }
+    .reportnavigation {
+        background-color: transparent;
+        border-color: transparent;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .alert {
+        margin-bottom: 12px;
+    }
+    input[type="button"] {
+        width: 100%;
+        @media (min-width: 768px) {
+            width: auto;
+        }
+    }
+}
+
+
+/**************************************/
+
+
+/* NO NEED TO EDIT BELOW LAYOUT STYLE */
+
+
+/**************************************/
+
+
+/* table layout */
+
+#options_02 {
+    #startertable {
+        float: left;
+        width: 49.9%
+    }
+    #benchtable {
+        float: right;
+        width: 49.9%
+    }
+    .reportnavigation {
+        clear: both
+    }
+    #startertable .oddtablerow th,
+    #startertable .eventablerow th,
+    #benchtable .oddtablerow th,
+    #benchtable .eventablerow th {
+        display: none
+    }
+    .report .playerrow:hover,
+    .report .playerrow:hover {
+        cursor: pointer
+    }
+    .report .postitle {
+        text-transform: uppercase
+    }
+    #benchtable .sheader,
+    #startertable .sheader {
+        position: relative;
+        width: 100%;
+        display: inline-table
+    }
+    #benchtable .sheader th,
+    #startertable .sheader th {
+        height: 22px;
+        line-height: 22px;
+        font-weight: 400;
+        font-size: 12px
+    }
+    .report .offstartern {
+        position: absolute;
+        right: 10px
+    }
+    #startertable tr.playerrow,
+    #benchtable tr.playerrow {
+        position: relative;
+        height: 56px;
+        background: none;
+        border: 0;
+        box-shadow: none;
+        display: block
+    }
+    .row_empty {
+        height: 56px
+    }
+    #startertable tr.playerrow td,
+    #benchtable tr.playerrow td {
+        padding: 0;
+        font-size: 14px;
+        background: none;
+        border: 0;
+        box-shadow: none
+    }
+    /* Hide table on submit lineup submission page when error lineup occures */
+    #body_submit_lineups #submit_lineups form {
+        display: none
+    }
+    /* table header row */
+    .report .theader {
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        box-shadow: none;
+        display: block
+    }
+    .report .theader td {
+        padding: 0;
+        font-size: 11px;
+        font-weight: 400
+    }
+    /* player photo */
+    #startertable tr.playerrow td.pphoto,
+    #benchtable tr.playerrow td.pphoto {
+        border-radius: 50%;
+        width: 51px;
+        max-width: 51px;
+        height: 51px;
+        overflow: hidden;
+        text-align: center;
+        position: absolute;
+        left: 1px;
+        top: 2px
+    }
+    #startertable .headshot,
+    #benchtable .headshot {
+        height: 57px;
+        width: 42px;
+        margin-top: -2px;
+    }
+    #startertable tr.def_row .headshot,
+    #benchtable tr.def_row .headshot {
+        height: 100%;
+        margin: 0;
+        width: auto;
+    }
+    /* player name */
+    #startertable tr.playerrow td.player,
+    #benchtable tr.playerrow td.player {
+        position: absolute;
+        left: 60px;
+        top: 2px;
+        border: 0;
+        box-shadow: none;
+        z-index: 1
+    }
+    #benchtable tr.theader td.player,
+    #startertable tr.theader td.player {
+        position: absolute;
+        left: 1px;
+        top: 0;
+        border: 0;
+        box-shadow: none
+    }
+    /* player matchup */
+    #startertable tr.playerrow td.weekly-opp,
+    #benchtable tr.playerrow td.weekly-opp {
+        position: absolute;
+        left: 65px;
+        top: 21px;
+        border: 0;
+        box-shadow: none;
+        font-size: 12px
+    }
+    #startertable tr.playerrow td.weekly-opp b,
+    #benchtable tr.playerrow td.weekly-opp b {
+        font-weight: 400;
+        font-style: italic;
+    }
+    #startertable tr.playerrow td.weekly-opp b:before,
+    #benchtable tr.playerrow td.weekly-opp b:before {
+        content: "Player on ";
+    }
+    #startertable tr.playerrow td.weekly-opp b:after,
+    #benchtable tr.playerrow td.weekly-opp b:after {
+        content: " this week !";
+    }
+    /* player injury */
+    #benchtable td.inj,
+    #startertable td.inj {
+        position: absolute;
+        left: 40px;
+        top: 36px;
+        border: 0;
+        box-shadow: none;
+    }
+    #benchtable td.inj b,
+    #startertable td.inj b {
+        font-size: 10px;
+        font-weight: 400;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        display: block
+    }
+    /* player proj points */
+    #benchtable td.proj-pts,
+    #startertable td.proj-pts {
+        position: absolute;
+        left: 70px;
+        top: 37px;
+        border: 0;
+        box-shadow: none;
+        text-align: center;
+        font-size: 12px!important
+    }
+    #benchtable td.proj-pts:before,
+    #startertable td.proj-pts:before {
+        content: "Proj Pts: ";
+    }
+    /* player bye */
+    #benchtable td.bye,
+    #startertable td.bye {
+        display: none;
+    }
+    /* player ytd points */
+    #benchtable td.ytd-pts,
+    #startertable td.ytd-pts {
+        position: absolute;
+        right: 120px;
+        top: 18px;
+        border: 0;
+        box-shadow: none;
+        width: 45px;
+        text-align: center
+    }
+    #benchtable tr.theader td.ytd-pts,
+    #startertable tr.theader td.ytd-pts {
+        position: absolute;
+        right: 120px;
+        top: 0;
+        border: 0;
+        box-shadow: none;
+        width: 45px;
+        text-align: center;
+    }
+    #benchtable td.ytd-pts a,
+    #startertable td.ytd-pts a {
+        text-decoration: none
+    }
+    /* player avg points */
+    #benchtable td.avg-pts,
+    #startertable td.avg-pts {
+        position: absolute;
+        right: 180px;
+        top: 18px;
+        border: 0;
+        box-shadow: none;
+        width: 45px;
+        text-align: center
+    }
+    #benchtable tr.theader td.avg-pts,
+    #startertable tr.theader td.avg-pts {
+        position: absolute;
+        right: 180px;
+        top: 0;
+        border: 0;
+        box-shadow: none;
+        width: 45px;
+        text-align: center;
+    }
+    /* player rush pass rank */
+    #benchtable td.rush-rank,
+    #startertable td.rush-rank {
+        position: absolute;
+        right: 40px;
+        top: 18px;
+        border: 0;
+        box-shadow: none;
+        width: 20px;
+        text-align: center
+    }
+    #benchtable td.pass-rank,
+    #startertable td.pass-rank {
+        position: absolute;
+        right: 75px;
+        top: 18px;
+        border: 0;
+        box-shadow: none;
+        width: 20px;
+        text-align: center
+    }
+    #benchtable tr.theader td.rank,
+    #startertable tr.theader td.rank {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        border: 0;
+        box-shadow: none;
+        width: 60px;
+        text-align: center;
+    }
+    #benchtable td.pass-rank a,
+    #startertable td.pass-rank a,
+    #benchtable td.rush-rank a,
+    #startertable td.rush-rank a {
+        text-decoration: none
+    }
+    tr.theader .opp-rank {
+        white-space: nowrap;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -8px
+    }
+    tr.theader .rush-rank {
+        position: absolute;
+        left: 0px;
+        top: 7px
+    }
+    tr.theader .pass-rank {
+        position: absolute;
+        right: 0px;
+        top: 7px;
+    }
+    /* player nfl news */
+    #startertable tr.playerrow td.nfl-news,
+    #benchtable tr.playerrow td.nfl-news {
+        display: none
+    }
+    /* Disable pointer events */
+    #startertable tr.playerrow,
+    #benchtable tr.playerrow {
+        pointer-events: none;
+        z-index: 0
+    }
+    /* Enable pointer events for player name - ytd points and font awesome icon */
+    #startertable td.player a,
+    #benchtable td.player a,
+    #startertable tr.playerrow:after,
+    #benchtable tr.playerrow:after {
+        pointer-events: all
+    }
+    #startertable td.player a:before,
+    #benchtable td.player a:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 102%;
+        z-index: -1;
+    }
+    /* Add sillouete image to starter empty table rows */
+    #startertable tr.row_empty td {
+        position: relative;
+    }
+    #startertable tr.row_empty td:before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: 51px;
+        max-width: 51px;
+        height: 51px;
+        overflow: hidden;
+        text-align: center;
+        position: absolute;
+        left: 1px;
+        top: 2px;
+        background: #fff url(//nitrografixx.com/MFL-Popups/silhouette.png)no-repeat;
+        background-size: 42px 57px;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        background-position: 50% 60%;
+        overflow: hidden;
+    }
+    /******************/
+    /*  FONT AWESOME  */
+    /******************/
+    /* Starter table x icon */
+    #startertable tr.playerrow:after {
+        content: "\f057";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 13px;
+        z-index: 1;
+        font-size: 30px;
+        right: 5px
+    }
+    /* Bench table + icon */
+    #benchtable tr.playerrow:after {
+        content: "\f055";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 13px;
+        z-index: 1;
+        font-size: 30px;
+        right: 5px
+    }
+    /* Starter and Bench table lock icon */
+    #benchtable tr.playerrow.disabled-row:after,
+    #startertable tr.playerrow.disabled-row:after {
+        content: "\f023";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 13px;
+        z-index: 1;
+        font-size: 30px;
+        right: 7px;
+        cursor: default
+    }
+    /* Starter and Bench table checkmark icon */
+    #benchtable tr.playerrow.original-starter:before,
+    #startertable tr.playerrow.original-starter:before {
+        content: "\f05d";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 1px;
+        z-index: 1;
+        font-size: 16px;
+        left: 1px;
+        cursor: default;
+        height: 12px;
+        width: 12px;
+        background: none
+    }
+    /* Button layout to use icons */
+    .form_buttons input[type="button"],
+    #go-back.form_buttons input[type="button"] {
+        position: relative;
+        padding: 5px 10px 5px 25px !important;
+        font-size: 16px
+    }
+    /* Submit button icon */
+    .form_buttons:before {
+        font-family: 'FontAwesome';
+        position: relative;
+        left: 26px;
+        content: "\f00c";
+        z-index: 1;
+        font-size: 16px
+    }
+    /* Use default submission form icon */
+    .form_buttons.default-btn input[type="button"] {
+        position: relative;
+        padding: 5px 25px 5px 10px !important;
+        font-size: 16px
+    }
+    .form_buttons.default-btn:before,
+    h3 + p.default-btn {
+        display: none
+    }
+    .form_buttons.default-btn:after {
+        font-family: 'FontAwesome';
+        position: relative;
+        right: 23px;
+        content: "\f0a9";
+        z-index: 1;
+        font-size: 16px
+    }
+    /* form submission go back button */
+    #go-back:before {
+        font-family: 'FontAwesome';
+        position: relative;
+        left: 23px;
+        content: "\f0e2";
+        z-index: 1;
+        font-size: 16px;
+    }
+    p.form_buttons,
+    #go-back.form_buttons {
+        margin-left: -16px;
+    }
+    p.form_buttons.default-btn {
+        margin-left: 16px;
+    }
+    /* Lineup Responsive Styles */
+    @media only screen and (max-width: 63em) {
+        /* player avg points */
+        #benchtable td.avg-pts,
+        #startertable td.avg-pts,
+        #benchtable tr.theader td.avg-pts,
+        #startertable tr.theader td.avg-pts {
+            display: none
+        }
+    }
+    @media only screen and (max-width: 54em) {
+        /* player ytd points */
+        #benchtable td.ytd-pts,
+        #startertable td.ytd-pts,
+        #benchtable tr.theader td.ytd-pts,
+        #startertable tr.theader td.ytd-pts {
+            display: none
+        }
+    }
+    @media only screen and (max-width: 44em) {
+        .starter-hide,
+        .bench-hide {
+            display: none!important
+        }
+        .starter-show,
+        .bench-show {
+            float: inherit!important;
+            width: 100%!important
+        }
+        .mobile-link {
+            cursor: pointer
+        }
+        .mobile-table-hide {
+            display: none!important
+        }
+        .mobile-table-show {
+            float: inherit!important;
+            width: 100%!important
+        }
+        #startertable .row_empty td {
+            position: relative
+        }
+        #startertable .row_empty td:after {
+            font-family: "FontAwesome";
+            position: absolute;
+            content: "\f055";
+            font-size: 30px;
+            right: 5px;
+            top: 13px
+        }
+        /* player ytd points */
+        #benchtable td.ytd-pts,
+        #startertable td.ytd-pts,
+        #benchtable tr.theader td.ytd-pts,
+        #startertable tr.theader td.ytd-pts {
+            display: block;
+            right: 150px;
+        }
+        /* player avg points */
+        #benchtable td.avg-pts,
+        #startertable td.avg-pts,
+        #benchtable tr.theader td.avg-pts,
+        #startertable tr.theader td.avg-pts {
+            display: block;
+            right: 250px;
+        }
+    }
+    @media only screen and (max-width: 35em) {
+        /* player ytd points */
+        #benchtable td.ytd-pts,
+        #startertable td.ytd-pts,
+        #benchtable tr.theader td.ytd-pts,
+        #startertable tr.theader td.ytd-pts {
+            right: 120px;
+        }
+        /* player avg points */
+        #benchtable td.avg-pts,
+        #startertable td.avg-pts,
+        #benchtable tr.theader td.avg-pts,
+        #startertable tr.theader td.avg-pts {
+            right: 180px;
+        }
+    }
+    @media only screen and (max-width: 31em) {
+        /* player avg points */
+        #benchtable td.avg-pts,
+        #startertable td.avg-pts,
+        #benchtable tr.theader td.avg-pts,
+        #startertable tr.theader td.avg-pts {
+            display: none
+        }
+    }
+    @media only screen and (max-width: 26em) {
+        /* player ytd points */
+        #benchtable td.ytd-pts,
+        #startertable td.ytd-pts,
+        #benchtable tr.theader td.ytd-pts,
+        #startertable tr.theader td.ytd-pts {
+            display: none
+        }
+    }
+    @media only screen and (max-width: 20em) {
+        #benchtable td.rush-rank,
+        #startertable td.rush-rank {
+            right: 38px;
+        }
+        #benchtable td.pass-rank,
+        #startertable td.pass-rank {
+            right: 68px;
+        }
+        #benchtable tr.theader td.rank,
+        #startertable tr.theader td.rank {
+            right: 36px;
+        }
+        tr.theader .rush-rank {
+            left: 3px
+        }
+        tr.theader .pass-rank {
+            right: 3px;
+        }
+    }
+    @media only screen and (max-width: 19.9em) {
+        #benchtable td.rush-rank,
+        #startertable td.rush-rank,
+        #benchtable td.pass-rank,
+        #startertable td.pass-rank {
+            display: none
+        }
+        #benchtable tr.theader td.rank,
+        #startertable tr.theader td.rank {
+            display: none
+        }
+    }
+    td.posheader {
+        text-align: left !important;
+        font-weight: bold;
+    }
+    td.inj b {
+        padding: 0 4.5px;
+    }
 }

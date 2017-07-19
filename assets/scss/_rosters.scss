@@ -1,13 +1,21 @@
   #single_roster {
-    .withfranchiseicon {
-      display: none;
-    }
+      .withfranchiseicon {
+          display: none;
+      }
   }
   
   @media (min-width: 992px) {
-    #single_roster {
-      td.two_column_layout {
-        width: 100%;
+      #single_roster {
+          td.two_column_layout {
+              width: 100%;
+          }
       }
-    }
+  }
+  
+  #body_options_07 {
+      .ownername {
+          display: block;
+          font-size: 12px;
+          margin-top: 5px;
+      }
   }

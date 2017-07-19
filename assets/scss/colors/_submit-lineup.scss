@@ -1,10 +1,114 @@
 #body_options_02 {
-  
-  .reportnavigation {
-    color: $link-color;
-    a:link,
-    a:visited {
-      color: $link-color;
+    .reportnavigation {
+        color: $link-color;
+        a:link,
+        a:visited {
+            color: $link-color;
+        }
     }
-  }
+}
+
+
+/****************************************/
+
+
+/* EDIT COLORING BELOW TO MATCH MY SITE */
+
+
+/****************************************/
+
+
+/* table header row */
+
+#options_02 {
+    .report .theader {
+        background: $eventablerow;
+        border-bottom: 1px solid $border-color
+    }
+    /* bg coloring for table rows inside each table that display Select x amount of players */
+    .report .toomany {
+        background: $alert-danger-bg;
+        color: $alert-danger-text
+    }
+    /* light shaded red when player limit exceeded */
+    .report .notenough {
+        background: $alert-warning-bg;
+        color: $alert-warning-text
+    }
+    /* light shaded yellow when need to add more players to that position */
+    .report .rightamount {
+        background: $eventablerow
+    }
+    /* grey shade when have correct value of position player in lineup */
+    /* Starter and Bench tablerow background color and border color */
+    #startertable tr.playerrow.eventablerow,
+    #benchtable tr.playerrow.eventablerow {
+        background: $report-bg
+    }
+    #startertable tr.playerrow.oddtablerow,
+    #benchtable tr.playerrow.oddtablerow {
+        background: $report-bg
+    }
+    #startertable tr.row_empty,
+    #benchtable tr.row_empty {
+        background: transparent;
+    }
+    tr.rightamount td,
+    tr.notenough td,
+    tr.toomany td,
+    tr.row_empty td,
+    #startertable tr.playerrow.oddtablerow,
+    #benchtable tr.playerrow.oddtablerow,
+    #startertable tr.playerrow.eventablerow,
+    #benchtable tr.playerrow.eventablerow {
+        border-bottom: 1px solid $border-color;
+    }
+    /* player photo */
+    #startertable tr.playerrow td.pphoto,
+    #benchtable tr.playerrow td.pphoto {
+        border: 1px solid $border-color;
+        background: transparent
+    }
+    /* player injury */
+    #benchtable td.inj b,
+    #startertable td.inj b {
+        color: $white;
+        background: $drop-color
+    }
+    /* player proj points */
+    #benchtable td.proj-pts,
+    #startertable td.proj-pts {
+        color: $add-color
+    }
+    /* player matchup - player on bye text color */
+    #startertable tr.playerrow td.weekly-opp b,
+    #benchtable tr.playerrow td.weekly-opp b {
+        color: $gray3;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* x drop player icon */
+    #startertable tr.playerrow:after {
+        color: $drop-color
+    }
+    /* lock icon color for player on bye or game started */
+    #benchtable tr.playerrow.disabled-row:after,
+    #startertable tr.playerrow.disabled-row:after {
+        color: $drop-color
+    }
+    /* + add player icon */
+    #benchtable tr.playerrow:after,
+    #benchtable tr.playerrow.original-starter:before,
+    #startertable tr.playerrow.original-starter:before {
+        color: $add-color
+    }
+    /* submit lineup - use default submit form icon color */
+    .form_buttons:before,
+    .form_buttons.default-btn:after,
+    #go-back:before {
+        color: $white
+    }
+    /* Add Button for Empty starter rows on mobile */
+    #startertable .row_empty td:after {
+        color: $add-color
+    }
 }
