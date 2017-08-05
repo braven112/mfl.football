@@ -1,0 +1,67 @@
+ #options_113 {
+     .report td {
+         width: 70px
+     }
+     td.reallysmall[align="right"] {
+         font-size: 12px;
+         width: 5px;
+         text-align: left;
+         visibility: visible;
+         vertical-align: bottom;
+         padding-bottom: 10px;
+     }
+
+     a.position_rb,
+     a.position_wr,
+     a.position_qb,
+     a.position_te,
+     a.position_def,
+     a.position_pk {
+         font-size: 8px;
+         visibility: visible;
+         padding: 10px 2px;
+         text-align: center;
+         line-height: 10px
+     }
+
+     a.position_qb {
+
+         background: linear-gradient(to bottom, #f9a7a7 0%, #fcecfc 100%);
+
+         color: #000;
+         display: block;
+     }
+
+     a.position_rb {
+
+         background: linear-gradient(to bottom, #b7df2d 0%, #e2ffa0 100%);
+
+         color: #000;
+         display: block;
+     }
+
+     a.position_wr {
+         background: linear-gradient(to bottom, #fff082 1%, #fff5aa 100%);
+         color: #000;
+         display: block;
+     }
+
+     a.position_te {
+
+         background: linear-gradient(to bottom, #b6dffd 0%, #e0f3fa 100%);
+         color: #000;
+         display: block;
+     }
+
+     a.position_pk {
+         background: linear-gradient(to bottom, #f8b500 0%, #fbdf93 100%);
+         color: #000;
+         display: block;
+     }
+
+     a.position_def {
+         background: linear-gradient(to bottom, #c4783a 0%, #edc4b6 100%);
+         color: #000;
+         display: block;
+     }
+ }
