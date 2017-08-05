@@ -1,0 +1,24 @@
+/*add drop*/
+
+#body_add_drop form table table caption {
+  padding-left: 0;
+}
+
+#body_add_drop form > table caption {
+  padding-left: 8px;
+}
+
+#body_add_drop table table div {
+  width: 100% !important;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+#body_add_drop table table {
+  width: 100% !important;
+}
+
+table#drop td, table#add {
+  cursor: pointer;
+}

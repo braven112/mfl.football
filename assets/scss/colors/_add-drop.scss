@@ -1,0 +1,39 @@
+/***************************************/
+/*      FIX OPTION SELECT PAGES        */
+/***************************************/
+/* COLOR TO MATCH SITE */
+#picker tr:hover{background:red;color:#fff}
+#picker tr.highlight{background:#0f0;color:#111}
+#add tr.highlight,#add tr:hover{background:#0f0;color:#000}
+#drop tr.highlight,#drop tr:hover{background:red;color:#fff}
+#body_add_drop .resize table td.points{color:#0f0}
+#body_add_drop form .mobile-view caption{color:#fff}
+#body_add_drop form #add_name_field_id{color:#0f0}
+#body_add_drop form #drop_name_field_id{color:red}
+#body_add_drop form .mobile-view,#body_add_drop form .table3{background:rgba(45,45,45,.8);border:1px solid #333}
+#body_add_drop #add_note_field_id,#body_add_drop td.locked-warning{background:rgba(0,0,0,.2);color:#da3636;}
+#body_add_drop form .head-th{background:rgba(0,0,0,.2)}
+#body_add_drop table table div {
+  border-color: $border-color !important;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: $report-bg;
+}
+/*add drop*/
+
+span#add_name_field_id {
+  color: $add-color;
+}
+
+span#drop_name_field_id {
+  color: $drop-color;
+}
+
+#add .highlight {
+  color: $white;
+  background-color: $add-color;
+}
+
+#drop .highlight {
+  color: $white;
+  background-color: $drop-color;
+}

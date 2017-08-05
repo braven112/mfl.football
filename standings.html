@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Template instructions | MFLaddons</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var json = [{"version":"1.0","leagueStandings":{"franchise":[{"h2hl":"3","power_rank":"61.57","dp":"151.13","pf":"2338.57","streak_len":"1","divpf":"1475.78","conft":"0","pa":"2143.10","acct":"50","maxpa":"166.64","h2ht":"0","id":"0005","confpf":"2324.2","all_play_l":"95","h2hw":"14","confl":"3","confw":"13","all_play_w":"296","altpwr":"70","vp":"52","pp":"2611.27","pwr":"61.57","divw":"8","minpa":"81.66","divl":"2","all_play_t":"0","streak_type":"L","op":"2187.44","divt":"0"},{"h2hl":"3","power_rank":"63.06","dp":"129.82","pf":"2465.68","streak_len":"6","divpf":"1502.53","conft":"0","pa":"2071.56","acct":"100","maxpa":"156.45","h2ht":"0","id":"0014","confpf":"2401.85","all_play_l":"84","h2hw":"14","confw":"13","confl":"3","all_play_w":"307","altpwr":"71","vp":"51","pp":"2716.78","pwr":"63.06","divw":"8","minpa":"101.12","divl":"2","all_play_t":"0","streak_type":"W","divt":"0","op":"2335.86"},{"h2hl":"3","power_rank":"59.40","dp":"163.68","pf":"2250.72","streak_len":"8","divpf":"1341","conft":"0","pa":"1924.82","acct":"290","maxpa":"148.5","h2ht":"0","id":"0021","confpf":"2112.5","all_play_l":"126","h2hw":"14","confw":"13","confl":"3","all_play_w":"265","altpwr":"66","vp":"46","pp":"2579.51","pwr":"59.40","divw":"8","minpa":"89.9","divl":"2","all_play_t":"0","streak_type":"W","divt":"0","op":"2087.04"},{"h2hl":"5","power_rank":"53.87","dp":"153.29","pf":"2133.15","streak_len":"8","divpf":"1327.98","conft":"0","pa":"1954.87","acct":"120","maxpa":"158.64","h2ht":"0","id":"0004","confpf":"2073.88","all_play_l":"155","h2hw":"12","confw":"11","confl":"5","all_play_w":"236","altpwr":"58","vp":"44","pp":"2422.59","pwr":"53.87","divw":"7","minpa":"92.2","divl":"3","all_play_t":"0","streak_type":"W","divt":"0","op":"1979.86"},{"h2hl":"5","power_rank":"53.31","dp":"199.51","pf":"2176.49","streak_len":"1","divpf":"1301.42","conft":"0","pa":"1936.26","acct":"100","maxpa":"161.1","h2ht":"0","id":"0013","confpf":"2076.88","all_play_l":"157","h2hw":"12","confw":"11","confl":"5","all_play_w":"234","altpwr":"57","vp":"40","pp":"2492.93","pwr":"53.31","divw":"6","minpa":"66.81","divl":"4","all_play_t":"0","streak_type":"L","divt":"0","op":"1976.98"},{"h2hl":"5","power_rank":"58.67","dp":"194.13","pf":"2208.95","streak_len":"2","divpf":"1338.99","conft":"0","pa":"1969.95","acct":"120","maxpa":"179.65","h2ht":"0","id":"0022","confpf":"2212.41","all_play_l":"130","h2hw":"12","confw":"11","confl":"5","all_play_w":"261","altpwr":"59","vp":"45","pp":"2625.03","pwr":"58.67","divw":"7","minpa":"64.49","divl":"3","all_play_t":"0","streak_type":"L","divt":"0","op":"2014.82"},{"h2hl":"5","power_rank":"56.21","dp":"149.63","pf":"2041.45","streak_len":"1","divpf":"1106.8","conft":"0","pa":"1961.74","acct":"40","maxpa":"169.5","h2ht":"0","id":"0001","confpf":"1977.76","all_play_l":"166","h2hw":"12","confw":"11","confl":"5","all_play_w":"225","altpwr":"51","vp":"38","pp":"2525.49","pwr":"56.21","divw":"7","minpa":"67.52","divl":"3","all_play_t":"0","streak_type":"L","divt":"0","op":"1891.82"},{"h2hl":"5","power_rank":"52.46","dp":"198.73","pf":"2150.33","streak_len":"3","divpf":"1259.79","conft":"0","pa":"2000.57","acct":"100","maxpa":"165.48","h2ht":"0","id":"0011","confpf":"2045.23","all_play_l":"162","h2hw":"12","confw":"11","confl":"5","all_play_w":"229","altpwr":"55","vp":"40","pp":"2525.54","pwr":"52.46","divw":"5","minpa":"81.77","divl":"5","all_play_t":"0","streak_type":"W","divt":"0","op":"1951.60"},{"h2hl":"8","power_rank":"47.54","dp":"140.19","pf":"1898.83","streak_len":"3","divpf":"1104.26","conft":"0","pa":"2014.68","acct":"-3.2","maxpa":"175.02","h2ht":"0","id":"0015","confpf":"1888.38","all_play_l":"224","h2hw":"9","confw":"9","confl":"7","all_play_w":"167","altpwr":"32","vp":"29","pp":"2331.61","pwr":"47.54","divw":"6","minpa":"83.38","divl":"4","all_play_t":"0","streak_type":"W","divt":"0","op":"1758.64"},{"h2hl":"9","power_rank":"47.67","dp":"154.43","pf":"2107.47","streak_len":"3","divpf":"1252.59","conft":"0","pa":"2006.05","acct":"0","maxpa":"169.5","h2ht":"0","id":"0012","confpf":"1988.19","all_play_l":"160","h2hw":"8","confw":"8","confl":"8","all_play_w":"231","altpwr":"49","vp":"32","pp":"2397.41","pwr":"47.67","divw":"5","minpa":"77.2","divl":"5","all_play_t":"0","streak_type":"L","divt":"0","op":"1953.04"},{"h2hl":"9","power_rank":"41.51","dp":"149.09","pf":"1913.19","streak_len":"2","divpf":"1193.03","conft":"0","pa":"2078.78","acct":"0","maxpa":"180.03","h2ht":"0","id":"0008","confpf":"1888.79","all_play_l":"230","h2hw":"8","confw":"7","confl":"9","all_play_w":"161","altpwr":"31","vp":"28","pp":"2233.80","pwr":"41.51","divw":"4","minpa":"68.63","divl":"6","all_play_t":"0","streak_type":"W","divt":"0","op":"1764.10"},{"h2hl":"10","power_rank":"39.74","dp":"135.93","pf":"1892.17","streak_len":"4","divpf":"1134.25","conft":"0","pa":"2055.66","acct":"81.8","maxpa":"164.96","h2ht":"0","id":"0019","confpf":"1814.17","all_play_l":"224","h2hw":"7","confw":"7","confl":"9","all_play_w":"167","altpwr":"22","vp":"26","pp":"2186.37","pwr":"39.74","divw":"5","minpa":"83.6","divl":"5","all_play_t":"0","streak_type":"L","divt":"0","op":"1756.24"},{"h2hl":"10","power_rank":"43.43","dp":"181.15","pf":"2027.97","streak_len":"3","divpf":"1201.29","conft":"0","pa":"2183.11","acct":"0","maxpa":"175.02","h2ht":"0","id":"0006","confpf":"1933.75","all_play_l":"183","h2hw":"7","confw":"6","confl":"10","all_play_w":"207","altpwr":"40","vp":"27","pp":"2364.46","pwr":"43.43","divw":"4","minpa":"92.65","divl":"6","all_play_t":"1","streak_type":"L","divt":"0","op":"1846.82"},{"h2hl":"10","power_rank":"45.28","dp":"192.93","pf":"2086.21","streak_len":"1","divpf":"1326.53","conft":"0","pa":"2165.93","acct":"40","maxpa":"166.86","h2ht":"0","id":"0010","confpf":"2025.99","all_play_l":"188","h2hw":"7","confw":"7","confl":"9","all_play_w":"203","altpwr":"39","vp":"27","pp":"2500.08","pwr":"45.28","divw":"5","minpa":"68.63","divl":"5","all_play_t":"0","streak_type":"W","divt":"0","op":"1893.28"},{"h2hl":"10","power_rank":"38.11","dp":"105.94","pf":"1826.88","streak_len":"2","divpf":"1067.82","conft":"0","pa":"2173.29","acct":"0","maxpa":"171.04","h2ht":"0","id":"0007","confpf":"1814.36","all_play_l":"257","h2hw":"7","confw":"6","confl":"10","all_play_w":"134","altpwr":"19","vp":"22","pp":"2192.56","pwr":"38.11","divw":"4","minpa":"67.54","divl":"6","all_play_t":"0","streak_type":"L","divt":"0","op":"1720.94"},{"h2hl":"10","power_rank":"41.59","dp":"157.96","pf":"1963.48","streak_len":"1","divpf":"1227.75","conft":"0","pa":"2057.20","acct":"0","maxpa":"165.72","h2ht":"0","id":"0002","confpf":"1904.83","all_play_l":"209","h2hw":"7","confw":"7","confl":"9","all_play_w":"182","altpwr":"37","vp":"26","pp":"2291.78","pwr":"41.59","divw":"5","minpa":"61.64","divl":"5","all_play_t":"0","streak_type":"W","divt":"0","op":"1805.52"},{"h2hl":"11","power_rank":"44.74","dp":"110.75","pf":"2070.69","streak_len":"3","divpf":"1157.1","conft":"0","pa":"2188.75","acct":"157","maxpa":"182.12","h2ht":"0","id":"0009","confpf":"1876.48","all_play_l":"187","h2hw":"6","confw":"6","confl":"10","all_play_w":"204","altpwr":"37","vp":"24","pp":"2554.90","pwr":"44.74","divw":"4","minpa":"90.29","divl":"6","all_play_t":"0","streak_type":"W","divt":"0","op":"1959.94"},{"h2hl":"11","power_rank":"38.82","dp":"135.24","pf":"1943.88","streak_len":"1","divpf":"1115.83","conft":"0","pa":"2024.35","acct":"140","maxpa":"142.83","h2ht":"0","id":"0017","confpf":"1831.37","all_play_l":"224","h2hw":"6","confw":"6","confl":"10","all_play_w":"167","altpwr":"27","vp":"22","pp":"2270.99","pwr":"38.82","divw":"4","minpa":"85.55","divl":"6","all_play_t":"0","streak_type":"W","divt":"0","op":"1808.64"},{"h2hl":"11","power_rank":"36.54","dp":"167.20","pf":"1943.14","streak_len":"1","divpf":"1130.79","conft":"0","pa":"2147.95","acct":"0","maxpa":"172.32","h2ht":"0","id":"0018","confpf":"1778.03","all_play_l":"214","h2hw":"6","confw":"6","confl":"10","all_play_w":"177","altpwr":"27","vp":"22","pp":"2151.16","pwr":"36.54","divw":"3","minpa":"89.9","divl":"7","all_play_t":"0","streak_type":"W","divt":"0","op":"1775.94"},{"h2hl":"11","power_rank":"34.65","dp":"64.16","pf":"1719.48","streak_len":"1","divpf":"984.22","conft":"0","pa":"2121.88","acct":"0","maxpa":"179.34","h2ht":"0","id":"0020","confpf":"1623.2","all_play_l":"266","h2hw":"6","confw":"6","confl":"10","all_play_w":"125","altpwr":"9","vp":"17","pp":"2074.74","pwr":"34.65","divw":"2","minpa":"85.3","divl":"8","all_play_t":"0","streak_type":"L","divt":"0","op":"1655.32"},{"h2hl":"12","power_rank":"39.74","dp":"146.76","pf":"1899.04","streak_len":"3","divpf":"1146.31","conft":"0","pa":"2082.88","acct":"0","maxpa":"164.96","h2ht":"0","id":"0024","confpf":"1763.11","all_play_l":"236","h2hw":"5","confw":"5","confl":"11","all_play_w":"155","altpwr":"16","vp":"18","pp":"2324.98","pwr":"39.74","divw":"5","minpa":"79.92","divl":"5","all_play_t":"0","streak_type":"L","divt":"0","op":"1752.28"},{"h2hl":"12","power_rank":"36.62","dp":"125.96","pf":"1899.52","streak_len":"2","divpf":"1120.48","conft":"0","pa":"2040.32","acct":"0","maxpa":"156.99","h2ht":"0","id":"0023","confpf":"1758.32","all_play_l":"243","h2hw":"5","confw":"5","confl":"11","all_play_w":"148","altpwr":"17","vp":"16","pp":"2231.40","pwr":"36.62","divw":"3","minpa":"64.49","divl":"7","all_play_t":"0","streak_type":"W","divt":"0","op":"1773.56"},{"h2hl":"13","power_rank":"33.64","dp":"119.66","pf":"1800.54","streak_len":"6","divpf":"1089.49","conft":"0","pa":"2180.18","acct":"0","maxpa":"175.37","h2ht":"0","id":"0016","confpf":"1763.45","all_play_l":"264","h2hw":"4","confw":"4","confl":"12","all_play_w":"126","altpwr":"7","vp":"15","pp":"2207.42","pwr":"33.64","divw":"3","minpa":"80.62","divl":"7","all_play_t":"1","streak_type":"L","divt":"0","op":"1680.88"},{"h2hl":"13","power_rank":"26.99","dp":"130.69","pf":"1595.45","streak_len":"5","divpf":"1042.44","conft":"0","pa":"1982.86","acct":"0","maxpa":"182.01","h2ht":"0","id":"0003","confpf":"1591.02","all_play_l":"307","h2hw":"4","confw":"3","confl":"13","all_play_w":"84","altpwr":"4","vp":"13","pp":"1901.43","pwr":"26.99","divw":"2","minpa":"77.48","divl":"8","all_play_t":"0","streak_type":"L","divt":"0","op":"1464.76"}]},"encoding":"utf-8"}];
+        var tr;
+        for (var i = 0; i < json.length; i++) {
+            tr = $('<tr/>');
+            tr.append("<td>" + json[i].leagueStandings.franchise + "</td>");
+            tr.append("<td>" + json[i].leagueStandings.franchise[0].all_play_w + "</td>");
+            tr.append("<td>" + json[i].leagueStandings.franchise[0].all_play_w + "</td>");
+            tr.append("<td>" + json[i].leagueStandings.franchise[0].all_play_l + "</td>");
+            tr.append("<td>" + json[i].leagueStandings.franchise[0].all_play_t + "</td>");
+            $('table').append(tr);
+            console.log(json[i].standings.franchise)
+        }
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container instructions">
+        <div class="row">
+            <div class="col-sm-8">
+                <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    padding: 10px 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    overflow: hidden;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding: 10px 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    overflow: hidden;
+                    word-break: normal;
+                }
+
+                .tg .tg-yw4l {
+                    vertical-align: top
+                }
+                </style>
+                <table id="target_table_id tbody" class="tg">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-97923590-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
