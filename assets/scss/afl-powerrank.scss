@@ -1,0 +1,93 @@
+.pro-relpage {
+    .premierleague,
+    .dleague {
+        .bench_points,
+        .maxpf,
+        .minpf,
+        .total_points,
+        .total_potential_points,
+        .coulda_won,
+        .woulda_lost,
+        .efficiency,
+        .power_rank,
+        .alt_power_rank {
+            display: none;
+        }
+        th[colspan="11"],
+        th[colspan="4"] {
+            display: none;
+        }
+    }
+    .dleague {
+
+        .dleague--row:nth-child(even) {
+            background-color: #ececec;
+        }
+        .dleague--row:nth-child(4) {
+            border-bottom: 3px solid green;
+        }
+        .dleague--row:nth-child(6) {
+            border-bottom: 3px solid #98b398;
+        }
+        .dleague--row:nth-child(14) {
+            border-bottom: 9px solid transparent;
+        }
+        caption {
+            background-image: url(http://www.afl-fantasy.com/images/league_logo/dleague.svg);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: contain;
+            height: 60px;
+            padding-top: 18px;
+        }
+        .premierleague--row {
+            display: none;
+        }
+    }
+
+    .premierleague {
+        .premierleague--row:nth-child(even) {
+            background-color: #ececec;
+        }
+        .premierleague--row:nth-child(3) {
+            //background-color: #f3cd04;
+            border-bottom: 3px solid #f3cd04;
+        }
+        .premierleague--row:nth-child(4) {
+            //background-color: silver;
+            border-bottom: 3px solid silver;
+        }
+        .premierleague--row:nth-child(5) {
+            border-bottom: 3px solid #e0c699; //background-color: #e0c699;
+        }
+        .premierleague--row:nth-child(10) {
+            border-bottom: 3px solid pink;
+        }
+        .premierleague--row:nth-child(12) {
+            border-bottom: 3px solid red;
+        }
+        caption {
+            background-image: url(http://www.afl-fantasy.com/images/league_logo/premier.svg);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: contain;
+            height: 60px;
+            padding-top: 18px;
+        }
+        .dleague--row {
+            display: none;
+        }
+    }
+    span.reportnavigation,
+    .reportform {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .report-wrapper.premierleague.pro-rel,
+        .report-wrapper.dleague.pro-rel {
+            width: 48%;
+            float: left;
+            margin: 0 1%;
+        }
+    }
+}
