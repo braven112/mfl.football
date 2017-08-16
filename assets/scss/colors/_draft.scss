@@ -1,0 +1,26 @@
+
+/*  USE THIS TO HIDE ITEMS YOU DO NOT WANT SHOWING ON YOUR DRAFT ROOM PAGE  */
+.banner-container,#tabmenu-wrap,footer{display:none!important}
+
+/***************************************/
+/*           DRAFT ROOM STYLE          */
+/***************************************/
+/*  COLORING  */
+#custom_draftroom #draft_countdown_timer:before{color:$primary-color}
+#custom_draftroom #draft-controller{color:$drop-color}
+#custom_draftroom #draft-edit a{color:$drop-color}
+#custom_draftroom #draft-edit a:hover{color:$primary-color}
+#custom_draftroom .fa-pause-circle,#custom_draftroom .fa-stop-circle,#custom_draftroom .fa-step-forward,#custom_draftroom .fa-play-circle{color:#375a77}
+#custom_draftroom .fa-pause-circle:hover,#custom_draftroom .fa-stop-circle:hover{color:$drop-color}
+#custom_draftroom .fa-step-forward:hover,#custom_draftroom .fa-play-circle:hover{color:$add-color}
+#custom_draftroom #make_pick .owner-away{background:$eventablerow;}
+#custom_draftroom #make_pick .eventablerow{background:none;}
+#custom_draftroom #make_pick i{color:$primary-color}
+#custom_draftroom #make_pick i:hover{color:lighten($primary-color, 5%)}
+/*  HIGHLIGHT BG COLOR  */
+#custom_draftroom .moohighlight{background-color:$alert-danger-bg!important}
+#custom_draftroom .moohighlight.done{background-color:transparent!important}
+/*  PLAYER PROFILE  */
+#custom_draftroom #draft_player_link{color: $primary-color}
+#custom_draftroom #player-profile th{background:$eventablerow;}
+#custom_draftroom #player-profile #draft_player_photo{border:2px solid $primary-color}

@@ -272,3 +272,5 @@ textarea#MSG {
 span#chat_audio_clip {
   display: none;
 }
+//remove mfl ads
+div[id*="usmg_ad"]{display:none} 

@@ -12,7 +12,7 @@ $(document).ready(function() {
         
 
 
-        $('.report-wrapper').addClass('premierleague pro-rel').clone().removeClass().addClass('report-wrapper dleague pro-rel').appendTo('.mobile-wrap');
+        $('.report-wrapper').attr('id', 'premierleague').addClass('premierleague pro-rel').clone().removeClass().attr('id', 'dleague').addClass('report-wrapper dleague pro-rel').appendTo('.mobile-wrap');
 
         $('.premierleague caption span').text('Premier League');
         $('.dleague caption span').text('D-League');

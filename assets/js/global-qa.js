@@ -71,6 +71,8 @@ jQuery(document).ready(function() {
     } else {
 
     }
+    //// Custom Draft Add classes
+    $("#Customdraft_makepick, #Customdraft_messages,#Customdraft_draftpicks,#Customdraft_profile,#Customdraft_rostertable").addClass('report-wrapper');
 
 });
 

@@ -1,69 +1,73 @@
 #body_options_52 {
-  .report-wrapper table table td input[type="button"] {
-    width: 100%;
-  }
-  td[colspan="3"][align="center"] .franchiseicon {
-    width: 175px;
-    height: auto;
-    position: relative;
-    top: -7px;
-  }
-  .picks {
-    width: 350px;
-  }
-  table#picker tr td {
-    cursor: pointer;
-    display: table-cell;
-    position:inherit;
-  }
-  span.reportnavigation {
-    display: none;
-  }
-  form table[cellspacing="0"] tr:first-child td:nth-child(4) {
-    position: relative;
-    left: -50px;
-  }
+    .report-wrapper table table td input[type="button"] {
+        width: 100%;
+    }
+    td[colspan="3"][align="center"] .franchiseicon {
+        width: 175px;
+        height: auto;
+        position: relative;
+        top: -7px;
+    }
+    .picks {
+        width: 350px;
+    }
+    table#picker tr td {
+        cursor: pointer;
+        display: table-cell;
+        position: inherit;
+    }
+    span.reportnavigation {
+        display: none;
+    }
+    form table[cellspacing="0"] tr:first-child td:nth-child(4) {
+        position: relative;
+        left: -50px;
+    }
     form table[style="width:471px"] tr:first-child td:nth-child(4) {
-    position: inherit;
-  }
-  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(1),
-  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(3),
-  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td:nth-child(5) {
-    display: none;
-  }
-  form table[cellspacing="0"] tr[class=""] + tr td {
-    display: none;
-  }
-  form table[border="0"] tr:nth-child(3) > td:nth-child(1) {
-    display: none;
-  }
-  form table[border="0"] tr:nth-child(3) > td[colspan="9"]:nth-child(1) {
-    display: table-cell;
-  }
-  form table[cellspacing="0"] tr[class=""] + tr td[colspan="3"] {
-    display: table-cell;
-  }
-  form table[cellspacing="0"] tr[class=""]:nth-child(1) > td[valign="center"]:nth-child(1) {
-    display: table-cell;
-  }
-  .reportnavigation.alert-info, .alert-info, .reportnavigation.alert-info a:link, .alert-info a:link, .reportnavigation.alert-info a:visited, .alert-info a:visited {
-    max-width: 1085px;
-}
-td[colspan="3"] ol {
-    padding-left: 14px;
-    padding-right: 130px;
-}
-//Align waitinfor and on deck text
-.report-wrapper table td[colspan="3"] h3 {
-    padding-left: 8px;
-}
-.report-wrapper table td[colspan="3"] {
-    padding: 6px 0px;
-}
+        position: inherit;
+    }
+    form table[cellspacing="0"] tr[class=""]:nth-child(1)>td:nth-child(1),
+    form table[cellspacing="0"] tr[class=""]:nth-child(1)>td:nth-child(3),
+    form table[cellspacing="0"] tr[class=""]:nth-child(1)>td:nth-child(5) {
+        display: none;
+    }
+    form table[cellspacing="0"] tr[class=""]+tr td {
+        display: none;
+    }
+    form table[border="0"] tr:nth-child(3)>td:nth-child(1) {
+        display: none;
+    }
+    form table[border="0"] tr:nth-child(3)>td[colspan="9"]:nth-child(1) {
+        display: table-cell;
+    }
+    form table[cellspacing="0"] tr[class=""]+tr td[colspan="3"] {
+        display: table-cell;
+    }
+    form table[cellspacing="0"] tr[class=""]:nth-child(1)>td[valign="center"]:nth-child(1) {
+        display: table-cell;
+    }
+    .reportnavigation.alert-info,
+    .alert-info,
+    .reportnavigation.alert-info a:link,
+    .alert-info a:link,
+    .reportnavigation.alert-info a:visited,
+    .alert-info a:visited {
+        max-width: 1085px;
+    }
+    td[colspan="3"] ol {
+        padding-left: 14px;
+        padding-right: 130px;
+    } //Align waitinfor and on deck text
+    .report-wrapper table td[colspan="3"] h3 {
+        padding-left: 8px;
+    }
+    .report-wrapper table td[colspan="3"] {
+        padding: 6px 0px;
+    }
 
-.reportform {
-    width: 1090px;
-}
+    .reportform {
+        width: 1090px;
+    }
 }
 
 
@@ -71,13 +75,362 @@ td[colspan="3"] ol {
 
 ///////My Draft List////////////////
 #body_options_129 {
-  select {
-    font-size: .9em;
-    option {
-    padding: 4px 0;
+    select {
+        font-size: .9em;
+        option {
+            padding: 4px 0;
+        }
+    }
+    input[type="button"],
+    input[type="submit"] {
+        padding: 14px 20px;
     }
 }
-input[type="button"], input[type="submit"] {
-    padding: 14px 20px;
+
+
+
+
+
+
+
+
+
+
+/*   FORMATTING BELOW
+======================= */
+
+#custom_draftroom {
+    .myfantasyleague_tabmenu {
+        margin-top: 5px
     }
+    caption span.module_expand {
+        display: none!important
+    }
+    caption {
+        cursor: default
+    }
+    .toggle_tabs {
+        text-align: center;
+    }
+    .tabs_scroll>div {
+        padding: 2px;
+    }
+    /*  DRAFT TIMER  */
+    #draft_countdown_timer:before {
+        content: "Draft Timer: ";
+    }
+    #draft_countdown_timer {
+        float: right;
+        font-size: 14px;
+        font-weight: normal
+    }
+    /*  DRAFT CONTROL BUTTONS  */
+    #draft-controller {
+        position: relative;
+        ;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    caption i {
+        cursor: pointer
+    }
+    #draft-edit {
+        font-size: 30px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30px;
+        width: 40px;
+        margin: 0 auto
+    }
+    #draft-control {
+        text-align: center;
+        display: block
+    }
+    #draft-control i {
+        margin: 0 10px;
+        font-size: 30px;
+    }
+    #draft-control .fa-step-forward {
+        margin-right: 100px
+    }
+    #draft-pick-edit input[type="button"] {
+        padding: 6px 4px
+    }
+    /*  MAKE A PICK  */
+    #Customdraft_makepick h3 {
+        margin: 15px 0;
+    }
+    #make_pick {
+        text-align: center;
+    }
+    #make_pick select {
+        width: 100%;
+        max-width: 100%;
+        margin: 0
+    }
+    #make_pick select[name="position"],
+    #make_pick select[name="team"] {
+        width: 100px
+    }
+
+    #make_pick td {
+        display: block;
+        text-align: center
+    }
+    #make_pick th.owner-away {
+        font-size: 14px;
+        font-weight: bold;
+        border-top: 0;
+        border-bottom: 0;
+        padding: 6px 18px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        max-width: 100px;
+    }
+    #make_pick td.owner-away {
+        text-align: left;
+        padding-left: 100px;
+    }
+    #make_pick #source_list {
+        max-height: 150px;
+        margin-bottom: 10px
+    }
+    #make_pick #destination_list {
+        max-height: 100px;
+        margin-bottom: 5px
+    }
+    #make_pick {
+        position: relative;
+    }
+    #make_pick i {
+        font-size: 30px;
+        vertical-align: middle;
+        cursor: pointer
+    }
+    .source-list-arrow i.fa-arrow-circle-down {
+        position: absolute;
+        left: 10px;
+        margin-top: 0px
+    }
+    .source-list-arrow i.fa-arrow-circle-up {
+        position: absolute;
+        left: 40px;
+        margin-top: 0px
+    }
+    .draft-list-arrow {
+        margin: 0 10px
+    }
+    #make_pick td[valign="top"] {
+        text-align: right
+    }
+    #make_pick .draftbutton {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 5px;
+        vertical-align: middle
+    }
+    /*  DRAFT MESSAGES  */
+    #draft_status {
+        overflow-y: auto;
+        height: 80px
+    }
+    #draft_status ul {
+        margin: 0 5px;
+        margin-left: 0!important;
+        padding: 0 5px
+    }
+    #draft_status ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0 3px;
+        border: 0;
+        margin-bottom: 3px
+    }
+    /*  DRAFT PICKS  */
+    .draftpicks #draft_picks_container {
+        overflow-y: auto;
+        height: 537px
+    }
+    .draftpicks #draft_picks_container.commish-adjust {
+        height: 523px
+    }
+    .draftpicks {
+        text-align: center;
+        margin: 0;
+        padding: 0
+    }
+    .draft_picks_header {
+        position: relative
+    }
+    .draftpicks td {
+        font-size: 12px;
+        text-align: left
+    }
+    .draftpicks td.pick {
+        text-align: center
+    }
+    .draftpicks td.franchise {
+        max-width: 150px;
+        min-width: 150px;
+        width: 150px;
+    }
+    .draftpicks th,
+    .draftpicks td {
+        padding: 0;
+        margin: 0;
+        padding: 2px
+    }
+    .draftpicks th.pick {
+        position: absolute
+    }
+    .draftpicks .pick {
+        text-align: center;
+        max-width: 40px;
+        min-width: 40px;
+        width: 40px
+    }
+    .draftpicks th.franchise {
+        position: absolute;
+        left: 40px
+    }
+    .draftpicks th.selection {
+        position: absolute;
+        left: 190px;
+    }
+    .draftpicks .selection {
+        padding-left: 5px
+    }
+    .draft_picks_header th:last-of-type:after {
+        content: "Time";
+        position: absolute;
+        right: 30px;
+        visibility: visible;
+        bottom: 2px
+    }
+    .draftpicks th.timestamp {
+        visibility: hidden
+    }
+    .draftpicks td.timestamp {
+        text-align: right;
+        font-style: italic;
+        font-size: 10px;
+        white-space: nowrap;
+        width: 64px;
+        max-width: 64px
+    }
+    .draftpicks b,
+    .draftpicks a,
+    .draftpicks br {
+        display: none!important
+    }
+    .draftpicks {
+        font-size: 0
+    }
+    .draftpicks td {
+        padding: 10px 2px
+    }
+    @media (pointer:coarse) {
+        .draft_picks_header th:last-of-type:after {
+            right: 15px
+        }
+    }
+    /*  PLAYER PROFILE  */
+    #player-profile {
+        padding: 3px;
+        table-layout: fixed;
+        position: relative
+    }
+    #player-profile caption span {
+        color: transparent;
+        font-size: 0
+    }
+    #draft_player_link {
+        position: absolute;
+        left: 5px;
+        top: -33px;
+        font-size: 18px;
+        font-family: 'Roboto Slab';
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    #player-profile #player_height_weight,
+    #player-profile #player_dob_age,
+    #player-profile #player_adp {
+        text-align: center;
+    }
+    #player-profile #draft_player_photo {
+        margin: 5px 0 5px 15px;
+    }
+    /*  ROSTERS  */
+    #rostertable td:first-of-type {
+        text-align: center
+    }
+    /*  DRAFT CHAT  */
+    .franchiseicon {
+        width: 100%;
+        max-width: 150px;
+        height: auto
+    }
+    /*  OWNER ACTIVITY MODULE  */
+    #owner_activity td,
+    #owner_activity th {
+        text-align: left;
+    }
+    #avg_draft_time td:last-of-type,
+    #avg_draft_time th:last-of-type {
+        text-align: center
+    }
+    /*  AVG DRAFT TIME MODULE  */
+    #avg_draft_time td,
+    #avg_draft_time th {
+        text-align: left;
+    }
+    #avg_draft_time td:last-of-type,
+    #avg_draft_time th:last-of-type {
+        text-align: center
+    }
+    /*  ADJUST 2 COLUMN MODULES  */
+    .toggle_tabs>.report-wrapper {
+        margin: 1px 2px 12px;
+    }
+    .toggle_tabs div.mobile-wrap {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    div#Customdraft_profile {
+        padding-top: 48px;
+    }
+    .toggle_tabs caption {
+        display: table-caption!important
+    }
+    .two_column_layout.mobile-view {
+        padding: 0;
+    }
+    table.two_column_layout {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    td.two_column_layout.mobile-view:nth-child(1) {
+        margin-right: 18px;
+    }
+
+
+    td.two_column_layout {
+        @media (min-width: 992px) {
+            width: 49%;
+        }
+        @media (min-width: 1200px) {
+            width: 49.2063274383544886347%;
+        }
+    }
+}
+    .tabs_scroll .mobile-wrap .report .oddtablerow {
+    box-shadow: none;
 }
