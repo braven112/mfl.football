@@ -88,14 +88,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 /*   FORMATTING BELOW
 ======================= */
 
@@ -108,6 +100,16 @@
     }
     caption {
         cursor: default
+    }
+    table#tab_quicklinks caption {
+        display: block;
+        h3 {
+            margin-left: 0;
+        }
+    }
+
+    table#tab_quicklinks {
+        margin-bottom: 0;
     }
     .toggle_tabs {
         text-align: center;
@@ -431,6 +433,7 @@
         }
     }
 }
-    .tabs_scroll .mobile-wrap .report .oddtablerow {
+
+.tabs_scroll .mobile-wrap .report .oddtablerow {
     box-shadow: none;
 }

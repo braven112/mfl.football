@@ -1,0 +1,63 @@
+// #scoreboardTooltip:after {
+//     border-left-color: transparent;
+//     border-right-color: transparent;
+//     border-top-color: #263e68!important;
+// }
+
+// #scoreboardTooltip.top:after {
+//     border-bottom-color: #263e68!important;
+// }
+div#scoreboardTooltip {
+    background-color: $report-bg;
+}
+#MFLPlayerPopupClose {
+    background: $accent-color;
+}
+#MFLPlayerPopupClose:hover {
+    background: $dark-accent-color;
+}
+
+#MFLFantasyMatchupsUpdate, #MFLNFLMatchupsUpdate, .MFLNFLLiveClock, .MFLLiveClock {
+    color: $primary-text-color;
+}
+
+#MFLScoreboardOverlay {
+    background-color: #000
+}
+.MFLPlayerStatsPopup.report td.MFLPlayerName {
+    background-color: $report-bg;
+}
+.MFLGameLinks {
+    background-color: $pagebody-bg;
+    .MFLGameTable {
+        background-color: $report-bg;
+    }
+    .MFLLiveClock {
+        background-color: $pagebody-bg;
+        border-top-color: $accent-color;
+    }
+}
+
+.MFLOuterTable .report td {
+    padding: 6px 6px;
+}
+
+.MFLMainScoreboard {
+	@media (min-width: 513px) {
+    background-color: $pagebody-bg;
+		border: 1px solid rgba(0,0,0,0.1);
+  }
+    
+    #MFLRoadScore > div, #MFLHomeScore > div {
+    color: $caption-color;
+    background-color: $report-bg;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+}
+
+td#myTopTableHolder {
+
+    td#MFLCenterTop {
+    	color: $caption-color;
+    }
+  }

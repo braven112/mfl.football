@@ -137,11 +137,14 @@
       }
     }
   }
-  
+  .nav_buttons img {
+    max-width: 100%;
+}
   @media (max-width: 767px) {
     .nav_wrapper {
       max-width: 100%;
       overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
       .nav_buttons {
         min-width: 610px;
         &.nav_buttons7 {

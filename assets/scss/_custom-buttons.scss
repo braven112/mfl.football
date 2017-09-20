@@ -1,0 +1,54 @@
+.draftcta {
+    overflow: hidden !important;
+    border-left: 8px solid;
+}
+
+.cta_button {
+    display: block;
+    padding: 6px 0px 6px;
+    vertical-align: top;
+    font-size: 18px;
+    font-family: 'Roboto slab';
+    font-weight: bold;
+
+    a {
+        font-family: 'Roboto slab';
+        text-decoration: none;
+    }
+
+
+    .cta_button--svg {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .icon-paypal {
+        height: 30px;
+        width: 30px;
+        margin: 9px 16px 9px 10px;
+    }
+
+    .icon-draft-podium {
+        margin: 5px 12px 5px 6px;
+    }
+
+    .cta-hide {
+        display: none;
+    }
+}
+
+.standingscta {
+    overflow: hidden !important;
+    border-left: 8px solid;
+    .cta_button {
+        font-size: 14px;
+        @media (min-width: 1200px) {font-size: 18px;} 
+    }
+    
+        .col-sm-4 {
+            @media (min-width: 768px) {width: auto;}
+            margin-right: 5%;
+            @media (min-width: 992px) {margin-right: 0;}
+            @media (min-width: 1200px) {margin-right: 2%;}   
+    }
+}

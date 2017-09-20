@@ -105,13 +105,14 @@ span.reportnavigation {
   overflow: initial !important;
 }
 
-.report-wrapper, #outerMFLScoreboardDiv, #lineup-form {
+.report-wrapper, #lineup-form {
   margin-bottom: 24px;
   border-radius: 4px;
   padding: 12px;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   @media (max-width: 991px) {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
