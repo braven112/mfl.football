@@ -8,4 +8,10 @@
 	.playoffbracketname {
     font-size: 24px;
 	}
+.bottomteam, .topteam {
+    border-bottom: 1px solid;
+}
+.bottomteam, .bracket {
+    border-right: 1px solid;
+}
 }
