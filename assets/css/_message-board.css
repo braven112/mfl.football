@@ -1,1 +1,6 @@
-#board_show .ava{width:auto;height:auto;max-width:300px}
+#board_show .ava {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 100px;
+}
