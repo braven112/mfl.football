@@ -189,6 +189,13 @@ td.MFLPlayerProjections, td.MFLPlayerPoints {
     padding: 0;
     -webkit-overflow-scrolling: touch
 }
+.MFLLiveClock {
+    height: 26px;
+}
+.MFLPaceScore {
+    font-family: $headline-font;
+    opacity: 0.75;
+}
 
 td#myTopTableHolder {
     @media (min-width: 1200px) {
