@@ -1,18 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700');
+@import "variables_roboto-black-yellow";
+@import "../../base-styles";
+///Color files using the customer variables above
 @import "alerts";
-@import "add-drop";
 @import "auctions";
 @import "calendar";
 @import "constitution";
 @import "commish";
-@import "custom-buttons";
-@import "draft";
 @import "header";
-//@import "history";
 @import "footer";
 @import "icons";
 @import "inputs";
-@import "livescoring";
-@import "livescoring-toshabman";
 @import "mflmenu";
 @import "mfltabs";
 @import "misc";
@@ -20,4 +18,4 @@
 @import "scrollbar";
 @import "standings";
 @import "submit-lineup";
-@import "tabs";
+

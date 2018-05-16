@@ -1,0 +1,24 @@
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700');
+  @import "variables";
+body {
+    font-family: $body-font;
+    color: $primary-text-color;
+	background:$white;
+}
+
+a:link {
+    color: $link-color;
+}
+
+a:visited {
+    color: $link-color;
+}
+
+.feed_item:nth-child(odd) {
+    background-color: $oddtablerow;
+    border-color:$offwhite;
+}
+.feed_item:nth-child(even) {
+    background-color: $eventablerow;
+    border-color:$offwhite;
+}

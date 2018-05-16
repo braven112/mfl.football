@@ -1,0 +1,61 @@
+ .container-header {
+   background-color: $white;
+ }
+ 
+ .st1 {
+   display: inline;
+   fill: #33373A;
+ }
+ 
+ .st2 {
+   fill: $accent-color;
+ }
+ 
+ .st3 {
+   fill: $primary-color;
+ }
+ 
+ .st4 {
+   display: none;
+   fill: #1C497C;
+ }
+ 
+ .st5 {
+   fill: $lightgray;
+ }
+ 
+ .st6 {
+   fill: $white;
+ }
+ 
+ .leaguename {
+   font-family: $headline-font;
+   color: $accent-color;
+ }
+ 
+ span.leaguename--the {
+   color: $primary-color;
+ }
+ 
+ span.leaguename--dotus {
+   color: $primary-color;
+ }
+ 
+ .nav_buttons .svg-text {
+   color: $link-color;
+ }
+ 
+ .welcome {
+   background: $secondary-color;
+   color: $white;
+ }
+ 
+ .active.welcome {
+   background: $secondary-color;
+   color: $white;
+ }
+ 
+ .welcome a:link,
+ .welcome a:visited {
+   color: $white;
+ }

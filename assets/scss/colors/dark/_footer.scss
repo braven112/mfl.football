@@ -1,0 +1,15 @@
+.container-footer {
+  background-color: $footer-bg-color;
+  a:link,a:visited {
+    color: $footer-text-color;
+  }
+  ul {
+    li {
+    color: $footer-header-text-color;
+    font-family: $headline-font;
+    }
+}
+  .defending-champ {
+    color: $footer-header-text-color;
+  }
+}

@@ -1,0 +1,24 @@
+.homepagecolumn #standings h3,
+.homepagecolumn #brief_standings h3,
+.homepagecolumn .homepagemodule caption {
+  background-color: transparent;
+  font-family: $headline-font;
+  color: $headline-font-color;
+}
+
+
+/*Standings*/
+
+.homepagecolumn #brief_standings h3,
+.homepagecolumn #standings h3 {
+  color: $headline-font-color;
+  border-bottom-color: $border-color;
+}
+
+#body_standings {
+  caption,h3 {
+  background-color: transparent;
+  font-family: $headline-font;
+  color: $headline-font-color;
+  }
+}

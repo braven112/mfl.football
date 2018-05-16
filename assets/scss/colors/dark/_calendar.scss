@@ -1,0 +1,46 @@
+#monthly_calendar td,
+#monthly_calendar th {
+  border-color:$calendar-border-color;
+}
+
+#monthly_calendar .eventablerow {
+  background-color: $eventablerow;
+}
+
+#monthly_calendar td.today {
+  background-color: $today-bg-color;
+  color: $today-text-color;
+  border-color:$today-border-color;
+}
+
+#monthly_calendar td.today {
+  .calendarday {
+    border-color: $calendar-border-color;
+  }
+  a:link {
+    color: $calendar-text-color;
+  }
+  a:visited {
+    color: $calendar-text-color;
+  }
+}
+
+#monthly_calendar ul li {
+  border-top: 1px solid $calendar-border-color;
+}
+
+#monthly_calendar ul li.calendar_event_trade {
+  border-bottom-color: $calendar-border-color;
+}
+#monthly_calendar td .calendarday {
+  border-bottom-color:$calendar-border-color;
+  border-left-color:$calendar-border-color;
+  background-color: $calendar-bg-color;
+}
+#monthly_calendar td.today .calendarday {
+  border-color: $today-border-color;
+  background-color: $today-bg-color;
+  border-bottom-color:darken($today-border-color, 10%);
+}
+
+

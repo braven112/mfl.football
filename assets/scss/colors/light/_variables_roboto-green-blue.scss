@@ -1,0 +1,115 @@
+//////////////////////Colors//////////////////////////
+
+$gray1:#333;
+$gray2:#666;
+$gray3:#999;
+
+$offwhite:#eee;
+$offwhite2:#f9f9f9;
+
+$lightgray:#ddd;
+$lightgray2:#ccc;
+$lightgray3:#aaa;
+
+$white:#fff;
+
+
+
+$primary-color:#1c497c;
+$secondary-color:#1d4b7e; 
+$accent-color:#2e8743;//Green
+$dark-accent-color:darken($accent-color, 10%);
+
+////////////////////////Fonts/////////////////////////////////
+$headline-font: 'Roboto Slab';
+$body-font: 'Roboto', sans-serif;
+$headline-font-color: $accent-color;
+
+////////////////////////Page Backgrounds/////////////////////////////////
+$primary-bg-color:$offwhite2;
+$pagebody-bg: #1A1A1A;
+$report-bg:$primary-bg-color;
+
+////////////////////////Header BG///////////////////////////////
+$header-bg: $report-bg;
+
+////////////////////////Footer BG///////////////////////////////
+$footer-bg-color:$primary-color;
+$footer-text-color:$accent-color;
+$footer-header-text-color:$white;
+
+////////////////////////Text/////////////////////////////////
+$primary-text-color:#BEBEBE;
+$secondary-text-color:#BEBEBE;
+
+////////////////////////Links/////////////////////////////////
+$link-color:$primary-color;
+$link-color-hover:lighten($primary-color, 5%);
+
+////////////////////////Default Border color/////////////////////////////////
+$border-color: #292929;
+
+////////////////////////MFL Menu/////////////////////////////////
+$menu-bg-color:$primary-color;
+$menu-border-color:$border-color;
+$menu-text-color:$white;
+
+////////////////////////Report navigation/////////////////////////////////
+$secondary-menu-border-color:$primary-bg-color;
+$secondary-menu-bg-color:$primary-bg-color;
+$secondary-menu-text-color: $primary-text-color;
+$secondary-menu-link-color: $accent-color;
+$secondary-menu-icon-color: $accent-color;
+$secondary-menu-icon-hover-color: lighten($secondary-menu-icon-color, 5%);
+
+////////////////////////Buttons/////////////////////////////////
+$button-bg-color:$accent-color;
+$button-bg-color-hover:lighten($button-bg-color, 5%);
+$button-link-color:$primary-color;
+
+////////////////////////Captions/////////////////////////////////
+$caption-color:$accent-color;
+
+////////////////////////Icons/////////////////////////////////
+$icon-color:$accent-color;
+$icon-color-hover: lighten($icon-color, 5%);
+$icon-text-color:$primary-text-color;
+
+////////////////////////Add/drop/////////////////////////////////
+$add-color:green;
+$drop-color:red;
+
+////////////////////////Alerts/////////////////////////////////
+$alert-warning-text:#8a6d3b;
+$alert-warning-bg:#fcf8e3;
+$alert-warning-border:#faf2cc;
+
+$alert-success-text:#3c763d;
+$alert-success-bg:#dff0d8;
+$alert-success-border:#d0e9c6;
+
+$alert-info-text:#31708f;
+$alert-info-bg:#d9edf7;
+$alert-info-border:#bcdff1;
+
+////////////////////////Calendar/////////////////////////////////
+$calendar-bg-color:$primary-color;
+$calendar-border-color:lighten($calendar-bg-color, 1%);
+$calendar-text-color:$white;
+$today-bg-color:$accent-color;
+$today-border-color:lighten($today-bg-color, 1%);
+$today-text-color:$primary-color;
+
+
+////////////////////////Homepage messages/////////////////////////////////
+$codebg-color: #31382d;
+
+////////////////////////Table Rows/////////////////////////////////
+$oddtablerow:$primary-color;
+$eventablerow:#292929;
+$newposition-border-color:#444;
+
+////////////////////////Logo Colors/////////////////////////////////
+$logo-color: $accent-color;
+$logo-secondary-color:$white;
+

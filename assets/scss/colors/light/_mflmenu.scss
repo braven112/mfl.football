@@ -1,0 +1,89 @@
+/*   MFL RESPONSIVE MENU MOBILE STYLE
+======================================= */
+  .myfantasyleague_menu {
+    background: $primary-color;
+    border-bottom-color:darken($primary-color, 5%);
+  }
+.myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
+    background: $primary-color;
+}
+.myfantasyleague_menu ul ul li {
+    background: $primary-color;
+}
+.myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
+    border-color:darken($primary-color, 5%);
+  }
+
+.myfantasyleague_menu li:hover > a {
+    background-color: $primary-color;
+}
+.myfantasyleague_menu ul li ul {
+    border-top-color: darken($primary-color, 5%);/*darker border*/
+}
+
+.myfantasyleague_menu ul li ul li:hover > a {
+    background-color: darken($primary-color, 5%);
+  }
+@media only screen and (max-width:920px) {
+  .myfantasyleague_menu {
+    background: $primary-color;
+    border-bottom-color:$primary-color;
+  }
+
+
+
+   .myfantasyleague_menu > label .top-bun {
+    background-color: $white;
+  }
+     .myfantasyleague_menu > label .burger {
+    background-color: $white;
+  }
+       .myfantasyleague_menu > label .double-burger {
+    background-color: $white;
+    }
+   .myfantasyleague_menu > label .bottom-bun {
+    background-color: $white;
+  }
+ 
+  .myfantasyleague_menu ul li label span {
+    background: $white;
+  }
+  .myfantasyleague_menu ul li label span:before {
+    background: $primary-color;
+  }
+  .myfantasyleague_menu ul li label span:after {
+    background: $primary-color;
+  }
+  .myfantasyleague_menu > span {
+    color: $white;
+  }
+  .myfantasyleague_menu ul {
+    background: $primary-color;
+  }
+  .myfantasyleague_menu ul ul li {
+    background-color: $primary-color;
+  }
+  .myfantasyleague_menu ul li a {
+    border-top-color:$primary-color;
+  }
+  .myfantasyleague_menu ul ul li a {
+    border-top-color: 1px solid $primary-color;
+  }
+
+  .myfantasyleague_menu ul ul li a:before {
+    border-left-color:$white;
+  }
+  
+  .myfantasyleague_menu li:hover > a {
+    background-color: darken($primary-color, 5%);
+  }
+  .myfantasyleague_menu ul li ul li:hover > a {
+    background-color: darken($primary-color, 5%);
+  }
+  .myfantasyleague_menu ul ul li a {
+    border-top-color:$primary-color;
+  }
+  .myfantasyleague_menu ul ul li.has-sub a {
+    border-top-color:$primary-color;
+  }
+}

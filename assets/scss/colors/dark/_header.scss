@@ -1,0 +1,44 @@
+ .container-header {
+   background-color: $report-bg;
+ }
+ 
+ .st1 {
+   display: none;
+ }
+ 
+ .st2 {
+   fill: transparent;
+ }
+ 
+ .st3 {
+   fill: $logo-color;
+ }
+ 
+ .st4 {
+   display: none;
+ }
+ 
+ .st5 {
+   fill: $logo-secondary-color;
+ }
+ 
+ .st6 {
+   fill: $logo-secondary-color;
+ }
+ 
+ .leaguename {
+   font-family: $headline-font;
+   color: $caption-color;
+ }
+ 
+ span.leaguename--the {
+   color: $icon-text-color;
+ }
+ 
+ span.leaguename--dotus {
+   color: $icon-text-color;
+ }
+ 
+ .nav_buttons .svg-text {
+   color: $icon-text-color;
+ }

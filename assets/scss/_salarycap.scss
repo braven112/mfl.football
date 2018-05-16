@@ -164,3 +164,174 @@
     padding: 1px;
   }
 }
+
+
+#contractReportContainer {
+    width: 100%;
+    .text-align-left.icon-header {
+  margin-top: -24px;
+}
+
+#contractOuterDiv {
+  width: 100%;
+}
+
+#contractOuterDiv .report {
+  width: 100%;
+}
+
+#contractOuterDiv td {
+  white-space: nowrap;
+}
+
+#contractOuterDiv th {
+  text-align: center;
+}
+
+#contractHeader {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contractReport {
+  margin-top: 24px;
+}
+
+@media (min-width: 640px) {
+  .contractDropdown {
+    float: right;
+    position: relative;
+    top: -5px;
+  }
+}
+
+.contractDropdown .team-dropdown {
+  margin-bottom: 36px;
+  @media (min-width: 640px) {
+    border: none;
+    position: relative;
+    top: 26px;
+    margin-bottom: 0;
+  }
+}
+
+.contractReport img {
+  max-width: 100%;
+  @media (max-width: 639px) {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.subtotals {
+  background-color: #ddd;
+  padding: 15px 5px 5px;
+}
+
+#contractReport {}
+
+#contractTable {}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.rfaStatus {
+  font-style: italic;
+}
+
+.rfaFutureContract {
+  font-style: italic;
+}
+
+.report .ufaStatus {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contractStatus {
+  font-size: 8pt;
+  color: white;
+  font-weight: bold;
+  margin-left: 4px;
+  padding: 0px 3px;
+  vertical-align: top;
+}
+
+.auditionStatus {
+  font-style: italic;
+}
+
+.contractHomeButton {
+  float: right;
+}
+
+.contractHomeButton a:link,
+.contractHomeButton a:hover,
+.contractHomeButton a:visited,
+.contractHomeButton a:active {
+  text-decoration: none;
+  padding: 4px;
+  margin: -1px;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team-nav {
+  margin: 12px 0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  .team-nav--button {
+    display: inline-block;
+    padding: 6px 3px 6px 0;
+    border-radius: 8px;
+  }
+  .team-nav--button svg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 5px 0 0;
+  }
+  .team-nav--button .svg-text {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 10px;
+    font-weight:$secondary-menu-font-weight;
+  }
+  @media (min-width: 1200px) {
+    .team-nav .svg-text {
+      margin-right: 18px;
+    }
+  }
+  .team-nav--button .svg-text a:link,
+  .team-nav--button .svg-text a:visited {
+    text-decoration: none;
+  }
+  svg.icon-user-plus {
+    padding: 2px;
+    position: relative;
+    left: 1px;
+  }
+  svg.icon-user-md {
+    padding: 1px;
+  }
+}
+}
