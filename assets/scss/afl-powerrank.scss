@@ -1,4 +1,8 @@
 .pro-relpage {
+    .pro-rel th a:link {
+        text-decoration: none;
+        pointer-events: none;
+    }
     .premierleague,
     .dleague {
         .bench_points,
@@ -22,13 +26,16 @@
 
         .dleague--row:nth-child(even) {
             background-color: #ececec;
-        }
+        } //D-League Champ
+        .dleague--row:nth-child(3) {
+            border-bottom: 3px solid #f3cd04;
+        } //Top 2 teams
         .dleague--row:nth-child(4) {
             border-bottom: 3px solid green;
-        }
+        } //Top 4 teams
         .dleague--row:nth-child(6) {
             border-bottom: 3px solid #98b398;
-        }
+        } //Last Place team
         .dleague--row:nth-child(13) {
             border-bottom: 3px solid #4a3000;
         }
@@ -54,17 +61,18 @@
     .premierleague {
         .premierleague--row:nth-child(even) {
             background-color: #ececec;
-        }
+        } //Champion
         .premierleague--row:nth-child(3) {
-            //background-color: #f3cd04;
             border-bottom: 3px solid #f3cd04;
-        }
+        } //2nd
         .premierleague--row:nth-child(4) {
-            //background-color: silver;
             border-bottom: 3px solid silver;
-        }
+        } //3rd
         .premierleague--row:nth-child(5) {
-            border-bottom: 3px solid #e0c699; //background-color: #e0c699;
+            border-bottom: 3px solid #e0c699;
+        } //4th
+        .premierleague--row:nth-child(6) {
+            border-bottom: 3px solid #86bb86;
         }
         .premierleague--row:nth-child(10) {
             border-bottom: 3px solid pink;

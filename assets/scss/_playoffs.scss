@@ -1,17 +1,19 @@
-.playoffbracket {
-	caption {
-    display:none;
+.playoffbracket.report {
+	td {
+    	font-size: .8em;
 	}
-	.oddtablerow {
-    box-shadow: none;
-	}
-	.playoffbracketname {
-    font-size: 24px;
-	}
-.bottomteam, .topteam {
-    border-bottom: 1px solid;
-}
-.bottomteam, .bracket {
-    border-right: 1px solid;
-}
+    .oddtablerow {
+        box-shadow: none;
+    }
+    .playoffbracketname {
+        font-size: 24px;
+    }
+    .bottomteam,
+    .topteam {
+        border-bottom: 2px solid;
+    }
+    .bottomteam,
+    .bracket {
+        border-right: 2px solid;
+    }
 }

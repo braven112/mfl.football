@@ -32,4 +32,16 @@
   td.two_column_layout {
     margin-top: -40px;
   }
+  @media (min-width: 992px) {
+        td.two_column_layout:nth-child(1) {
+            padding: 0px 6px 0 0;
+            position: relative;
+            left: -3px;
+        }
+        td.two_column_layout:nth-child(2) {
+            padding: 0px 0 0 6px;
+            position: relative;
+            right: -2px;
+        }
+    }
 }

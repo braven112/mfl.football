@@ -1,8 +1,10 @@
-.playoffbracket {
-.bottomteam, .topteam {
-    border-bottom-color: $lightgray;
-}
-.bottomteam, .bracket {
-    border-right-color: $lightgray;
-}
+.playoffbracket.report {
+    .bottomteam,
+    .topteam {
+        border-bottom-color: $lightgray;
+    }
+    .bottomteam,
+    .bracket {
+        border-right-color: $lightgray;
+    }
 }
