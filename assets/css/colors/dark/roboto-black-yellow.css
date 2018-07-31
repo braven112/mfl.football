@@ -2923,6 +2923,10 @@ div[id*="usmg_ad"] {
 .playoffbracket.report .bracket {
   border-right: 2px solid; }
 
+.playoffbracket.report tr.header th {
+  border: 1px solid;
+  padding: 8px; }
+
 #single_roster .withfranchiseicon {
   display: none; }
 
@@ -4599,6 +4603,10 @@ textarea#MSG {
 .playoffbracket.report .bottomteam,
 .playoffbracket.report .bracket {
   border-right-color: #ddd; }
+
+.playoffbracket.report tr.header th {
+  background-color: #eee;
+  border-color: #ddd; }
 
 .subtotals {
   background-color: transparent;

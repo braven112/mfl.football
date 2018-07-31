@@ -1,7 +1,7 @@
 .playoffbracket.report {
-	td {
-    	font-size: .8em;
-	}
+    td {
+        font-size: .8em;
+    }
     .oddtablerow {
         box-shadow: none;
     }
@@ -15,5 +15,9 @@
     .bottomteam,
     .bracket {
         border-right: 2px solid;
+    }
+    tr.header th {
+        border: 1px solid;
+        padding: 8px;
     }
 }

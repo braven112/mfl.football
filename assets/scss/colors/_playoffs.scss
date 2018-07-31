@@ -7,4 +7,8 @@
     .bracket {
         border-right-color: $lightgray;
     }
+    tr.header th {
+        background-color: $offwhite;
+        border-color: $lightgray;
+    }
 }
