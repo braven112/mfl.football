@@ -22,10 +22,17 @@
 //Align division logos to the left and add margin-top to give them some room when images are used.
 #standings {
   img.standingslogo {
-    margin-left: 0;
+    margin-left: 0px;
     margin-top: 24px;
   }
   tr:first-child img {
     margin-top: 0;
   }
+}
+#body_standings {
+  img.standingslogo {
+    margin-left: 6px;
+    margin-top: 24px;
+  }
+
 }

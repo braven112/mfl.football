@@ -1673,7 +1673,7 @@ table.two_column_layout {
   .nav_button--button {
     display: inline-block;
     margin: 0 auto;
-    padding: 0 29px 0;
+    padding: 0 20px 0;
     margin-bottom: 10px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1730,7 +1730,6 @@ table.two_column_layout {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  vertical-align: top;
   width: 100%;
   position: absolute;
   left: 0;
@@ -3237,7 +3236,10 @@ table#standings th {
   font-weight: bold;
   text-align: left;
   font-size: 24px;
-  padding-left: 10px; }
+  padding-left: 12px; }
+
+#body_standings h3 {
+  padding-left: 6px; }
 
 #body_standings td#division00, #body_standings td#division01, #body_standings td#division02, #body_standings td#division03, #body_standings td#division04, #body_standings td#division05, #body_standings td#division06, #body_standings td#division07 {
   padding: 6px 0px 2px; }
@@ -3254,23 +3256,23 @@ table#standings th {
 .nodivisions #standings caption, .nodivisions .homepagecolumn #brief_standings caption {
   display: block; }
 
-#body_options_02 .report tr th:first-child {
+#body_lineup .report tr th:first-child {
   display: none; }
 
-#body_options_02 .report a {
+#body_lineup .report a {
   white-space: nowrap; }
 
-#body_options_02 .report input[type="checkbox"] {
+#body_lineup .report input[type="checkbox"] {
   margin-right: 10px;
   position: relative;
   top: 3px; }
 
-#body_options_02 td[colspan="10"] {
+#body_lineup td[colspan="10"] {
   padding: 10px 0; }
-  #body_options_02 td[colspan="10"] textarea#MESSAGE0001 {
+  #body_lineup td[colspan="10"] textarea#MESSAGE0001 {
     width: 100%; }
 
-#body_options_02 .franchiselogo {
+#body_lineup .franchiselogo {
   display: none;
   margin-bottom: 12px;
   width: 300px;
@@ -3278,26 +3280,26 @@ table#standings th {
   position: relative;
   top: -80px; }
 
-#body_options_02 .reportnavigation {
+#body_lineup .reportnavigation {
   background-color: transparent;
   border-color: transparent;
   margin-bottom: 0;
   text-align: left; }
 
-#body_options_02 .alert {
+#body_lineup .alert {
   margin-bottom: 12px; }
 
-#body_options_02 input[type="button"] {
+#body_lineup input[type="button"] {
   width: 100%; }
   @media (min-width: 768px) {
-    #body_options_02 input[type="button"] {
+    #body_lineup input[type="button"] {
       width: auto; } }
 
 /**************************************/
 /* NO NEED TO EDIT BELOW LAYOUT STYLE */
 /**************************************/
 /* table layout */
-#options_02 {
+#lineup {
   /* Hide table on submit lineup submission page when error lineup occures */
   /* table header row */
   /* player photo */
@@ -3325,40 +3327,40 @@ table#standings th {
   /* Use default submission form icon */
   /* form submission go back button */
   /* Lineup Responsive Styles */ }
-  #options_02 #startertable {
+  #lineup #startertable {
     float: left;
     width: 49.9%; }
-  #options_02 #benchtable {
+  #lineup #benchtable {
     float: right;
     width: 49.9%; }
-  #options_02 .reportnavigation {
+  #lineup .reportnavigation {
     clear: both; }
-  #options_02 #startertable .oddtablerow th,
-  #options_02 #startertable .eventablerow th,
-  #options_02 #benchtable .oddtablerow th,
-  #options_02 #benchtable .eventablerow th {
+  #lineup #startertable .oddtablerow th,
+  #lineup #startertable .eventablerow th,
+  #lineup #benchtable .oddtablerow th,
+  #lineup #benchtable .eventablerow th {
     display: none; }
-  #options_02 .report .playerrow:hover,
-  #options_02 .report .playerrow:hover {
+  #lineup .report .playerrow:hover,
+  #lineup .report .playerrow:hover {
     cursor: pointer; }
-  #options_02 .report .postitle {
+  #lineup .report .postitle {
     text-transform: uppercase; }
-  #options_02 #benchtable .sheader,
-  #options_02 #startertable .sheader {
+  #lineup #benchtable .sheader,
+  #lineup #startertable .sheader {
     position: relative;
     width: 100%;
     display: inline-table; }
-  #options_02 #benchtable .sheader th,
-  #options_02 #startertable .sheader th {
+  #lineup #benchtable .sheader th,
+  #lineup #startertable .sheader th {
     height: 22px;
     line-height: 22px;
     font-weight: 400;
     font-size: 12px; }
-  #options_02 .report .offstartern {
+  #lineup .report .offstartern {
     position: absolute;
     right: 10px; }
-  #options_02 #startertable tr.playerrow,
-  #options_02 #benchtable tr.playerrow {
+  #lineup #startertable tr.playerrow,
+  #lineup #benchtable tr.playerrow {
     position: relative;
     height: 56px;
     background: none;
@@ -3366,31 +3368,31 @@ table#standings th {
     -webkit-box-shadow: none;
     box-shadow: none;
     display: block; }
-  #options_02 .row_empty {
+  #lineup .row_empty {
     height: 56px; }
-  #options_02 #startertable tr.playerrow td,
-  #options_02 #benchtable tr.playerrow td {
+  #lineup #startertable tr.playerrow td,
+  #lineup #benchtable tr.playerrow td {
     padding: 0;
     font-size: 14px;
     background: none;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  #options_02 #body_submit_lineups #submit_lineups form {
+  #lineup #body_submit_lineups #submit_lineups form {
     display: none; }
-  #options_02 .report .theader {
+  #lineup .report .theader {
     height: 30px;
     line-height: 30px;
     position: relative;
     -webkit-box-shadow: none;
     box-shadow: none;
     display: block; }
-  #options_02 .report .theader td {
+  #lineup .report .theader td {
     padding: 0;
     font-size: 11px;
     font-weight: 400; }
-  #options_02 #startertable tr.playerrow td.pphoto,
-  #options_02 #benchtable tr.playerrow td.pphoto {
+  #lineup #startertable tr.playerrow td.pphoto,
+  #lineup #benchtable tr.playerrow td.pphoto {
     border-radius: 50%;
     width: 51px;
     max-width: 51px;
@@ -3400,18 +3402,18 @@ table#standings th {
     position: absolute;
     left: 1px;
     top: 2px; }
-  #options_02 #startertable .headshot,
-  #options_02 #benchtable .headshot {
+  #lineup #startertable .headshot,
+  #lineup #benchtable .headshot {
     height: 57px;
     width: 42px;
     margin-top: -2px; }
-  #options_02 #startertable tr.def_row .headshot,
-  #options_02 #benchtable tr.def_row .headshot {
+  #lineup #startertable tr.def_row .headshot,
+  #lineup #benchtable tr.def_row .headshot {
     height: 100%;
     margin: 0;
     width: auto; }
-  #options_02 #startertable tr.playerrow td.player,
-  #options_02 #benchtable tr.playerrow td.player {
+  #lineup #startertable tr.playerrow td.player,
+  #lineup #benchtable tr.playerrow td.player {
     position: absolute;
     left: 60px;
     top: 2px;
@@ -3419,16 +3421,16 @@ table#standings th {
     -webkit-box-shadow: none;
     box-shadow: none;
     z-index: 1; }
-  #options_02 #benchtable tr.theader td.player,
-  #options_02 #startertable tr.theader td.player {
+  #lineup #benchtable tr.theader td.player,
+  #lineup #startertable tr.theader td.player {
     position: absolute;
     left: 1px;
     top: 0;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  #options_02 #startertable tr.playerrow td.weekly-opp,
-  #options_02 #benchtable tr.playerrow td.weekly-opp {
+  #lineup #startertable tr.playerrow td.weekly-opp,
+  #lineup #benchtable tr.playerrow td.weekly-opp {
     position: absolute;
     left: 65px;
     top: 21px;
@@ -3436,26 +3438,26 @@ table#standings th {
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 12px; }
-  #options_02 #startertable tr.playerrow td.weekly-opp b,
-  #options_02 #benchtable tr.playerrow td.weekly-opp b {
+  #lineup #startertable tr.playerrow td.weekly-opp b,
+  #lineup #benchtable tr.playerrow td.weekly-opp b {
     font-weight: 400;
     font-style: italic; }
-  #options_02 #startertable tr.playerrow td.weekly-opp b:before,
-  #options_02 #benchtable tr.playerrow td.weekly-opp b:before {
+  #lineup #startertable tr.playerrow td.weekly-opp b:before,
+  #lineup #benchtable tr.playerrow td.weekly-opp b:before {
     content: "Player on "; }
-  #options_02 #startertable tr.playerrow td.weekly-opp b:after,
-  #options_02 #benchtable tr.playerrow td.weekly-opp b:after {
+  #lineup #startertable tr.playerrow td.weekly-opp b:after,
+  #lineup #benchtable tr.playerrow td.weekly-opp b:after {
     content: " this week !"; }
-  #options_02 #benchtable td.inj,
-  #options_02 #startertable td.inj {
+  #lineup #benchtable td.inj,
+  #lineup #startertable td.inj {
     position: absolute;
     left: 40px;
     top: 36px;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  #options_02 #benchtable td.inj b,
-  #options_02 #startertable td.inj b {
+  #lineup #benchtable td.inj b,
+  #lineup #startertable td.inj b {
     font-size: 10px;
     font-weight: 400;
     border-radius: 50%;
@@ -3463,8 +3465,8 @@ table#standings th {
     height: 16px;
     line-height: 16px;
     display: block; }
-  #options_02 #benchtable td.proj-pts,
-  #options_02 #startertable td.proj-pts {
+  #lineup #benchtable td.proj-pts,
+  #lineup #startertable td.proj-pts {
     position: absolute;
     left: 70px;
     top: 37px;
@@ -3473,14 +3475,14 @@ table#standings th {
     box-shadow: none;
     text-align: center;
     font-size: 12px !important; }
-  #options_02 #benchtable td.proj-pts:before,
-  #options_02 #startertable td.proj-pts:before {
+  #lineup #benchtable td.proj-pts:before,
+  #lineup #startertable td.proj-pts:before {
     content: "Proj Pts: "; }
-  #options_02 #benchtable td.bye,
-  #options_02 #startertable td.bye {
+  #lineup #benchtable td.bye,
+  #lineup #startertable td.bye {
     display: none; }
-  #options_02 #benchtable td.ytd-pts,
-  #options_02 #startertable td.ytd-pts {
+  #lineup #benchtable td.ytd-pts,
+  #lineup #startertable td.ytd-pts {
     position: absolute;
     right: 120px;
     top: 18px;
@@ -3489,8 +3491,8 @@ table#standings th {
     box-shadow: none;
     width: 45px;
     text-align: center; }
-  #options_02 #benchtable tr.theader td.ytd-pts,
-  #options_02 #startertable tr.theader td.ytd-pts {
+  #lineup #benchtable tr.theader td.ytd-pts,
+  #lineup #startertable tr.theader td.ytd-pts {
     position: absolute;
     right: 120px;
     top: 0;
@@ -3499,11 +3501,11 @@ table#standings th {
     box-shadow: none;
     width: 45px;
     text-align: center; }
-  #options_02 #benchtable td.ytd-pts a,
-  #options_02 #startertable td.ytd-pts a {
+  #lineup #benchtable td.ytd-pts a,
+  #lineup #startertable td.ytd-pts a {
     text-decoration: none; }
-  #options_02 #benchtable td.avg-pts,
-  #options_02 #startertable td.avg-pts {
+  #lineup #benchtable td.avg-pts,
+  #lineup #startertable td.avg-pts {
     position: absolute;
     right: 180px;
     top: 18px;
@@ -3512,8 +3514,8 @@ table#standings th {
     box-shadow: none;
     width: 45px;
     text-align: center; }
-  #options_02 #benchtable tr.theader td.avg-pts,
-  #options_02 #startertable tr.theader td.avg-pts {
+  #lineup #benchtable tr.theader td.avg-pts,
+  #lineup #startertable tr.theader td.avg-pts {
     position: absolute;
     right: 180px;
     top: 0;
@@ -3522,8 +3524,8 @@ table#standings th {
     box-shadow: none;
     width: 45px;
     text-align: center; }
-  #options_02 #benchtable td.rush-rank,
-  #options_02 #startertable td.rush-rank {
+  #lineup #benchtable td.rush-rank,
+  #lineup #startertable td.rush-rank {
     position: absolute;
     right: 40px;
     top: 18px;
@@ -3532,8 +3534,8 @@ table#standings th {
     box-shadow: none;
     width: 20px;
     text-align: center; }
-  #options_02 #benchtable td.pass-rank,
-  #options_02 #startertable td.pass-rank {
+  #lineup #benchtable td.pass-rank,
+  #lineup #startertable td.pass-rank {
     position: absolute;
     right: 75px;
     top: 18px;
@@ -3542,8 +3544,8 @@ table#standings th {
     box-shadow: none;
     width: 20px;
     text-align: center; }
-  #options_02 #benchtable tr.theader td.rank,
-  #options_02 #startertable tr.theader td.rank {
+  #lineup #benchtable tr.theader td.rank,
+  #lineup #startertable tr.theader td.rank {
     position: absolute;
     right: 40px;
     top: 0;
@@ -3552,48 +3554,48 @@ table#standings th {
     box-shadow: none;
     width: 60px;
     text-align: center; }
-  #options_02 #benchtable td.pass-rank a,
-  #options_02 #startertable td.pass-rank a,
-  #options_02 #benchtable td.rush-rank a,
-  #options_02 #startertable td.rush-rank a {
+  #lineup #benchtable td.pass-rank a,
+  #lineup #startertable td.pass-rank a,
+  #lineup #benchtable td.rush-rank a,
+  #lineup #startertable td.rush-rank a {
     text-decoration: none; }
-  #options_02 tr.theader .opp-rank {
+  #lineup tr.theader .opp-rank {
     white-space: nowrap;
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: -8px; }
-  #options_02 tr.theader .rush-rank {
+  #lineup tr.theader .rush-rank {
     position: absolute;
     left: 0px;
     top: 7px; }
-  #options_02 tr.theader .pass-rank {
+  #lineup tr.theader .pass-rank {
     position: absolute;
     right: 0px;
     top: 7px; }
-  #options_02 #startertable tr.playerrow td.nfl-news,
-  #options_02 #benchtable tr.playerrow td.nfl-news {
+  #lineup #startertable tr.playerrow td.nfl-news,
+  #lineup #benchtable tr.playerrow td.nfl-news {
     display: none; }
-  #options_02 #startertable tr.playerrow,
-  #options_02 #benchtable tr.playerrow {
+  #lineup #startertable tr.playerrow,
+  #lineup #benchtable tr.playerrow {
     pointer-events: none;
     z-index: 0; }
-  #options_02 #startertable td.player a,
-  #options_02 #benchtable td.player a,
-  #options_02 #startertable tr.playerrow:after,
-  #options_02 #benchtable tr.playerrow:after {
+  #lineup #startertable td.player a,
+  #lineup #benchtable td.player a,
+  #lineup #startertable tr.playerrow:after,
+  #lineup #benchtable tr.playerrow:after {
     pointer-events: all; }
-  #options_02 #startertable td.player a:before,
-  #options_02 #benchtable td.player a:before {
+  #lineup #startertable td.player a:before,
+  #lineup #benchtable td.player a:before {
     content: "";
     position: absolute;
     height: 100%;
     width: 102%;
     z-index: -1; }
-  #options_02 #startertable tr.row_empty td {
+  #lineup #startertable tr.row_empty td {
     position: relative; }
-  #options_02 #startertable tr.row_empty td:before {
+  #lineup #startertable tr.row_empty td:before {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -3611,7 +3613,7 @@ table#standings th {
     border-bottom: 0;
     background-position: 50% 60%;
     overflow: hidden; }
-  #options_02 #startertable tr.playerrow:after {
+  #lineup #startertable tr.playerrow:after {
     content: "\f057";
     font-family: FontAwesome;
     position: absolute;
@@ -3619,7 +3621,7 @@ table#standings th {
     z-index: 1;
     font-size: 30px;
     right: 5px; }
-  #options_02 #benchtable tr.playerrow:after {
+  #lineup #benchtable tr.playerrow:after {
     content: "\f055";
     font-family: FontAwesome;
     position: absolute;
@@ -3627,8 +3629,8 @@ table#standings th {
     z-index: 1;
     font-size: 30px;
     right: 5px; }
-  #options_02 #benchtable tr.playerrow.disabled-row:after,
-  #options_02 #startertable tr.playerrow.disabled-row:after {
+  #lineup #benchtable tr.playerrow.disabled-row:after,
+  #lineup #startertable tr.playerrow.disabled-row:after {
     content: "\f023";
     font-family: FontAwesome;
     position: absolute;
@@ -3637,8 +3639,8 @@ table#standings th {
     font-size: 30px;
     right: 7px;
     cursor: default; }
-  #options_02 #benchtable tr.playerrow.original-starter:before,
-  #options_02 #startertable tr.playerrow.original-starter:before {
+  #lineup #benchtable tr.playerrow.original-starter:before,
+  #lineup #startertable tr.playerrow.original-starter:before {
     content: "\f05d";
     font-family: FontAwesome;
     position: absolute;
@@ -3650,156 +3652,156 @@ table#standings th {
     height: 12px;
     width: 12px;
     background: none; }
-  #options_02 .form_buttons input[type="button"],
-  #options_02 #go-back.form_buttons input[type="button"] {
+  #lineup .form_buttons input[type="button"],
+  #lineup #go-back.form_buttons input[type="button"] {
     position: relative;
     padding: 5px 10px 5px 25px !important;
     font-size: 16px; }
-  #options_02 .form_buttons:before {
+  #lineup .form_buttons:before {
     font-family: 'FontAwesome';
     position: relative;
     left: 26px;
     content: "\f00c";
     z-index: 1;
     font-size: 16px; }
-  #options_02 .form_buttons.default-btn input[type="button"] {
+  #lineup .form_buttons.default-btn input[type="button"] {
     position: relative;
     padding: 5px 25px 5px 10px !important;
     font-size: 16px; }
-  #options_02 .form_buttons.default-btn:before,
-  #options_02 h3 + p.default-btn {
+  #lineup .form_buttons.default-btn:before,
+  #lineup h3 + p.default-btn {
     display: none; }
-  #options_02 .form_buttons.default-btn:after {
+  #lineup .form_buttons.default-btn:after {
     font-family: 'FontAwesome';
     position: relative;
     right: 23px;
     content: "\f0a9";
     z-index: 1;
     font-size: 16px; }
-  #options_02 #go-back:before {
+  #lineup #go-back:before {
     font-family: 'FontAwesome';
     position: relative;
     left: 23px;
     content: "\f0e2";
     z-index: 1;
     font-size: 16px; }
-  #options_02 p.form_buttons,
-  #options_02 #go-back.form_buttons {
+  #lineup p.form_buttons,
+  #lineup #go-back.form_buttons {
     margin-left: -16px; }
-  #options_02 p.form_buttons.default-btn {
+  #lineup p.form_buttons.default-btn {
     margin-left: 16px; }
   @media only screen and (max-width: 63em) {
-    #options_02 {
+    #lineup {
       /* player avg points */ }
-      #options_02 #benchtable td.avg-pts,
-      #options_02 #startertable td.avg-pts,
-      #options_02 #benchtable tr.theader td.avg-pts,
-      #options_02 #startertable tr.theader td.avg-pts {
+      #lineup #benchtable td.avg-pts,
+      #lineup #startertable td.avg-pts,
+      #lineup #benchtable tr.theader td.avg-pts,
+      #lineup #startertable tr.theader td.avg-pts {
         display: none; } }
   @media only screen and (max-width: 54em) {
-    #options_02 {
+    #lineup {
       /* player ytd points */ }
-      #options_02 #benchtable td.ytd-pts,
-      #options_02 #startertable td.ytd-pts,
-      #options_02 #benchtable tr.theader td.ytd-pts,
-      #options_02 #startertable tr.theader td.ytd-pts {
+      #lineup #benchtable td.ytd-pts,
+      #lineup #startertable td.ytd-pts,
+      #lineup #benchtable tr.theader td.ytd-pts,
+      #lineup #startertable tr.theader td.ytd-pts {
         display: none; } }
   @media only screen and (max-width: 44em) {
-    #options_02 {
+    #lineup {
       /* player ytd points */
       /* player avg points */ }
-      #options_02 .starter-hide,
-      #options_02 .bench-hide {
+      #lineup .starter-hide,
+      #lineup .bench-hide {
         display: none !important; }
-      #options_02 .starter-show,
-      #options_02 .bench-show {
+      #lineup .starter-show,
+      #lineup .bench-show {
         float: inherit !important;
         width: 100% !important; }
-      #options_02 .mobile-link {
+      #lineup .mobile-link {
         cursor: pointer; }
-      #options_02 .mobile-table-hide {
+      #lineup .mobile-table-hide {
         display: none !important; }
-      #options_02 .mobile-table-show {
+      #lineup .mobile-table-show {
         float: inherit !important;
         width: 100% !important; }
-      #options_02 #startertable .row_empty td {
+      #lineup #startertable .row_empty td {
         position: relative; }
-      #options_02 #startertable .row_empty td:after {
+      #lineup #startertable .row_empty td:after {
         font-family: "FontAwesome";
         position: absolute;
         content: "\f055";
         font-size: 30px;
         right: 5px;
         top: 13px; }
-      #options_02 #benchtable td.ytd-pts,
-      #options_02 #startertable td.ytd-pts,
-      #options_02 #benchtable tr.theader td.ytd-pts,
-      #options_02 #startertable tr.theader td.ytd-pts {
+      #lineup #benchtable td.ytd-pts,
+      #lineup #startertable td.ytd-pts,
+      #lineup #benchtable tr.theader td.ytd-pts,
+      #lineup #startertable tr.theader td.ytd-pts {
         display: block;
         right: 150px; }
-      #options_02 #benchtable td.avg-pts,
-      #options_02 #startertable td.avg-pts,
-      #options_02 #benchtable tr.theader td.avg-pts,
-      #options_02 #startertable tr.theader td.avg-pts {
+      #lineup #benchtable td.avg-pts,
+      #lineup #startertable td.avg-pts,
+      #lineup #benchtable tr.theader td.avg-pts,
+      #lineup #startertable tr.theader td.avg-pts {
         display: block;
         right: 250px; } }
   @media only screen and (max-width: 35em) {
-    #options_02 {
+    #lineup {
       /* player ytd points */
       /* player avg points */ }
-      #options_02 #benchtable td.ytd-pts,
-      #options_02 #startertable td.ytd-pts,
-      #options_02 #benchtable tr.theader td.ytd-pts,
-      #options_02 #startertable tr.theader td.ytd-pts {
+      #lineup #benchtable td.ytd-pts,
+      #lineup #startertable td.ytd-pts,
+      #lineup #benchtable tr.theader td.ytd-pts,
+      #lineup #startertable tr.theader td.ytd-pts {
         right: 120px; }
-      #options_02 #benchtable td.avg-pts,
-      #options_02 #startertable td.avg-pts,
-      #options_02 #benchtable tr.theader td.avg-pts,
-      #options_02 #startertable tr.theader td.avg-pts {
+      #lineup #benchtable td.avg-pts,
+      #lineup #startertable td.avg-pts,
+      #lineup #benchtable tr.theader td.avg-pts,
+      #lineup #startertable tr.theader td.avg-pts {
         right: 180px; } }
   @media only screen and (max-width: 31em) {
-    #options_02 {
+    #lineup {
       /* player avg points */ }
-      #options_02 #benchtable td.avg-pts,
-      #options_02 #startertable td.avg-pts,
-      #options_02 #benchtable tr.theader td.avg-pts,
-      #options_02 #startertable tr.theader td.avg-pts {
+      #lineup #benchtable td.avg-pts,
+      #lineup #startertable td.avg-pts,
+      #lineup #benchtable tr.theader td.avg-pts,
+      #lineup #startertable tr.theader td.avg-pts {
         display: none; } }
   @media only screen and (max-width: 26em) {
-    #options_02 {
+    #lineup {
       /* player ytd points */ }
-      #options_02 #benchtable td.ytd-pts,
-      #options_02 #startertable td.ytd-pts,
-      #options_02 #benchtable tr.theader td.ytd-pts,
-      #options_02 #startertable tr.theader td.ytd-pts {
+      #lineup #benchtable td.ytd-pts,
+      #lineup #startertable td.ytd-pts,
+      #lineup #benchtable tr.theader td.ytd-pts,
+      #lineup #startertable tr.theader td.ytd-pts {
         display: none; } }
   @media only screen and (max-width: 20em) {
-    #options_02 #benchtable td.rush-rank,
-    #options_02 #startertable td.rush-rank {
+    #lineup #benchtable td.rush-rank,
+    #lineup #startertable td.rush-rank {
       right: 38px; }
-    #options_02 #benchtable td.pass-rank,
-    #options_02 #startertable td.pass-rank {
+    #lineup #benchtable td.pass-rank,
+    #lineup #startertable td.pass-rank {
       right: 68px; }
-    #options_02 #benchtable tr.theader td.rank,
-    #options_02 #startertable tr.theader td.rank {
+    #lineup #benchtable tr.theader td.rank,
+    #lineup #startertable tr.theader td.rank {
       right: 36px; }
-    #options_02 tr.theader .rush-rank {
+    #lineup tr.theader .rush-rank {
       left: 3px; }
-    #options_02 tr.theader .pass-rank {
+    #lineup tr.theader .pass-rank {
       right: 3px; } }
   @media only screen and (max-width: 19.9em) {
-    #options_02 #benchtable td.rush-rank,
-    #options_02 #startertable td.rush-rank,
-    #options_02 #benchtable td.pass-rank,
-    #options_02 #startertable td.pass-rank {
+    #lineup #benchtable td.rush-rank,
+    #lineup #startertable td.rush-rank,
+    #lineup #benchtable td.pass-rank,
+    #lineup #startertable td.pass-rank {
       display: none; }
-    #options_02 #benchtable tr.theader td.rank,
-    #options_02 #startertable tr.theader td.rank {
+    #lineup #benchtable tr.theader td.rank,
+    #lineup #startertable tr.theader td.rank {
       display: none; } }
-  #options_02 td.posheader {
+  #lineup td.posheader {
     text-align: left !important;
     font-weight: bold; }
-  #options_02 td.inj b {
+  #lineup td.inj b {
     padding: 0 4.5px; }
 
 table.report {
@@ -4679,23 +4681,27 @@ tr.cap_room_available_row th {
   color: #da3636; }
 
 #standings img.standingslogo {
-  margin-left: 0;
+  margin-left: 0px;
   margin-top: 24px; }
 
 #standings tr:first-child img {
   margin-top: 0; }
 
-#body_options_02 .reportnavigation {
+#body_standings img.standingslogo {
+  margin-left: 6px;
+  margin-top: 24px; }
+
+#body_lineup .reportnavigation {
   color: #fff; }
-  #body_options_02 .reportnavigation a:link,
-  #body_options_02 .reportnavigation a:visited {
+  #body_lineup .reportnavigation a:link,
+  #body_lineup .reportnavigation a:visited {
     color: #fff; }
 
 /****************************************/
 /* EDIT COLORING BELOW TO MATCH MY SITE */
 /****************************************/
 /* table header row */
-#options_02 {
+#lineup {
   /* bg coloring for table rows inside each table that display Select x amount of players */
   /* light shaded red when player limit exceeded */
   /* light shaded yellow when need to add more players to that position */
@@ -4710,64 +4716,64 @@ tr.cap_room_available_row th {
   /* + add player icon */
   /* submit lineup - use default submit form icon color */
   /* Add Button for Empty starter rows on mobile */ }
-  #options_02 .report .theader {
+  #lineup .report .theader {
     background: #292929;
     border-bottom: 1px solid #292929; }
-  #options_02 .report .toomany {
+  #lineup .report .toomany {
     background: #f2dede;
     color: #a94442; }
-  #options_02 .report .notenough {
+  #lineup .report .notenough {
     background: #fcf8e3;
     color: #8a6d3b; }
-  #options_02 .report .rightamount {
+  #lineup .report .rightamount {
     background: #292929; }
-  #options_02 #startertable tr.playerrow.eventablerow,
-  #options_02 #benchtable tr.playerrow.eventablerow {
+  #lineup #startertable tr.playerrow.eventablerow,
+  #lineup #benchtable tr.playerrow.eventablerow {
     background: #1f1f1f; }
-  #options_02 #startertable tr.playerrow.oddtablerow,
-  #options_02 #benchtable tr.playerrow.oddtablerow {
+  #lineup #startertable tr.playerrow.oddtablerow,
+  #lineup #benchtable tr.playerrow.oddtablerow {
     background: #1f1f1f; }
-  #options_02 #startertable tr.row_empty,
-  #options_02 #benchtable tr.row_empty {
+  #lineup #startertable tr.row_empty,
+  #lineup #benchtable tr.row_empty {
     background: transparent; }
-  #options_02 tr.rightamount td,
-  #options_02 tr.notenough td,
-  #options_02 tr.toomany td,
-  #options_02 tr.row_empty td,
-  #options_02 #startertable tr.playerrow.oddtablerow,
-  #options_02 #benchtable tr.playerrow.oddtablerow,
-  #options_02 #startertable tr.playerrow.eventablerow,
-  #options_02 #benchtable tr.playerrow.eventablerow {
+  #lineup tr.rightamount td,
+  #lineup tr.notenough td,
+  #lineup tr.toomany td,
+  #lineup tr.row_empty td,
+  #lineup #startertable tr.playerrow.oddtablerow,
+  #lineup #benchtable tr.playerrow.oddtablerow,
+  #lineup #startertable tr.playerrow.eventablerow,
+  #lineup #benchtable tr.playerrow.eventablerow {
     border-bottom: 1px solid #292929; }
-  #options_02 #startertable tr.playerrow td.pphoto,
-  #options_02 #benchtable tr.playerrow td.pphoto {
+  #lineup #startertable tr.playerrow td.pphoto,
+  #lineup #benchtable tr.playerrow td.pphoto {
     border: 1px solid #292929;
     background: transparent; }
-  #options_02 #benchtable td.inj b,
-  #options_02 #startertable td.inj b {
+  #lineup #benchtable td.inj b,
+  #lineup #startertable td.inj b {
     color: #fff;
     background: red; }
-  #options_02 #benchtable td.proj-pts,
-  #options_02 #startertable td.proj-pts {
+  #lineup #benchtable td.proj-pts,
+  #lineup #startertable td.proj-pts {
     color: green; }
-  #options_02 #startertable tr.playerrow td.weekly-opp b,
-  #options_02 #benchtable tr.playerrow td.weekly-opp b {
+  #lineup #startertable tr.playerrow td.weekly-opp b,
+  #lineup #benchtable tr.playerrow td.weekly-opp b {
     color: #999;
     font-family: 'Roboto', sans-serif; }
-  #options_02 #startertable tr.playerrow:after {
+  #lineup #startertable tr.playerrow:after {
     color: red; }
-  #options_02 #benchtable tr.playerrow.disabled-row:after,
-  #options_02 #startertable tr.playerrow.disabled-row:after {
+  #lineup #benchtable tr.playerrow.disabled-row:after,
+  #lineup #startertable tr.playerrow.disabled-row:after {
     color: red; }
-  #options_02 #benchtable tr.playerrow:after,
-  #options_02 #benchtable tr.playerrow.original-starter:before,
-  #options_02 #startertable tr.playerrow.original-starter:before {
+  #lineup #benchtable tr.playerrow:after,
+  #lineup #benchtable tr.playerrow.original-starter:before,
+  #lineup #startertable tr.playerrow.original-starter:before {
     color: green; }
-  #options_02 .form_buttons:before,
-  #options_02 .form_buttons.default-btn:after,
-  #options_02 #go-back:before {
+  #lineup .form_buttons:before,
+  #lineup .form_buttons.default-btn:after,
+  #lineup #go-back:before {
     color: #fff; }
-  #options_02 #startertable .row_empty td:after {
+  #lineup #startertable .row_empty td:after {
     color: green; }
 
 .tabbed-reports {

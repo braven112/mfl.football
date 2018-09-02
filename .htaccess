@@ -1,0 +1,16 @@
+
+RewriteEngine on
+# To set your custom php.ini, add the following line to this file:
+# suphp_configpath /home/yourusername/path/to/php.ini
+# php_value mbstring.func_overload 4 # Required for PWSB support. Please do not uncomment this line.
+RewriteCond %{HTTP_HOST} ^theleague\.us$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.theleague\.us$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/www59\.myfantasyleague\.com\/2018\/home\/13522" [R=301,L]
+RewriteCond %{HTTP_HOST} ^theleague\.us$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.theleague\.us$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^forum\/?$ "http\:\/\/www\.theleague\.us\/forum\/index\.php" [R=301,L]
+

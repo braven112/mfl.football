@@ -3,8 +3,10 @@
         text-decoration: none;
         pointer-events: none;
     }
+
     .premierleague,
     .dleague {
+
         .bench_points,
         .maxpf,
         .minpf,
@@ -17,91 +19,187 @@
         .alt_power_rank {
             display: none;
         }
+
         th[colspan="11"],
         th[colspan="4"] {
             display: none;
         }
     }
+
     .dleague {
+        caption {
+            animation: slideInDown .5s ease both;
+        }
 
         .dleague--row:nth-child(even) {
             background-color: #ececec;
-        } //D-League Champ
+        }
+
+        //D-League Champ
         .dleague--row:nth-child(3) {
-            border-bottom: 3px solid #f3cd04;
-        } //Top 2 teams
+            border-bottom: 3px solid #e4d271;
+            background-color: #fff7d2;
+        }
+
+        //Top 2 teams
         .dleague--row:nth-child(4) {
             border-bottom: 3px solid green;
-        } //Top 4 teams
+            background-color: #d2f1d2;
+        }
+
+        //Top 4 teams
+        .dleague--row:nth-child(5) {
+            background-color: #e9f7e9;
+            border-bottom: 1px solid #d8efd8
+        }
+
         .dleague--row:nth-child(6) {
             border-bottom: 3px solid #98b398;
-        } //Last Place team
+            background-color: #e9f7e9;
+        }
+
+        //Last Place team
         .dleague--row:nth-child(13) {
             border-bottom: 3px solid #4a3000;
         }
+
         .dleague--row:nth-child(14) {
             background-color: #543b1e;
             color: #ffffff;
             font-weight: bold;
             border-bottom: 6px solid transparent;
         }
+
         caption {
-            background-image: url(///mfl.football/afl-fantasy.com/images/league_logo/dleague.svg);
-            background-repeat: no-repeat;
+            background-image: url( ///mfl.football/afl-fantasy.com/images/league_logo/dleague.svg);
+                background-repeat: no-repeat;
             background-position: top right;
             background-size: contain;
-            height: 60px;
-            padding-top: 18px;
+            height: 65px;
+            padding-top: 8px;
         }
+
         .premierleague--row {
             display: none;
         }
     }
 
     .premierleague {
+        caption {
+            animation: slideInUp .5s ease both;
+        }
+
         .premierleague--row:nth-child(even) {
             background-color: #ececec;
-        } //Champion
-        .premierleague--row:nth-child(3) {
-            border-bottom: 3px solid #f3cd04;
-        } //2nd
-        .premierleague--row:nth-child(4) {
-            border-bottom: 3px solid silver;
-        } //3rd
-        .premierleague--row:nth-child(5) {
-            border-bottom: 3px solid #e0c699;
-        } //4th
-        .premierleague--row:nth-child(6) {
-            border-bottom: 3px solid #86bb86;
         }
+
+        //Champion
+        .premierleague--row:nth-child(3) {
+            background-color: #fff7d2;
+            border-bottom: 3px solid #e4d271;
+        }
+
+        //2nd
+        .premierleague--row:nth-child(4) {
+            background-color: #f1f1f1;
+            border-bottom: 3px solid silver;
+        }
+
+        //3rd
+        .premierleague--row:nth-child(5) {
+            background-color: #ffede0;
+            border-bottom: 3px solid #e0c7b1;
+        }
+
+        //4th
+        .premierleague--row:nth-child(6) {
+            background-color: #e9f7e9;
+            border-bottom: 3px solid #a2cca2;
+        }
+
         .premierleague--row:nth-child(10) {
             border-bottom: 3px solid pink;
         }
+
+        .premierleague--row:nth-child(11) {
+            background-color: #ffe2e7;
+            border-bottom: 1px solid #f5d5db;
+        }
+
         .premierleague--row:nth-child(12) {
+            background-color: #ffe2e7;
             border-bottom: 3px solid red;
         }
+
+        .premierleague--row:nth-child(13) {
+            background-color: pink;
+            border-bottom: 1px solid #f5b3bf;
+        }
+
+        .premierleague--row:nth-child(14) {
+            background-color: pink;
+        }
+
         caption {
-            background-image: url(//mfl.football/afl-fantasy.com/images/league_logo/premier.svg);
-            background-repeat: no-repeat;
+            background-image: url( //mfl.football/afl-fantasy.com/images/league_logo/premier.svg);
+                background-repeat: no-repeat;
             background-position: top right;
             background-size: contain;
-            height: 60px;
-            padding-top: 18px;
+            height: 65px;
+            padding-top: 8px;
         }
+
         .dleague--row {
             display: none;
         }
     }
+
     span.reportnavigation,
     .reportform {
         display: none;
     }
+
     @media (min-width: 768px) {
+
         .report-wrapper.premierleague.pro-rel,
         .report-wrapper.dleague.pro-rel {
             width: 48%;
             float: left;
             margin: 0 1%;
         }
+    }
+}
+
+#premierleague caption span::after {
+    content: "2017 Champions: Smokane FC";
+    display: block;
+    font-size: .5em;
+    color: #b22222;
+}
+
+#dleague caption span::after {
+    content: "2017 Champions: Titsburgh Feelers";
+    display: block;
+    font-size: .5em;
+    color: #b22222;
+}
+
+@keyframes slideInUp {
+    0% {
+        background-position: right 8px;
+    }
+
+    100% {
+        background-position: right 0px;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        background-position: right -8px;
+    }
+
+    100% {
+        background-position: right 0px;
     }
 }
