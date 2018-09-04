@@ -36,6 +36,27 @@
 #body_add_drop span.reportnavigation {
   display: none; }
 
+#body_add_drop form[action="add_drop"] table table td[valign=bottom], #body_add_drop form[action="add_drop"] table table td[valign=bottom] a {
+  font-size: 15px;
+  text-decoration: none; }
+
+#body_add_drop form[action="add_drop"] table table td[align=center], #body_add_drop form[action="add_drop"] table table td[align=left], #body_add_drop form[action="add_drop"] table table td[align=right] {
+  text-align: left;
+  min-width: 40px !important;
+  padding: 0 4px 4px 0; }
+
+#body_add_drop #drop tr.highlight, #body_add_drop #drop tr:hover td:first-child {
+  padding: 5px; }
+
+#body_add_drop #add tr.highlight, #body_add_drop #add tr:hover td:first-child {
+  padding: 5px; }
+
+#body_add_drop table.pickerbox {
+  padding: 0 !important; }
+
+#body_add_drop form[action="add_drop"] > table tr:first-child td[valign="top"] {
+  width: 50%; }
+
 .alert {
   padding: 10px 14px;
   margin-bottom: 1rem;
@@ -1829,9 +1850,9 @@ input#chat_text_field {
 #body_options_101 input[type="submit"] {
   margin-left: 10px; }
 
-form.reportform input[type="submit"] {
-  margin-left: 5px;
-  padding: 5px 30px; }
+input[value="Now!"], form.reportform input[type="submit"] {
+  padding: 5px 30px;
+  margin-left: 6px; }
 
 .btn-primary a, .btn-primary a:link, .btn-primary a:visited {
   border-radius: 5px;

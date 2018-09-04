@@ -13,7 +13,6 @@ input[type="button"], input[type="submit"] {
   }
 }
 
-input[type="button"]:hover, input[type="submit"]:hover {}
 
 #league_chat input[type="button"] {
   width: 100%;
@@ -43,17 +42,15 @@ input#chat_text_field {
   }
 }
 
-input[type="text"] {}
 
 #body_options_101 input[type="submit"] {
   margin-left: 10px;
 }
 
-form.reportform input[type="submit"] {
-  margin-left: 5px;
+input[value="Now!"],form.reportform input[type="submit"] {
   padding: 5px 30px;
+  margin-left: 6px;
 }
-
 //button on current auction page
 .btn-primary a, .btn-primary a:link, .btn-primary a:visited {
   border-radius: 5px;

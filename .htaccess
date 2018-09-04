@@ -13,4 +13,5 @@ RewriteCond %{HTTP_HOST} ^www\.theleague\.us$
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^forum\/?$ "http\:\/\/www\.theleague\.us\/forum\/index\.php" [R=301,L]
+Header set Access-Control-Allow-Origin "*"
 

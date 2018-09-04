@@ -29,5 +29,30 @@
     padding: 8px 6px;
 }
 
-span.reportnavigation {display: none;}
+    span.reportnavigation {display: none;}
+    form[action="add_drop"] table table td[valign=bottom],form[action="add_drop"] table table td[valign=bottom] a {
+        font-size: 15px;
+        text-decoration:none;
+    }
+    form[action="add_drop"] table table td[align=center], form[action="add_drop"] table table td[align=left], form[action="add_drop"] table table td[align=right] {
+        text-align: left;
+        min-width: 40px !important;
+        padding: 0 4px 4px 0;
+    }
+    
+    #drop tr.highlight, #drop tr:hover td:first-child {
+        padding: 5px;
+    }
+    #add tr.highlight, #add tr:hover td:first-child{
+        padding: 5px;
+    }
+    table.pickerbox {
+        padding: 0 !important;
+    }
+    
+    form[action="add_drop"] > table tr:first-child td[valign="top"] {
+        width: 50%;
+    }
 }
+
+

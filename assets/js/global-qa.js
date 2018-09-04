@@ -40,14 +40,14 @@ jQuery(document).ready(function() {
     });
 
     //remove empty td's on add/drop page
-    $("#body_options_43 td").filter(function() {
+/*     $("#body_options_43 td").filter(function() {
 
         var html = $(this).html();
 
         if (html == '' || html == ' ')
             return true;
 
-    }).remove();
+    }).remove(); */
     //remove empty td's on draft page
     $("#body_options_52 td[colspan='3'] table > td").filter(function() {
 

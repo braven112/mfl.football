@@ -1,0 +1,122 @@
+@import "colors/light/roboto-blue-red";
+@import "afl-powerrank";
+
+table#waiver_order tr:nth-child(15) th {
+    padding-top: 24px;
+}
+
+#body_home {
+    &.al-north,
+    &.nl-east {
+        #standings {
+            //dynamically add the many rows
+            @for $i from 9 through 16 {
+                tr:nth-child(#{$i}) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.al-south,
+    &.nl-west {
+        #standings {
+
+            //dynamically add the many rows
+            @for $i from 1 through 8 {
+                tr:nth-child(#{$i}) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.al {
+    table#waiver_order {
+        //dynamically add the many rows
+        @for $i from 15 through 28 {
+            tr:nth-child(#{$i}) {
+                display: none;
+            }
+        }
+    }
+}
+
+.nl {
+    table#waiver_order {
+        //dynamically add the many rows
+        @for $i from 1 through 14 {
+            tr:nth-child(#{$i}) {
+                display: none;
+            }
+        }
+    }
+}
+
+//add division titles
+td#division00::after {
+    content: " 2017 Division Champions: Smokane FC";
+    font-size: 1em;
+    color: #b22222;
+    display: block;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    font-family: "Roboto Slab";
+}
+
+td#division01::after {
+    content: " 2017 Division Champions: Midwestside Connection";
+    font-size: 1em;
+    color: #b22222;
+    display: block;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    font-family: "Roboto Slab";
+}
+
+td#division02::after {
+    content: " 2017 Division Champions: Balls Deep";
+    font-size: 1em;
+    color: #b22222;
+    display: block;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    font-family: "Roboto Slab";
+}
+
+td#division03::after {
+    content: " 2017 Division Champions: Chatmaster";
+    font-size: 1em;
+    color: #b22222;
+    display: block;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    font-family: "Roboto Slab";
+}
+
+#body_standings td#division00::after,
+#body_standings td#division01::after,
+#body_standings td#division02::after,
+#body_standings td#division03::after {
+    padding-left: 11px;
+}
+
+#body_standings td#division00 img.standingslogo,
+#body_standings td#division01 img.standingslogo {
+    margin-left: 9px;
+}
+
+.container-footer .defending-champ {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Roboto Slab";
+    font-weight: normal;
+}
+
+.container-footer .defending-champ a {
+    margin-top: 3px;
+}
+
+.container-footer .defending-champ img {
+    width: 200px;
+}
