@@ -16,8 +16,13 @@
         .woulda_lost,
         .efficiency,
         .power_rank,
-        .alt_power_rank {
+        .alt_power_rank,
+        .all_play_t {
             display: none;
+        }
+        
+        td {
+            font-size: 16px;
         }
 
         th[colspan="11"],

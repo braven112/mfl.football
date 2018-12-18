@@ -4810,4 +4810,18 @@ tr.cap_room_available_row th {
   color: #f6f6f6;
   background-color: #ad8748; }
 
+#body_top tr.eventablerow.myfranchise, #body_options_08 tr.eventablerow.myfranchise {
+  background-color: #dbefd3;
+  color: #2c501e; }
+
+#body_top tr.oddtablerow.myfranchise, #body_options_08 tr.oddtablerow.myfranchise {
+  background-color: #f0fff0;
+  color: #2c501e; }
+
+#body_top tr.oddtablerow.myfranchise a, #body_options_08 tr.oddtablerow.myfranchise a {
+  color: #2c501e; }
+
+#body_top tr.eventablerow.myfranchise a, #body_options_08 tr.eventablerow.myfranchise a {
+  color: #2c501e; }
+
 /*# sourceMappingURL=roboto-black-gold.css.map */
