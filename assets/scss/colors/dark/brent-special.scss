@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto:900|Roboto+Slab:700');
+
+@import "variables_brent-special";
+@import "../../base-styles";
+///Color files using the customer variables above
+
+@import "../colors";
+
+caption span {
+    color: $headerColor;
+}
+
+.tabbed-reports {  
+    border: none;
+    box-shadow: none !important;
+}
+
+.tabbed-reports li {
+    color: $txtColor; 
+    background-color: inherit;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.tabbed-reports li:hover, 
+.tabbed-reports li.active, 
+.tabbed-reports li.current { 
+    color: $txtColor; 
+    background-color: inherit;
+} 
+
+.utility-nav {
+    background-color: #252627;
+    border: 1px solid $borderColor;
+}
+
+.container-header {
+    background: $bg;
+}
+
+.report-wrapper, 
+#lineup-form { 
+    border: 1px solid $borderColor;
+}
+
+.homepagecolumn #brief_standings h3, 
+.homepagecolumn #standings h3 {
+    border-bottom: none;
+}
+
+.myfantasyleague_menu {
+    border-bottom: none;
+}
+
+[class^="icon"],
+.utility-nav svg {
+    fill: $headerColor;
+}
